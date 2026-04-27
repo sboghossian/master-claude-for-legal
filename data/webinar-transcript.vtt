@@ -1,0 +1,1775 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.760
+ Okay, awesome. Let's go ahead and get started. Thank you all for answering the polls.
+
+00:00:03.760 --> 00:00:09.200
+ I'm excited to kind of walk through all of the results as well. I'm Nancy from our marketing
+
+00:00:09.200 --> 00:00:15.120
+ team here at Enthropic. Thank you so much all for joining us today. We're excited to have you all
+
+00:00:15.120 --> 00:00:21.040
+ since, you know, since we launched the legal plugin a few months ago, we've really just seen
+
+00:00:21.040 --> 00:00:27.200
+ so such overwhelming demand here at Enthropic around how to use co-work for legal. So this
+
+00:00:27.200 --> 00:00:33.680
+ webinar really is aimed at teaching you some best practices directly from our own legal and applied
+
+00:00:33.680 --> 00:00:41.440
+ AI teams. So without further ado, let's go ahead and dive in here. So first, the top question that
+
+00:00:41.440 --> 00:00:46.640
+ we almost always get with these webinars is will this session be recorded? And yes, it will be,
+
+00:00:46.640 --> 00:00:51.920
+ and we will make sure to send this to everyone at the end of the session. Second of all, this is
+
+00:00:51.920 --> 00:00:57.840
+ very much intended to be an interactive session. So please do enter your questions into the chat
+
+00:00:57.840 --> 00:01:03.360
+ window. And we will answer as many as we can. You'll also see an upvoting function so you
+
+00:01:03.360 --> 00:01:08.480
+ can upvote the questions that you would most like to see answered. And finally, give us feedback. We
+
+00:01:08.480 --> 00:01:12.960
+ run a lot of these webinars and we read every comment. We're always working to make these
+
+00:01:12.960 --> 00:01:20.160
+ sessions as valuable as we can. So now I'm excited to turn it over to my wonderful colleagues here,
+
+00:01:20.160 --> 00:01:23.120
+ Mark, Pike, and Maggie Russo. So I'll let them introduce themselves.
+
+00:01:23.120 --> 00:01:30.960
+ Awesome. Thank you so much. Hi, everybody. I'm Mark Pike. I'm a member of Anthropic's legal team
+
+00:01:30.960 --> 00:01:35.280
+ and the product lead for Claude for the legal industry. I've been here at Anthropic for two
+
+00:01:35.280 --> 00:01:41.760
+ and a half years, which in AI time definitely feels like a decade's worth of change. I'm joined by my
+
+00:01:41.760 --> 00:01:45.920
+ colleague, Maggie Russo, who will be driving most of what you see live. Maggie, why don't you go
+
+00:01:45.920 --> 00:01:50.640
+ ahead and introduce yourself as well? Thanks, Mark. Hi, everyone. My name is Maggie Russo.
+
+00:01:50.640 --> 00:01:55.600
+ I'm on the applied AI team here at Anthropic. And our team kind of sits across product, engineering,
+
+00:01:55.600 --> 00:01:59.680
+ research, and of course, our grow to market team. And we work with our customers to make sure they're
+
+00:01:59.680 --> 00:02:04.320
+ getting the most out of Claude. And one of the things that I've been able to do while at Anthropic
+
+00:02:04.320 --> 00:02:08.560
+ is work really closely with our customers in the legal industry. So I'm super excited to share some
+
+00:02:08.560 --> 00:02:15.200
+ of those learnings today and walk through a live demo a little bit later on. Thanks, Maggie. So quick
+
+00:02:15.200 --> 00:02:21.600
+ thing before we dive in here. I'm excited to say that over 20,000 of you registered for this webinar.
+
+00:02:21.600 --> 00:02:27.120
+ That is absolutely insane to me. I've never seen a number like that for a legal session in my career.
+
+00:02:27.120 --> 00:02:33.600
+ It tells me the question here has really changed. I think like a year ago lawyers were asking whether
+
+00:02:33.600 --> 00:02:41.120
+ to even use AI. And now everybody's asking how to use it well on real work. I actually pulled people
+
+00:02:41.120 --> 00:02:47.040
+ on LinkedIn last week. Feel free to find me on LinkedIn and follow along. But I asked people on
+
+00:02:47.040 --> 00:02:52.080
+ LinkedIn to comment what they were building with Claude already. And I got back a snapshot of what
+
+00:02:52.080 --> 00:02:58.560
+ the community has been figuring out to build with Claude. Solo practitioners, building their own
+
+00:02:58.560 --> 00:03:03.520
+ contract and matter management systems from scratch. In-house legal ops teams, open sourcing
+
+00:03:03.520 --> 00:03:09.120
+ their outside counsel management playbooks on GitHub so peers can fork them and build on top of
+
+00:03:09.120 --> 00:03:14.000
+ each other. Trial teams are building purpose built back ends for large litigation matters.
+
+00:03:14.000 --> 00:03:20.320
+ In research builders, we're wiring millions of statutes and regulator decisions across dozens
+
+00:03:20.320 --> 00:03:26.640
+ of jurisdictions into Claude via MCP. You'll see the same building blocks that they're using. These
+
+00:03:26.640 --> 00:03:30.640
+ skills and plug-ins and connectors. They're going to show up in everything that Maggie and I walk
+
+00:03:30.640 --> 00:03:36.640
+ through today. There's actually one story that stopped me in my tracks. A lawyer named, or sorry,
+
+00:03:36.640 --> 00:03:41.280
+ a paralegal named Andrew reached out and emailed me this week. He was part of a four-person pro
+
+00:03:41.280 --> 00:03:47.280
+ bono team, two lawyers, two paralegals, up against an MLaw 200 firm and an elder abuse case,
+
+00:03:47.280 --> 00:03:53.120
+ a pro bono case. Andrew built a tool on our API that sat at the counsel's table during this trial.
+
+00:03:53.120 --> 00:03:58.160
+ It was pulling in cross-examination angles, sometimes before opposing counsel could even
+
+00:03:58.160 --> 00:04:03.120
+ finish asking the question. And they were able to walk out with the large jury verdict for their
+
+00:04:03.120 --> 00:04:09.600
+ client. These tools that we're building here in Enthropic are democratizing us to the best legal
+
+00:04:09.600 --> 00:04:15.520
+ support, not just for big law firms and in-house legal teams, but for many who need that support.
+
+00:04:15.520 --> 00:04:20.400
+ So I encourage you to think of what you could build today and meet this moment.
+
+00:04:20.400 --> 00:04:27.440
+ So with that, I want to do a hands-on exercise here. I want you to really feel the range of this
+
+00:04:27.440 --> 00:04:32.960
+ tool right away. I think we're going to actually drop this exact prompt into the chat so you can
+
+00:04:32.960 --> 00:04:39.280
+ cut and paste it into your own clod. It connects to your email and calendar, your Slack or your teams,
+
+00:04:39.280 --> 00:04:44.880
+ and can create a briefing of your day, who you're meeting with, what's outstanding, what to read
+
+00:04:44.880 --> 00:04:50.560
+ before you walk into a meeting. This is the kind of great chief of staff I think all of us want to
+
+00:04:50.560 --> 00:04:57.920
+ have who might drop a brief on our desk at 8 a.m. Who doesn't want their own personalized chief of
+
+00:04:57.920 --> 00:05:03.920
+ staff. I'll also confess, I took this same prompt and I asked it to write me a daily horoscope that
+
+00:05:03.920 --> 00:05:09.520
+ reads from my actual calendar. And with Claude's help, I reverse engineered my kid's toy sticker
+
+00:05:09.520 --> 00:05:15.040
+ printer. It's this little Bluetooth printer. And I asked it to give me a horoscope of the day and it
+
+00:05:15.040 --> 00:05:21.360
+ says, "You're going to crush your webinar today." So it's awesome. It's sort of a silly fun example,
+
+00:05:21.360 --> 00:05:27.680
+ but it raises a serious point here. The same setup, calendar, email, a scheduled task is what
+
+00:05:27.680 --> 00:05:32.640
+ runs your morning briefing. It can also be what helps you with an MSA review against a playbook.
+
+00:05:32.640 --> 00:05:38.880
+ It can help you with NDA triage, regulatory assessments, wired in once, and it's wired for
+
+00:05:38.880 --> 00:05:44.080
+ all of these use cases. And this really is a working session. It's not just a demo. These
+
+00:05:44.080 --> 00:05:49.520
+ are going to be real documents, real workflows, real questions. So let's continue to get into it here.
+
+00:05:49.520 --> 00:05:55.760
+ We're going to show you a different way of working. You can delegate real legal tasks to Claude. It's
+
+00:05:55.760 --> 00:06:00.480
+ going to read the same matter files your team does, run the workflows that you run every week,
+
+00:06:00.480 --> 00:06:06.480
+ and carry context across Word, PowerPoint, Excel, your email, so nothing gets lost in the handoff.
+
+00:06:06.480 --> 00:06:12.160
+ And it's not theoretical. Our own legal team at Anthropic uses Claude every day for this type of
+
+00:06:12.160 --> 00:06:18.000
+ work, contract review, research, and the work that used to eat up hours. We call it amp-fooding. We
+
+00:06:18.000 --> 00:06:22.000
+ refer to ourselves as ants here at Anthropic. So we like to amp-food what we're building.
+
+00:06:22.800 --> 00:06:26.960
+ Many of you are interested in technology, but aren't builders yourselves. The first time I saw
+
+00:06:26.960 --> 00:06:31.520
+ Claude take action on something for me, not just to answer a question, but actually do the work,
+
+00:06:31.520 --> 00:06:36.080
+ it really changed how I thought about my own job. My engineering colleagues had that moment with
+
+00:06:36.080 --> 00:06:41.120
+ Claude Code last year, and I'm feeling empowered now with co-work. And that's what we're hoping
+
+00:06:41.120 --> 00:06:50.080
+ you learned today. So how does Claude know my legal work? I'd like to present these four pillars.
+
+00:06:50.720 --> 00:06:57.600
+ One is connecting to your live data via model context protocol, or MCPs. These are the USBCs
+
+00:06:57.600 --> 00:07:04.240
+ of Claude, of AI. It's an open protocol that helps you connect things from your matter management
+
+00:07:04.240 --> 00:07:10.640
+ system, things like iManage or Net Documents, pulling in stuff from CLMs, Drive, Outlook,
+
+00:07:10.640 --> 00:07:15.120
+ the full Microsoft staff. Claude reads the same matter files your team does.
+
+00:07:15.120 --> 00:07:20.560
+ It's not a static upload that goes stale the moment a new draft lands. It's live across
+
+00:07:20.560 --> 00:07:25.920
+ these systems where your work actually lives. The second is that it has legal skills. The workflows
+
+00:07:25.920 --> 00:07:31.920
+ your team runs every week are codified, NDA review, contract redlining, privileged log drafting,
+
+00:07:31.920 --> 00:07:38.240
+ matter intake, clause library checks, checklist, precedent search, deal point analysis. Claude
+
+00:07:38.240 --> 00:07:43.040
+ doesn't just start from a blank page on the work you do hundreds of times a year. It pulls from
+
+00:07:43.040 --> 00:07:47.200
+ that corpus of knowledge that you've created within your department and can help empower
+
+00:07:47.200 --> 00:07:52.560
+ new employees who maybe didn't even know to look in these places. And again, it understands these
+
+00:07:52.560 --> 00:07:57.120
+ playbooks. Claude reads the agreement structure the way a lawyer does. It tracks defined terms
+
+00:07:57.120 --> 00:08:02.240
+ across exhibits and schedules. It explains in plain English what a clause actually does
+
+00:08:02.240 --> 00:08:07.760
+ and flags exactly where the risk sits, not just doing a keyword search or an index. It actually
+
+00:08:07.760 --> 00:08:12.880
+ has comprehension of how the document holds together. And then it carries that context across
+
+00:08:12.880 --> 00:08:18.800
+ apps. The red line you ran in Word can become a summary slide in a PowerPoint, can then become
+
+00:08:18.800 --> 00:08:24.000
+ an email that you draft and send to a client. One thread, no re-explaining to the AI how these
+
+00:08:24.000 --> 00:08:28.320
+ things work, no copy/paste handoffs between these tools. The work moves with you.
+
+00:08:28.320 --> 00:08:37.600
+ And I like to ground things here in calling out that anthropics have been at the frontier
+
+00:08:37.600 --> 00:08:41.920
+ for the past 18 months. Our models have been the best in the world at coding.
+
+00:08:41.920 --> 00:08:46.720
+ And I think if you had told me a few years ago when I started anthropic that the best
+
+00:08:46.720 --> 00:08:50.160
+ model in the world for coding would also be good for legal work, I would have been shocked.
+
+00:08:50.160 --> 00:08:57.360
+ But it turns out you don't need to fine-tune models to give Claude the engineer a legal degree.
+
+00:08:57.360 --> 00:09:02.160
+ Instead, you just need to give these tools access, the same tools that the lawyers use,
+
+00:09:02.160 --> 00:09:07.440
+ every day to get their work done. And that's what helps it become a great teammate within
+
+00:09:07.440 --> 00:09:14.800
+ the legal context. All right. I'm going to take things back a couple of years. How many of you
+
+00:09:14.800 --> 00:09:21.760
+ remember your first experience interacting with generative AI? Probably fall of 2022 with chat
+
+00:09:21.760 --> 00:09:29.040
+ GPT or in 2023 using Claude as a more of a like chat interface. You ask a question, you get an
+
+00:09:29.040 --> 00:09:34.160
+ answer. You were getting summaries. Maybe you were writing first drafts. There were probably a bit of
+
+00:09:34.160 --> 00:09:42.000
+ hallucinations as well. But then something happened. Last year, it was only happening
+
+00:09:42.000 --> 00:09:48.080
+ for developers. We launched Claude code and developers got access to something more powerful.
+
+00:09:48.080 --> 00:09:53.920
+ AI that could actually do things, not just answer questions, but build things, work agentically,
+
+00:09:53.920 --> 00:10:00.160
+ ship new products and features with incredible speed. Claude code changed what's possible for
+
+00:10:00.160 --> 00:10:09.920
+ engineers. And now, we're beginning to bring other functions into the fold here. Beyond
+
+00:10:09.920 --> 00:10:15.600
+ engineering. Cowork does that same work for knowledge workers. It's a desktop agent for
+
+00:10:15.600 --> 00:10:20.640
+ users to handle complex multi-step tasks using Claude. And Claude helps get it done. It's the
+
+00:10:20.640 --> 00:10:27.040
+ same engine as Claude code. No terminal required. Whenever I look back at terminal, I still think
+
+00:10:27.040 --> 00:10:33.520
+ of the movie "The Matrix," these screens with all this code running across it. Cowork is in the four
+
+00:10:33.520 --> 00:10:39.920
+ corners of an application that is in a familiar interface for those of us who are used to working
+
+00:10:39.920 --> 00:10:47.040
+ with things like Microsoft Word and Word documents. It's still early. We're iterating rapidly. But
+
+00:10:47.040 --> 00:10:51.920
+ we've already seen so much interest in some very cool use cases by many of you, which makes us
+
+00:10:51.920 --> 00:10:58.720
+ confident transformations can continue to happen. The transformation happening inside of anthropic
+
+00:10:58.720 --> 00:11:04.640
+ legal looks a bit like this. We're using Claude to do contract review, red lines in 20 minutes
+
+00:11:04.640 --> 00:11:10.160
+ instead of hours. Our litigation team is using it to do transcript search or expert prep. We're
+
+00:11:10.160 --> 00:11:16.240
+ doing privacy impact assessments, things that used to take hours can now happen in 20, 30 minutes.
+
+00:11:16.240 --> 00:11:22.080
+ Our IP team is using it to do patent prioritization, to surface patentable ideas from product briefs
+
+00:11:22.080 --> 00:11:27.120
+ and GitHub repositories. They're using Claude agents to scan those things and then move with
+
+00:11:27.120 --> 00:11:33.920
+ the type of speed that a hyper growth company like ours really needs. But where to get started? Well,
+
+00:11:33.920 --> 00:11:40.720
+ I recently analyzed 742 JIRA tickets, which is an oddly specific number so you know I'm not making
+
+00:11:40.720 --> 00:11:47.360
+ it up right now. That kind of analysis would not have been possible for someone like me who doesn't
+
+00:11:47.360 --> 00:11:54.160
+ know how to do data analysis very well. I used the plugin. I invoked that plugin in Claude and then
+
+00:11:54.160 --> 00:12:01.040
+ had it read the repository of all those recent client intake matters that we received using JIRA.
+
+00:12:01.920 --> 00:12:11.840
+ Claude did all this in a co-work session. The output, here it is, the output helped me identify
+
+00:12:11.840 --> 00:12:17.520
+ some trends. I noticed that NDA triage, this is by the way synthesized data. I'm not going to leak
+
+00:12:17.520 --> 00:12:23.520
+ our secret sauce of our actual work, but it identified that we do way too much NDA triage
+
+00:12:23.520 --> 00:12:28.480
+ and we were spending a lot of time with busy work on that. Open source software questions were really
+
+00:12:28.480 --> 00:12:34.320
+ taking up a lot of time for our IP team. We saw these patterns emerge. We identified where that
+
+00:12:34.320 --> 00:12:40.320
+ busy work was and then the next step was to ask Claude, "Okay, how can we build automations to
+
+00:12:40.320 --> 00:12:45.440
+ actually help us get better work done and move with the type of speed we need to?" And so I asked
+
+00:12:45.440 --> 00:12:50.320
+ Claude, "Help me build a plugin that actually helps us automate a lot of this work." That's how I
+
+00:12:50.320 --> 00:12:55.120
+ helped create the legal plugin here at Anthropic and it really made an impact on the industry and
+
+00:12:55.120 --> 00:12:59.600
+ I've been excited to see others in the community build on that and build their own skills and
+
+00:12:59.600 --> 00:13:06.640
+ plugins that you can integrate with these tools and systems. Now, I've shared a lot here. I want
+
+00:13:06.640 --> 00:13:11.600
+ to pass it over to Maggie, who's going to provide more of a live demo showing these legal use cases
+
+00:13:11.600 --> 00:13:15.520
+ and really get hands on keyboards so you can see this working. So over to you, Maggie.
+
+00:13:15.520 --> 00:13:22.080
+ Awesome. Thank you so much, Mark. All right, let me pull up my screen. And while I'm doing that,
+
+00:13:22.080 --> 00:13:29.360
+ I did see a question in the chat come up regarding the legal plugin and folks asking where they can
+
+00:13:29.360 --> 00:13:33.200
+ actually install this. So because I'm going to be using a couple of different skills and things from
+
+00:13:33.200 --> 00:13:37.520
+ the plugin, I'll just walk through this right now. I'll show it again in more depth and kind of talk
+
+00:13:37.520 --> 00:13:43.600
+ about how you can actually customize using Claude a little bit later in the demo. But just so that
+
+00:13:43.600 --> 00:13:50.000
+ folks can follow along, if you go into Cowork and customize here, either in your personal plugins or
+
+00:13:50.000 --> 00:13:56.080
+ org plugins, you should be able to see under anthropic and partners the legal plugin here.
+
+00:13:56.080 --> 00:14:01.280
+ And this will give you a little bit of an overview of the skills that it has and the connectors.
+
+00:14:01.280 --> 00:14:05.600
+ And then you can just go ahead and hit this install button and then that will add the plugin for you.
+
+00:14:05.600 --> 00:14:10.320
+ We will also send out these directions after the call, I believe, or the information is linked
+
+00:14:10.320 --> 00:14:16.720
+ in our resources. But again, that's customize, go to plugins, and then just search for the legal
+
+00:14:16.720 --> 00:14:24.240
+ plugin under anthropic and partners. And you should have that there. Alright, so going through
+
+00:14:24.240 --> 00:14:29.440
+ a couple different demos today, I wanted to kind of show you what an average day in the life of
+
+00:14:29.440 --> 00:14:34.880
+ a member of the anthropic legal team might look like and mark you're the expert here. So please
+
+00:14:34.880 --> 00:14:39.280
+ keep me honest and chime in with your anecdotal evidence, but wanted to walk through a couple
+
+00:14:39.280 --> 00:14:44.240
+ different flows. So we're going to start with a really common problem and task, which is prepping
+
+00:14:44.240 --> 00:14:48.880
+ for a meeting that you maybe didn't have quite enough time to prep for. And I know that not
+
+00:14:48.880 --> 00:14:53.440
+ everyone has access to co-work yet. So I wanted to start with an example in chat, and then we'll
+
+00:14:53.440 --> 00:14:58.960
+ flip over to co-work and show a more long running task, as well as working with Claude directly in
+
+00:14:58.960 --> 00:15:05.440
+ the Microsoft Word add-in. Okay, so to start, I'm going to be working inside of a project. So I
+
+00:15:05.440 --> 00:15:11.520
+ have this project pinned here. It's called Outside Council Harrington Web, which is a fake firm that
+
+00:15:11.520 --> 00:15:16.080
+ we're working with as our outside counsel. And you can think of projects, really, as shared
+
+00:15:16.080 --> 00:15:21.440
+ workspaces. So in this example, my whole legal team would have access to it. I can add my team
+
+00:15:21.440 --> 00:15:27.600
+ members there. I can add instructions for how I want to work with Claude within this project,
+
+00:15:27.600 --> 00:15:33.360
+ as well as tools to use with it. So I have my G Suite here connecting my calendar and drive.
+
+00:15:33.360 --> 00:15:40.000
+ And I can also add files directly. So I just have a firm overview here of Harrington Web,
+
+00:15:40.000 --> 00:15:45.520
+ kind of who we work with. That's going to be available to every conversation in the project,
+
+00:15:45.520 --> 00:15:50.640
+ for everyone in the project. So these instructions, these files, it's basically just allowing
+
+00:15:50.640 --> 00:15:55.680
+ my colleagues who might pick this up later today or tomorrow to have the exact same context that
+
+00:15:55.680 --> 00:16:00.000
+ I do so that they're not starting from zero. All right, so let's see how it would help me
+
+00:16:00.000 --> 00:16:04.080
+ prep for a meeting. So if I go to my calendar here, it's a light day for me. I've just got
+
+00:16:04.080 --> 00:16:10.000
+ one meeting here at 2 p.m. And outside counsel QBR, I can see the attendees and the agenda here. I've
+
+00:16:10.000 --> 00:16:16.160
+ got some files linked for my internal team to look at, some notes from prior meetings, maybe some,
+
+00:16:16.160 --> 00:16:22.720
+ looks like some spend information in a CSV file. And then I also have some email threads in Gmail
+
+00:16:22.720 --> 00:16:29.200
+ from previous correspondents with this firm. So I'm going to go into chat, and I'm going to ask it
+
+00:16:29.200 --> 00:16:34.240
+ to use a skill. And you'll see that here in a second. Basically, I'm going to say use the meeting
+
+00:16:34.240 --> 00:16:40.960
+ brief skill to prep me for my 2 p.m. QBR with Harrington Web today, pull from my calendar email
+
+00:16:40.960 --> 00:16:46.480
+ and Google Drive. So you see the first thing that's happening in this chat is that Claude is reading
+
+00:16:46.480 --> 00:16:51.280
+ the meeting brief skill. Now, this is based off of, this is a personal skill that I'm just using for
+
+00:16:51.280 --> 00:16:56.160
+ the demo, but it's based off of the meeting briefing skill that is part of the plugin.
+
+00:16:56.160 --> 00:17:02.400
+ So if you have the plugin installed, you'll be able to use this directly. And you'll notice
+
+00:17:02.400 --> 00:17:07.360
+ that I didn't actually use a slash command or anything special to make sure that the skill is
+
+00:17:07.360 --> 00:17:12.880
+ being used. I just used its name. I could also use a description like I'm prepping for the meeting,
+
+00:17:12.880 --> 00:17:17.520
+ help me create a brief for it. And Claude will know that that is what I'm talking about.
+
+00:17:17.520 --> 00:17:23.600
+ And then as Claude is working here, we can see that it's using the tools it has access to via
+
+00:17:23.600 --> 00:17:28.640
+ my connectors, which again, we're going to go back into the customize tab in a little bit today and
+
+00:17:28.640 --> 00:17:33.440
+ kind of talk a bit more about how to set those things up. But we can see that it's used these
+
+00:17:33.440 --> 00:17:38.240
+ integrations. It's looked at my calendar events, it's searched through my email threads and searched
+
+00:17:38.240 --> 00:17:46.080
+ my Google Drive files. And now it has everything I need to prep this briefing. So we can see that
+
+00:17:46.080 --> 00:17:51.760
+ it's loaded a pretty comprehensive briefing here. And it's able to give me a participants table so
+
+00:17:51.760 --> 00:17:56.960
+ it knows from the calendar event, who Diane and Marcus are from the Harrington web team kind of
+
+00:17:56.960 --> 00:18:02.480
+ what their their role on the call is, I've got a rough agenda. And then the really cool part is
+
+00:18:02.480 --> 00:18:06.960
+ that it's pulling in open issues that I maybe wouldn't have noticed ahead of time. So one thing
+
+00:18:06.960 --> 00:18:12.240
+ I'll call out is hey, like we have a draft out for an engagement contract that has a different
+
+00:18:12.240 --> 00:18:16.240
+ rate than what we have in the email thread. So that's flying that from our review as something
+
+00:18:16.240 --> 00:18:21.680
+ that I either want to talk about on the call or address prior to the meeting today. Looks
+
+00:18:21.680 --> 00:18:25.680
+ like we have some action items that we dropped and kind of forgot to do from our last meeting,
+
+00:18:25.680 --> 00:18:30.640
+ which is likely pulling from previous meeting notes. And we can see that Claude is actually
+
+00:18:30.640 --> 00:18:36.160
+ giving me its sources here of where those things came from, as well as some other open items,
+
+00:18:36.160 --> 00:18:40.320
+ right. So I've got some talking points and things that might come up in the meeting.
+
+00:18:40.320 --> 00:18:44.800
+ And I'm walking into this with a much better, much more prepared than I would have been.
+
+00:18:44.800 --> 00:18:49.280
+ If I was just trying to read across all of these, you know, disparate notes and emails and things
+
+00:18:49.280 --> 00:18:54.640
+ like that on my own ahead of the meeting. So one thing I can do to take this a step further
+
+00:18:54.640 --> 00:19:00.560
+ is say, hey, Claude, draft this as an internal email to my team. And what Claude is going to do
+
+00:19:00.560 --> 00:19:06.960
+ is go and add. So actually, I didn't even plan for this, but it's using our system prompt to say,
+
+00:19:06.960 --> 00:19:12.720
+ hey, I need to add a draft before sending. I'm going to allow it to go into my Gmail,
+
+00:19:12.720 --> 00:19:20.480
+ via the Gmail MCP, and go ahead and draft an internal team note to the anthropic legal team
+
+00:19:20.480 --> 00:19:25.440
+ members that are going to be on this meeting with me. And so that way I'm able to say,
+
+00:19:25.440 --> 00:19:31.040
+ hey, this is not only useful for me, but I can also share this with my team and make sure that
+
+00:19:31.040 --> 00:19:37.120
+ everyone has this context as well. You know, I might have also asked Claude to create a calendar
+
+00:19:37.120 --> 00:19:41.680
+ invite, for example, maybe an hour before the meeting or 30 minutes before, and attach this as
+
+00:19:42.720 --> 00:19:47.200
+ Google Drive Doc or something like that. But if I go into my-- yeah, go ahead, Mark.
+
+00:19:47.200 --> 00:19:51.520
+ I was just going to chime in. A lot of times I meet with customers and lawyers generally,
+
+00:19:51.520 --> 00:19:56.240
+ they're very concerned about AI taking action without their approval. And so I think that
+
+00:19:56.240 --> 00:20:02.640
+ prompt is a great example of keeping a human in the loop. So for lawyers, you want to ensure that
+
+00:20:02.640 --> 00:20:08.400
+ you are checking things for hallucinations or making sure it's not speaking to things you
+
+00:20:08.400 --> 00:20:13.040
+ didn't want it to. And so I think for a lot of lawyers, that system prompt is a really good
+
+00:20:13.040 --> 00:20:17.440
+ solution to something that the people have raised questions about. So I'm glad that popped up.
+
+00:20:17.440 --> 00:20:23.600
+ Absolutely. Yeah, we'll actually look at that in a little bit more detail. Great call, Mark,
+
+00:20:23.600 --> 00:20:29.920
+ in how to set up the connectors. So you can actually set up for your own personal preference.
+
+00:20:29.920 --> 00:20:34.160
+ Of course, your organization might have some settings already enforced there, but
+
+00:20:34.880 --> 00:20:38.560
+ what you would want Claude to ask for permission for versus what you're OK with it taking
+
+00:20:38.560 --> 00:20:45.840
+ direct action on. So great point. But I allowed it in that case just once to go and create this
+
+00:20:45.840 --> 00:20:51.920
+ draft. So if I go into my email now, I can see I have this draft email created already with email
+
+00:20:51.920 --> 00:20:58.640
+ addresses for my teammates. And I can go ahead and review this and then send it if it looks good.
+
+00:20:58.640 --> 00:21:02.960
+ So this is just one pretty basic example of something that I could do that would help save
+
+00:21:02.960 --> 00:21:07.840
+ me some time. I'm sure we've all had those moments where we know we have a meeting coming up and
+
+00:21:07.840 --> 00:21:13.040
+ there's things that we still need to review ahead of time. So just a really simple example you could
+
+00:21:13.040 --> 00:21:17.840
+ apply today, something you could do today, regardless if you are in chat or coworker or
+
+00:21:17.840 --> 00:21:25.360
+ call that AI on the Web. So that's chat. So this is kind of where chat can start to hit its ceiling.
+
+00:21:25.360 --> 00:21:30.800
+ There's a lot of powerful capabilities, but chat is basically reading what I appointed at rate.
+
+00:21:30.800 --> 00:21:35.200
+ So it's working within a project or I'm adding files directly to the conversation
+
+00:21:35.200 --> 00:21:39.600
+ and then it's handing me back a deliverable. But it's not necessarily going to open a folder on
+
+00:21:39.600 --> 00:21:45.280
+ my laptop, chain multiple tools together to accomplish a specific outcome that I give it.
+
+00:21:45.280 --> 00:21:53.440
+ For example, like taking this doc that we wrote and making edits to it, filing it in the matter
+
+00:21:53.440 --> 00:21:58.240
+ folder for a particular case or something like that. Those are three multiple asks across the
+
+00:21:58.240 --> 00:22:03.840
+ conversation. So let's move over to cowork and kind of take a look at this of how we could do
+
+00:22:03.840 --> 00:22:07.680
+ something that's a little bit more long running. So let's flip the rules here a little bit. So
+
+00:22:07.680 --> 00:22:12.720
+ we're no longer the anthropic legal team. We're going to pretend to be our friends at Harrington
+
+00:22:12.720 --> 00:22:18.560
+ Web. So it's the same firm that we were just going to meet with. They have their own kind of similar
+
+00:22:18.560 --> 00:22:23.440
+ problem. And we're going to pretend here that we are Marcus, who was one of the people on the call,
+
+00:22:23.440 --> 00:22:29.440
+ the associate, and that he has five NDAs sitting in this folder on his local machine that are waiting
+
+00:22:29.440 --> 00:22:35.840
+ for review. So if I open up this folder, you can see that I have cowork pointed at it. This two
+
+00:22:35.840 --> 00:22:42.320
+ cowork NDA triage folder, you can see within the incoming NDAs folder, I have these five NDAs.
+
+00:22:42.320 --> 00:22:47.680
+ And I also have a playbook, right? So this is a representative file of, hey, this is how the
+
+00:22:47.680 --> 00:22:54.560
+ organization is set up to triage these. But in your case, this might be a living breeding document
+
+00:22:54.560 --> 00:22:59.840
+ that we're connected to via an MCP. It might be something in Google Drive that we're pointing out,
+
+00:22:59.840 --> 00:23:04.800
+ or it might even be a skill that your team has actually created. But the important thing about
+
+00:23:04.800 --> 00:23:09.760
+ cowork is that it's kind of like a club of hands, right? It can read folders, it can open Word docs,
+
+00:23:09.760 --> 00:23:15.200
+ it can write files, run things in parallel. So what I'm going to do is keep it pointed here,
+
+00:23:15.200 --> 00:23:24.640
+ and basically ask it to triage these NDAs using a skill, and look at that playbook that we have
+
+00:23:24.640 --> 00:23:30.400
+ there. So I'm going to go ahead and kick this off. And I'm going to say I have five NDAs in the
+
+00:23:30.400 --> 00:23:35.760
+ incoming NDAs folder, use the triage NDA skill, and you can see this time I'm invoking it with
+
+00:23:35.760 --> 00:23:42.560
+ a slash command to review each one. So this is going to kick off. And we can see the progress
+
+00:23:42.560 --> 00:23:48.080
+ bar up here. We might actually for a longer running task later see that build a plan. But because this
+
+00:23:48.080 --> 00:23:52.800
+ is using a skill, it has a plan that it knows it needs to execute against based on a workflow
+
+00:23:52.800 --> 00:23:57.680
+ we've given that. So with that, and while this is running, let's actually jump back into the
+
+00:23:57.680 --> 00:24:03.920
+ customize tab so we can take a closer look at this. So here we have the legal plugin. So we touched on
+
+00:24:03.920 --> 00:24:08.960
+ this a little bit earlier, but this has basically been put together in collaboration with our team.
+
+00:24:08.960 --> 00:24:14.480
+ So Mark has played a huge role in this. So thank you, Mark, with coming up with, you know, skills,
+
+00:24:14.480 --> 00:24:19.680
+ connections, things that are going to really help you augment some tasks, you know, just by
+
+00:24:19.680 --> 00:24:25.040
+ installing the plugin and using it with Clon. So if we go look at our skills, yeah, go for it, Mark.
+
+00:24:25.040 --> 00:24:32.000
+ I was going to say, yes, I built the plugin. The weird thing is I always tell people not to use
+
+00:24:32.000 --> 00:24:37.440
+ it out of the box, which is a weird thing to say. This is this thing we launched, don't use it out
+
+00:24:37.440 --> 00:24:43.760
+ of the box. It's at its best when it has actually been remixed and incorporates your own company's
+
+00:24:43.760 --> 00:24:52.400
+ voice and risk matrices and your playbooks and your fallback language. And so, you know, it's
+
+00:24:52.400 --> 00:24:57.920
+ like a you would maybe you wouldn't wear a suit that you bought off the rack, you would get it
+
+00:24:57.920 --> 00:25:05.200
+ tailored to ensure it fits you well. Same thing with with these playbooks and plugins and skills.
+
+00:25:06.000 --> 00:25:10.320
+ So as you can see under the hood that Maggie's showing you, there's just these plain text files
+
+00:25:10.320 --> 00:25:18.320
+ that incorporate things like how you would typically do an NDA triage. But you should feed
+
+00:25:18.320 --> 00:25:24.400
+ it your existing work. And it's very good at helping you create skills. It's kind of recursive.
+
+00:25:24.400 --> 00:25:31.600
+ You can use Claude to create skills that then Claude then uses. So yeah, yeah, I'm glad you
+
+00:25:31.600 --> 00:25:37.920
+ brought that one up. It's a good segue into the skill creator skill. So as Mark mentioned, this is
+
+00:25:37.920 --> 00:25:42.880
+ a way that you can actually talk to Claude about a task that you would like to create as a repeatable
+
+00:25:42.880 --> 00:25:47.840
+ workflow. And it will help you do that either directly in line in a conversation, which we'll
+
+00:25:47.840 --> 00:25:54.080
+ see in a bit here, or based on maybe a text file or something else or word doc that you have created
+
+00:25:54.080 --> 00:25:59.600
+ on the kind of already walks through that process. But yeah, great point, Mark, you really do want to
+
+00:25:59.600 --> 00:26:04.160
+ kind of customize these things. You want to add your own flavor, add your own travel knowledge
+
+00:26:04.160 --> 00:26:10.080
+ so that it's more personalized, more customized to your organization. And there's an incredible
+
+00:26:10.080 --> 00:26:15.680
+ community of skills that are being created on GitHub and the other third party platforms. So
+
+00:26:15.680 --> 00:26:21.920
+ I always love reading on LinkedIn when people drop new ones, and I give them a test bin. So
+
+00:26:21.920 --> 00:26:28.160
+ check them out. Yeah, yeah, yeah. So the plugin comes with all of these preloaded. I think I have
+
+00:26:28.160 --> 00:26:32.000
+ one or two that are that are outdated here. So ignore those. But this is the skill that we were
+
+00:26:32.000 --> 00:26:37.280
+ using and co-work currently. And we'll flip back to that task in a second. But within my own personal
+
+00:26:37.280 --> 00:26:44.240
+ skills, if I have something that I've created, or I've downloaded from my organization and added
+
+00:26:44.240 --> 00:26:49.280
+ some customization for my team, I can also share those within my team just using this button.
+
+00:26:49.280 --> 00:26:54.800
+ So adding people within my team or like a listserv or something that I want to share that skill with.
+
+00:26:54.800 --> 00:27:01.040
+ And then as Mark mentioned, having kind of like an organizational marketplace that your admin can
+
+00:27:01.040 --> 00:27:07.440
+ control is a great way to distribute for folks that might actually be managing their organization's
+
+00:27:07.440 --> 00:27:12.160
+ skills library. It's a way to kind of share those across the organization so that you don't have
+
+00:27:12.160 --> 00:27:17.600
+ lots of different kind of disparate skills that aren't available to everyone. So it's really a
+
+00:27:17.600 --> 00:27:21.600
+ way to kind of democratize that organizational knowledge and make sure that people are following
+
+00:27:21.600 --> 00:27:27.600
+ best practices, as well as enabling people to really speed up the automation of their work.
+
+00:27:27.600 --> 00:27:31.360
+ And if you think about it, if you type all of this into cloud, that's a huge prompt.
+
+00:27:31.360 --> 00:27:37.200
+ We can invoke this with just a slash command or a single sentence, something very, very simple.
+
+00:27:37.200 --> 00:27:42.800
+ I'll also talk about connectors while we're here. So I think this was something that I saw some
+
+00:27:42.800 --> 00:27:46.800
+ folks in the chat asked me about. So I'll just use the Gmail connector as an example.
+
+00:27:47.920 --> 00:27:53.520
+ I have a couple different types of tools within this MCP. So read only tools and write delete
+
+00:27:53.520 --> 00:27:59.040
+ tools. And you can see all of these. By default, we can start to always allow needs approval,
+
+00:27:59.040 --> 00:28:06.240
+ which is what you saw Claude ask me before in Gmail, or blocked, which means it's not able to
+
+00:28:06.240 --> 00:28:13.120
+ happen within working with Claude. You can also set them to be custom. So what the connector comes
+
+00:28:13.120 --> 00:28:16.960
+ with out of the box or what your organization kind of ships out of the box for that connector.
+
+00:28:17.600 --> 00:28:21.440
+ You might want to be a bit more conservative. So you could switch these to needs approval.
+
+00:28:21.440 --> 00:28:24.960
+ I could switch any of these to needs approval instead of always allow.
+
+00:28:24.960 --> 00:28:29.520
+ So it's really just about what you feel comfortable with. And you can update these over time.
+
+00:28:29.520 --> 00:28:35.680
+ So that's kind of how you can customize and have some more control over what Claude is able to do
+
+00:28:35.680 --> 00:28:39.280
+ on your behalf, first kind of working with you and with your permission.
+
+00:28:39.280 --> 00:28:47.520
+ All right, so let's jump back into our task here. And let's see what Claude has been able to do.
+
+00:28:47.520 --> 00:28:51.120
+ And while we were talking through the customize customization options.
+
+00:28:51.120 --> 00:28:57.440
+ So it looks like Claude has been able to write our triage report, which we can open up here.
+
+00:28:57.440 --> 00:29:02.320
+ And it has flagged a couple different issues for us to look at. So I'm going to scroll to the top
+
+00:29:02.320 --> 00:29:09.040
+ here. But we can see that it triaged all five NDAs in our folder. And it used every single one
+
+00:29:09.040 --> 00:29:14.080
+ of these NDA documents to basically come up with this summary, right? So we have five incoming NDAs.
+
+00:29:14.080 --> 00:29:18.560
+ They each have a specific classification. And we can see that three of these are classified
+
+00:29:18.560 --> 00:29:25.440
+ as high risk. And if we go a little bit further within the report, they each have different areas
+
+00:29:25.440 --> 00:29:32.640
+ of risk called out. So if I go down to let's see one of the red ones, like next gen AI Corp.
+
+00:29:32.640 --> 00:29:38.480
+ It has a red classification here. Here's the part the receiving party, which is us.
+
+00:29:39.360 --> 00:29:44.400
+ And then I can see the actual detailed results here. So again, this is all criteria that's set
+
+00:29:44.400 --> 00:29:48.560
+ within the skill that the prompt that I actually gave it within co-work was one sentence, right?
+
+00:29:48.560 --> 00:29:54.720
+ Use the skill triage these NDAs. But what I get is a super robust review of everything within these
+
+00:29:54.720 --> 00:30:01.840
+ documents that I can actually use as a handoff to go into Microsoft Word directly. So I can scroll
+
+00:30:01.840 --> 00:30:06.560
+ through this a little bit more, but definitely encourage folks to use this. This is also I think
+
+00:30:06.560 --> 00:30:10.400
+ pretty applicable to like the contract review skill. I don't know, Mark, if you have other
+
+00:30:10.400 --> 00:30:17.280
+ kind of examples that are sort of akin to this. But yeah, like commercial redlining is another
+
+00:30:17.280 --> 00:30:25.040
+ huge one. Wow, the Q&A is really popping off a lot of great questions in there that we can follow
+
+00:30:25.040 --> 00:30:31.360
+ up on. But yes, it's quite easy to create these types of skills and playbooks and to ensure that
+
+00:30:31.360 --> 00:30:37.520
+ they're only available to people within your department. And I like to think of it as like,
+
+00:30:37.520 --> 00:30:42.880
+ imagine a new hire joined your legal team. What knowledge would you like that new hire to have
+
+00:30:42.880 --> 00:30:49.760
+ about how you do legal work? And that's what Claude is. It's effectively a co-worker, co-work.
+
+00:30:49.760 --> 00:30:55.280
+ So you're giving it all the legal knowledge and access to those. But it's possible to set
+
+00:30:55.280 --> 00:30:59.200
+ that up in a way so that other people at the company aren't accessing those same skills.
+
+00:31:00.080 --> 00:31:05.680
+ And you can really ensure that you've got the right information barriers and set things up
+
+00:31:05.680 --> 00:31:11.760
+ in a privileged way on our commercial offerings. I would emphasize that. There's been a lot of
+
+00:31:11.760 --> 00:31:19.200
+ rulings recently. I get a lot of questions at CLEs about this. Our enterprise plan offers the
+
+00:31:19.200 --> 00:31:25.440
+ ability for you to ensure that you're maintaining privilege within the boundaries of using Claude
+
+00:31:25.440 --> 00:31:33.760
+ with those of you on the legal team. So yeah. And I've loved creating documents, memos,
+
+00:31:33.760 --> 00:31:38.640
+ doing NDA triage, commercial redlining inside of Claude. But I think what you're about to show
+
+00:31:38.640 --> 00:31:42.720
+ with Claude for Word is so powerful. This is something that we've just released in the past
+
+00:31:42.720 --> 00:31:47.920
+ few weeks. And I'm excited to see what other surfaces we can bring that to. But it's Claude
+
+00:31:47.920 --> 00:31:52.800
+ meeting you where you are inside of your word processing environment, which for those of us
+
+00:31:52.800 --> 00:31:58.240
+ who are lawyers, that's where we spend a lot of our time. So this has been a great breakthrough
+
+00:31:58.240 --> 00:32:03.600
+ for us and our team and our productivity. So starting over in co-work, but then shipping it
+
+00:32:03.600 --> 00:32:08.640
+ over to Claude for Word. So yeah, Maggie, why don't you take it from there? Yeah, thanks, Mark.
+
+00:32:08.640 --> 00:32:12.560
+ Yeah, I kind of view this. I think I saw some questions earlier about Claude code and like
+
+00:32:12.560 --> 00:32:17.520
+ using the difference. I almost think of using the word adding is kind of similar of using the
+
+00:32:17.520 --> 00:32:22.720
+ terminal versus an IDE, if folks are familiar with that, like an environment where you can see
+
+00:32:22.720 --> 00:32:28.880
+ diffs or edits to the code in real time. This is kind of like the same idea, right? So if I open
+
+00:32:28.880 --> 00:32:35.200
+ the Claude add-in here on the right, I can see now that I have my NDA documents. So Claude didn't
+
+00:32:35.200 --> 00:32:40.800
+ make any edits to this yet directly in co-work. It just produced that triage report for me, right?
+
+00:32:40.800 --> 00:32:46.400
+ And I think this next-gen AI one was the worst offender according to the report. So I'm going
+
+00:32:46.400 --> 00:32:52.400
+ to open up and actually have it go through and do the red lines directly within Word.
+
+00:32:52.400 --> 00:32:57.360
+ So for folks that haven't used this yet, if you just go to add-ins within Word,
+
+00:32:57.360 --> 00:33:02.800
+ if you have access, you should see Claude there. And then you'll be prompted, I believe, on your
+
+00:33:02.800 --> 00:33:07.840
+ first sign-in to just log into your account. But once you're in here, you'll see that there's some
+
+00:33:07.840 --> 00:33:12.800
+ suggested skills that are specific to working within Microsoft Word. I have access to all my
+
+00:33:12.800 --> 00:33:17.440
+ other skills that I was using before. So you can work with it a very similar way that you would
+
+00:33:17.440 --> 00:33:22.640
+ work within chat or within co-work. But what I'm actually going to do right now is add this file
+
+00:33:22.640 --> 00:33:31.680
+ to it. So if I go back to my webinar here and go to this folder that we're working in, I have
+
+00:33:31.680 --> 00:33:37.680
+ this triage report file, right? So I'm going to upload this and just say based on the report,
+
+00:33:40.000 --> 00:33:54.640
+ start redlining the NDA. And we can check here and make sure that this is being added. Okay,
+
+00:33:54.640 --> 00:34:00.720
+ great. So we have the triage report, and then I can say based on this, start redlining this NDA,
+
+00:34:00.720 --> 00:34:05.440
+ and I will go ahead and kick this task off. So what this is going to do is it's actually going
+
+00:34:05.440 --> 00:34:12.000
+ to go through and read the report. I could also if this was just in line in co-work, copy and paste
+
+00:34:12.000 --> 00:34:18.480
+ it and put it in the chat, I could create this as a Word document and add that directly in Word or
+
+00:34:18.480 --> 00:34:23.760
+ work across two different files. But Claudia is going to go ahead and kind of review the work
+
+00:34:23.760 --> 00:34:29.280
+ that's already been done here. It's pulling in what we've already flagged as the most high-risk
+
+00:34:29.280 --> 00:34:33.920
+ issues. And then it's going to ask me for permission to go ahead and deliver these as track
+
+00:34:33.920 --> 00:34:38.320
+ changes. So I'm going to give it that approval. And then it's going to kick off and start working
+
+00:34:38.320 --> 00:34:46.480
+ here. One thing that's really cool about all of the add-ins for Microsoft Office, and I'm going
+
+00:34:46.480 --> 00:34:51.600
+ to go ahead and allow this, is that they can kind of share context across them. So let's say I
+
+00:34:51.600 --> 00:34:56.480
+ wasn't working on an NDA. I was working on like a meeting brief, for example. Something I could have
+
+00:34:56.480 --> 00:35:02.720
+ done, I might have mentioned this when we were in chat, is actually create the meeting briefing as a
+
+00:35:02.720 --> 00:35:07.360
+ Word document. I could have that open, chatting with Claude about the briefing and the agenda and
+
+00:35:07.360 --> 00:35:12.160
+ the talking points that I want to cover, and then open up PowerPoint and start to create a deck for
+
+00:35:12.160 --> 00:35:17.680
+ that, right? So that's another great use of working across the products that you're working in every
+
+00:35:17.680 --> 00:35:24.000
+ day today. Same thing for Excel, right? If there's information related to an analysis of some sort,
+
+00:35:24.000 --> 00:35:28.960
+ they need to pull into a briefing. Claude is going to share that context, which is super useful when
+
+00:35:28.960 --> 00:35:34.480
+ flipping back and forth between those different tools. So we can see now that Claude has gone
+
+00:35:34.480 --> 00:35:39.840
+ ahead and staged these red lines for us. So we can jump to each one. We can see that it's actually
+
+00:35:39.840 --> 00:35:45.040
+ giving us the reasoning for it. So we know that this triage reports reasoning is grounded in this
+
+00:35:45.040 --> 00:35:50.880
+ skill. We know that this skill is actually using our playbook. So it's kind of like a nested sort
+
+00:35:50.880 --> 00:35:57.200
+ of system there for grounding these results and suggestions into what our organization determines
+
+00:35:57.200 --> 00:36:03.200
+ is the way we want to do this work. And then I can go ahead and either dismiss or apply each one here,
+
+00:36:03.200 --> 00:36:08.560
+ right? I could apply all, but I can basically go through and agree with these red lines or change
+
+00:36:08.560 --> 00:36:15.280
+ them and do this directly within Word. So this is just one example. I think, Mark, you mentioned a
+
+00:36:15.280 --> 00:36:20.560
+ couple other ones, right? But working directly within Microsoft Word and kind of having Claude
+
+00:36:20.560 --> 00:36:25.440
+ in that sidebar table to chat with him and use it as an assistant as you're going through these types
+
+00:36:25.440 --> 00:36:33.840
+ of tasks. Yeah, I mentioned redlining, you know, sales agreements. I'm a product lawyer by training.
+
+00:36:33.840 --> 00:36:41.040
+ And so I love to read through my launch calendar product briefs. And I have a checklist of issues
+
+00:36:41.040 --> 00:36:45.120
+ that frequently come up when we're launching certain types of products. And so being able to
+
+00:36:45.120 --> 00:36:50.080
+ use that checklist as a skill and leave comments from my product managers and engineers so that
+
+00:36:50.080 --> 00:36:55.120
+ they're aware of issues that might be popping up. And then yeah, the context switching, like we don't
+
+00:36:55.120 --> 00:37:00.080
+ just live in Word documents. Oftentimes we'll do this. And if you're at a law firm, you're creating
+
+00:37:00.080 --> 00:37:04.720
+ a pitch for a client, and maybe that's in a PowerPoint, or maybe you're working on a large
+
+00:37:04.720 --> 00:37:11.120
+ M&A matter, and you need to go over to Excel and keep track of things in a spreadsheet and even do
+
+00:37:11.120 --> 00:37:19.520
+ some data analysis there. Sort of that like entire office agent trilogy, those three important
+
+00:37:19.520 --> 00:37:25.120
+ surfaces that we often work on, and then also incorporating email. And this is so powerful
+
+00:37:25.120 --> 00:37:30.160
+ because it can share context. And on top of it, you can update the skills and plugins over time.
+
+00:37:30.160 --> 00:37:34.480
+ You can tell Claude, you know what, you keep getting this wrong. Can we actually update the skill
+
+00:37:34.480 --> 00:37:39.680
+ so that going forward, other lawyers on my team know that this is how we approach these things.
+
+00:37:39.680 --> 00:37:44.080
+ It's really cool. The other thing I've loved seeing in the community is like,
+
+00:37:44.960 --> 00:37:50.480
+ well, I think many of us coming up in law school, maybe we're on journal, and you had to do blue
+
+00:37:50.480 --> 00:37:55.520
+ booking or other formatting exercises. And it feels like every state and local jurisdiction
+
+00:37:55.520 --> 00:38:00.080
+ and courthouse has different formatting needs. I'm not a litigator, but I've heard this feedback
+
+00:38:00.080 --> 00:38:04.800
+ a lot about how difficult it is to get Word documents to be formatted the right way. There's
+
+00:38:04.800 --> 00:38:10.240
+ some incredible community skills that help people format Word documents to look the way you need them
+
+00:38:10.240 --> 00:38:15.760
+ to. And this is only just the start. We just launched this product recently, with the pace
+
+00:38:15.760 --> 00:38:19.920
+ of innovation that's happening right now, and how quickly we're able to improve these documents,
+
+00:38:19.920 --> 00:38:25.680
+ or formatting skills, things are only going to get better over time. So I'm really enthused about
+
+00:38:25.680 --> 00:38:31.920
+ what I'm seeing here. Yeah. Awesome. Thanks so much, Mark. Yeah, speaking of creating skills
+
+00:38:31.920 --> 00:38:36.640
+ out of these types of flows, I think one thing that's really cool that we haven't addressed it
+
+00:38:36.640 --> 00:38:41.440
+ is actually creating or generating a new skill off of something that you've just worked with
+
+00:38:41.440 --> 00:38:48.640
+ Claude to do. So for example, I've used a skill obviously in this task to perform the sort of
+
+00:38:48.640 --> 00:38:54.240
+ workflow of triaging the NDA documents. But there's a lot of ways that I could extend this
+
+00:38:54.240 --> 00:38:59.760
+ from what I've done. My likely next steps, if I were just to use this, would be to go through in
+
+00:38:59.760 --> 00:39:06.400
+ Word and either approve or dismiss or maybe modify some of those red lines. After that, I'm probably
+
+00:39:06.400 --> 00:39:13.200
+ going to go and draft an email to the other council and kind of explain what our requested
+
+00:39:13.200 --> 00:39:18.720
+ changes are, maybe attach the document, or maybe I'll send it to another person on my team for review
+
+00:39:18.720 --> 00:39:24.080
+ first. So there's a lot of steps that come after this. And I think as you get more and more
+
+00:39:24.080 --> 00:39:30.560
+ comfortable working with Claude and more qualified, as we say, you can kind of add in more and more of
+
+00:39:30.560 --> 00:39:36.080
+ those things to a skill or some other repeated workflow. So for example, I could paste a prompt
+
+00:39:36.080 --> 00:39:42.000
+ in like this that says, save what we just did as a skill called daily NDA intake, or contract review
+
+00:39:42.000 --> 00:39:47.120
+ intake, or anything that's going to be a big part of your day-to-day. I want to scan the watch folder,
+
+00:39:47.120 --> 00:39:51.280
+ which I can point Claude at, for new NDAs. And that might be something in your drive.
+
+00:39:51.280 --> 00:39:57.360
+ And then say triage it against the playbook using parallel sub-agents, produce the risk report as a
+
+00:39:57.360 --> 00:40:04.720
+ docx file or draft red lines for anything high risk, and then file the outputs into this specific
+
+00:40:04.720 --> 00:40:11.280
+ file path and draft the emails. So this is going to actually ask me to create a skill file.
+
+00:40:11.280 --> 00:40:18.000
+ And I could also just as easily create this in conversation with Claude or use the skill
+
+00:40:18.000 --> 00:40:22.320
+ creator skill to do this. So it's going to actually go and package this up.
+
+00:40:22.320 --> 00:40:29.360
+ And then I'd be able to run it on demand. The other interesting thing, and actually,
+
+00:40:29.360 --> 00:40:34.000
+ if I go up here, you can click turn this into a skill, which will kind of kick off that prompt for
+
+00:40:34.000 --> 00:40:39.760
+ you. But the other really cool feature of this is the schedule feature. So if I click this,
+
+00:40:39.760 --> 00:40:45.120
+ that's actually going to kick off the slash schedule. And what that allows me to do is set
+
+00:40:45.120 --> 00:40:51.360
+ this up as a task that I run on a daily basis. Maggie, I've got a great example of a schedule.
+
+00:40:51.360 --> 00:40:59.520
+ Yeah, go for it. So my teammate Pamela, she joined a few months ago and she's on our regulatory team.
+
+00:40:59.520 --> 00:41:06.320
+ And she was chatting with co-work and frequently having to look up updates in the regulatory space,
+
+00:41:06.320 --> 00:41:11.360
+ news articles. And then she would spend about two hours a day synthesizing all of the latest news
+
+00:41:11.360 --> 00:41:16.480
+ for regulatory enforcement and new policies and things that were happening globally.
+
+00:41:16.480 --> 00:41:23.520
+ She threw a conversation with Claude after scheduling lots of these types of exercises,
+
+00:41:23.520 --> 00:41:29.200
+ realized she could create a daily newspaper and host it within our Google sites. So she
+
+00:41:29.200 --> 00:41:34.800
+ actually built a regulatory tracker that we all use. And so something that used to take her two
+
+00:41:34.800 --> 00:41:40.880
+ hours every day, Claude was able to schedule it. And then she was able to actually create an external
+
+00:41:40.880 --> 00:41:46.480
+ resource, hosting it within our Google site, so that other people can read it over a cup of coffee
+
+00:41:46.480 --> 00:41:52.240
+ in the morning. I know we talked about that chief of staff earlier as well. And having that a daily
+
+00:41:52.240 --> 00:41:57.040
+ brief be ready at 8am every morning. That's another great example of something that you can just,
+
+00:41:57.680 --> 00:42:02.320
+ it's repeatable work. I would encourage all of you right now, if you have hands on keyboard,
+
+00:42:02.320 --> 00:42:08.240
+ what are things you could do that you feel like are a bit energy draining and repetitive that you
+
+00:42:08.240 --> 00:42:13.360
+ do on a daily basis? What could you do to have Claude help you schedule those to help you hit
+
+00:42:13.360 --> 00:42:18.240
+ the ground running? And just go ahead and schedule that repeatable work and maybe even publish them
+
+00:42:18.240 --> 00:42:23.760
+ outwards into Slack or Teams or post them on a Google site so that your teammates are visiting
+
+00:42:23.760 --> 00:42:28.560
+ them as well. That's how I've really been able to up level my work in the past few months,
+
+00:42:28.560 --> 00:42:34.320
+ using these type of cron jobs or scheduled tasks. Yeah, yeah, absolutely, Margaret. I love that,
+
+00:42:34.320 --> 00:42:40.960
+ that kind of research agent, basically, that your team built, because it's not something that's just
+
+00:42:40.960 --> 00:42:46.560
+ available to that person on your team, or they're running it daily for themselves. It's now updating
+
+00:42:46.560 --> 00:42:51.840
+ automatically or on whatever kind of scheduled cadence. And it's available to everyone. So I think
+
+00:42:51.840 --> 00:42:56.960
+ that that follows a kind of a common path of identifying those more complex long running tasks
+
+00:42:56.960 --> 00:43:01.840
+ that you're doing manually, automating for them for yourself, and then figuring out how you can
+
+00:43:01.840 --> 00:43:07.280
+ kind of scale or multiply your impact there across your organization. So super cool example.
+
+00:43:07.280 --> 00:43:13.440
+ I just wanted to kind of flip over to show what this would look like if we were to run
+
+00:43:13.440 --> 00:43:18.160
+ that more long running skill with all the different steps. So I just ran this earlier,
+
+00:43:18.160 --> 00:43:22.960
+ and basically, what it did is instead of you can see, instead of creating just the triage report,
+
+00:43:22.960 --> 00:43:30.320
+ it actually created each individual document in Word with the red lines directly. It actually went
+
+00:43:30.320 --> 00:43:36.640
+ into my email and created a draft for each of the red lines. So I can see for each of these companies
+
+00:43:36.640 --> 00:43:43.680
+ that I had been working with within Claude, I have an actual draft email with what we
+
+00:43:44.400 --> 00:43:48.240
+ are proposing that I can then go and attach the file to once I've reviewed it.
+
+00:43:48.240 --> 00:43:55.520
+ So it's created a lot more assets than our initial conversation. And these are all available then for
+
+00:43:55.520 --> 00:44:02.320
+ me to pick this up. So if I go into the scheduled tasks window here, I can create a new task,
+
+00:44:02.320 --> 00:44:07.920
+ and I can call it daily NDA. I can run this as a skill, or I can just give it the prompt
+
+00:44:07.920 --> 00:44:12.000
+ itself for exactly what I want it to do. But basically, I would take that folder. Let's say
+
+00:44:12.000 --> 00:44:18.240
+ there's a working folder or somewhere where you expect these files that you want it to pick up
+
+00:44:18.240 --> 00:44:26.720
+ to live. I can set this on, let's say, a daily basis at 8 a.m. or 9 a.m. And so every day when
+
+00:44:26.720 --> 00:44:32.640
+ I'm coming into work or sitting down to start my day, I'm not actually having to kick this off and
+
+00:44:32.640 --> 00:44:37.600
+ kind of watch the task complete on its own. It's already waiting for me. So again, this is just
+
+00:44:37.600 --> 00:44:42.640
+ like a really kind of, I won't say simple because there are a lot of complex steps involved here,
+
+00:44:42.640 --> 00:44:48.400
+ but a way that you can set yourself up to be more of a manager than a doer in some cases.
+
+00:44:48.400 --> 00:44:54.240
+ You think of Claude as kind of your team of agents working for you. So you have this at
+
+00:44:54.240 --> 00:44:59.600
+ your disposal to run work in the way you want it, schedule it, and have it run on a repeatable basis.
+
+00:45:02.000 --> 00:45:07.600
+ Okay, I think we've got about 10 minutes left. So I'll just end with this, that we kind of covered
+
+00:45:07.600 --> 00:45:13.360
+ a couple of different services, right? Chat, co-work, working within Word and other office products.
+
+00:45:13.360 --> 00:45:18.640
+ But the main takeaway is that it's the same model underneath all of it, right? We're using Claude,
+
+00:45:18.640 --> 00:45:23.200
+ same family of models available within these products. And that same tribal knowledge that
+
+00:45:23.200 --> 00:45:28.960
+ you're creating via skills, plugins, MCPs, is driving those standards, right? So anywhere that
+
+00:45:28.960 --> 00:45:34.880
+ you're able to kind of add in your institutional knowledge of how you want Claude to run and work
+
+00:45:34.880 --> 00:45:39.120
+ with you, it's able to propagate that across all the areas that you're working with Claude.
+
+00:45:39.120 --> 00:45:44.800
+ So that's kind of giving you that ability to hand that work off, schedule it, have Claude do it for
+
+00:45:44.800 --> 00:45:50.240
+ you, and then focus your time on strategic work and making those judgment calls and all the things
+
+00:45:50.240 --> 00:45:57.600
+ that are most critical. Okay, that's all I had, Marcela. Let me stop sharing my screen here so
+
+00:45:57.600 --> 00:46:07.360
+ we can jump back into the slides. Perfect. Yeah, I think there's just a few key steps for success
+
+00:46:07.360 --> 00:46:12.080
+ here. So we talked about setting up those MCP connectors, getting started with the legal plugin,
+
+00:46:12.080 --> 00:46:17.360
+ Maggie showed you where to navigate and find that within Claude, and then working across apps like
+
+00:46:17.360 --> 00:46:24.240
+ the new Word add-in. So those are the key steps for success there. And we just want to emphasize
+
+00:46:24.240 --> 00:46:28.880
+ that Claude really meets your team where they're already working. So Claude for Excel and PowerPoint,
+
+00:46:28.880 --> 00:46:36.160
+ Claude for Word, and then co-work using things like the desktop application can really help you
+
+00:46:36.160 --> 00:46:40.960
+ with work that spans these different systems, pull things together. Co-work is so powerful. It's
+
+00:46:40.960 --> 00:46:46.000
+ using local compute and sort of working in a sandbox and using the power of your computer
+
+00:46:46.000 --> 00:46:51.760
+ along with Claude to get this type of work done in a safe environment, which is so important for those
+
+00:46:51.760 --> 00:47:03.520
+ of us who work in the legal industry. Let's see. I'd mentioned the JIRA analysis I did earlier.
+
+00:47:03.520 --> 00:47:09.120
+ We looked at 700 plus tickets from the past few months of legal work. If you right now are looking
+
+00:47:09.120 --> 00:47:14.320
+ for how to get started within your own legal team, maybe you work in-house at a large enterprise,
+
+00:47:14.320 --> 00:47:19.600
+ maybe you're in a small firm, maybe you're a large firm, maybe you work in public service,
+
+00:47:19.600 --> 00:47:24.960
+ have Claude analyze your busy work and then provide suggestions. That's how you can really
+
+00:47:24.960 --> 00:47:30.800
+ solve that cold start problem. Connect it to your email inbox. What is the energy draining work?
+
+00:47:30.800 --> 00:47:37.760
+ Another quick example for me is every Friday, we write like a weekly newsletter to share with our
+
+00:47:37.760 --> 00:47:42.880
+ cross-functional stakeholders of what the legal team has been up to. I dread that Friday morning
+
+00:47:42.880 --> 00:47:48.480
+ reminder. It's like an hour of busy work of compiling. I manage a team of other product
+
+00:47:48.480 --> 00:47:55.200
+ lawyers. I have to compile all of their wins for the week and synthesize it. And I don't like doing
+
+00:47:55.200 --> 00:48:01.120
+ work about the work. And I think that's what Claude is so good at, is taking that busy work.
+
+00:48:01.120 --> 00:48:07.360
+ For those of you who remember the movie Office Space, the TPS reports of the world, Claude is
+
+00:48:07.360 --> 00:48:13.520
+ very good at helping understand the progress, grounding itself in existing wins that your
+
+00:48:13.520 --> 00:48:19.200
+ department has had over the past year. Share the old weekly newsletters and tell it, this is the
+
+00:48:19.200 --> 00:48:24.560
+ high bar we keep ourselves to for success in our department. Write me a newsletter for the week
+
+00:48:24.560 --> 00:48:30.320
+ that shows the other similar type of wins. Don't be sycophantic and just tell me we did your work.
+
+00:48:30.320 --> 00:48:35.520
+ Show me what's actually impactful based on what other people are saying and draft that weekly
+
+00:48:35.520 --> 00:48:41.440
+ newsletter. So this is how I would suggest that you use Claude in your work to identify the best
+
+00:48:41.440 --> 00:48:47.360
+ next steps for you. We've got a few minutes here where we can maybe take some questions. I've been
+
+00:48:47.360 --> 00:48:53.760
+ skimming the chat all along. Wow. Incredible questions coming in. I think we're going to send
+
+00:48:53.760 --> 00:48:59.840
+ out a link to this webinar later. Please share it with your teammates as well. Hit us up on LinkedIn.
+
+00:48:59.840 --> 00:49:06.000
+ Reach out to our support team. We've got so many talented people here at Anthropic who are here
+
+00:49:06.000 --> 00:49:12.000
+ waiting to help you in your legal department transform. We can help with that. So please
+
+00:49:12.000 --> 00:49:17.120
+ reach out. We're here to support you. Nancy, I don't know if you're around and want to share
+
+00:49:17.120 --> 00:49:22.640
+ some of the questions from the chat or maybe some of the poll results. What we got going on?
+
+00:49:22.640 --> 00:49:34.320
+ You are on mute though. Sorry about that. Yes. We have a lot of wonderful questions. So we can spend
+
+00:49:34.320 --> 00:49:39.040
+ the rest of the time hitting some of the ones that were the most upvoted across the group.
+
+00:49:39.040 --> 00:49:45.200
+ So one question that came in was how is your team specifically dealing with attorney-client
+
+00:49:45.200 --> 00:49:50.800
+ privilege when using Claude? It's such a good question. I briefly touched on that earlier.
+
+00:49:50.800 --> 00:49:55.760
+ There's been some recent rulings about this. I think the whole industry is really sort of waking
+
+00:49:55.760 --> 00:50:01.360
+ up to this moment that lawyers are using AI to get their best work done. And it reminds me of
+
+00:50:01.360 --> 00:50:05.520
+ some of the conversations I've read about that were happening in the 1990s around whether or
+
+00:50:05.520 --> 00:50:12.640
+ not lawyers could use email or in the early 2000s about using cloud software, cloud-based
+
+00:50:12.640 --> 00:50:19.280
+ solutions and SaaS. Now, the Heppner ruling I think is one that on LinkedIn a lot of people
+
+00:50:19.280 --> 00:50:24.800
+ are discussing. This was a non-attorney using a consumer plan who didn't have things set up and
+
+00:50:24.800 --> 00:50:29.840
+ they were working at their own direction. For lawyers who are using Claude on our commercial
+
+00:50:29.840 --> 00:50:34.720
+ offerings, our team and enterprise plan, or a prosumer and have their privacy settings set
+
+00:50:34.720 --> 00:50:40.320
+ up correctly, I'm not your lawyer. You should speak to your own lawyer about privilege. But I
+
+00:50:40.320 --> 00:50:46.720
+ think we are quite confident here that you can set things up to be able to use Claude in a privileged
+
+00:50:46.720 --> 00:50:52.320
+ manner and maintain privilege. Yeah. So it's a great question. I would love to see policymakers
+
+00:50:52.320 --> 00:50:58.160
+ and other CLEs address this more because people are using this and it's going to keep happening.
+
+00:50:58.160 --> 00:51:03.360
+ I think, again, it helps us provide the best support for our clients. The ABA actually has
+
+00:51:03.360 --> 00:51:08.880
+ ethics rules that tell lawyers we need to stay up to date on technology and be aware of how it works.
+
+00:51:08.880 --> 00:51:13.840
+ That is our duty to our clients to understand these things and help provide the best client
+
+00:51:13.840 --> 00:51:21.040
+ services we can. So that's a great question though. Awesome. Great. We also did have a
+
+00:51:21.040 --> 00:51:27.120
+ couple of questions thematically that came up around security. So would love any sort of
+
+00:51:27.120 --> 00:51:33.120
+ general best practices as well as how you keep information, especially sensitive case files
+
+00:51:33.120 --> 00:51:41.760
+ secure and confidential across the line. Yeah. Yeah, go ahead. I'll take a stab at it. And Mark,
+
+00:51:41.760 --> 00:51:47.600
+ feel free to add specific to how your team is working with Claude. But from just like a broad
+
+00:51:47.600 --> 00:51:53.040
+ security standpoint, so co-work specifically is running within an isolated virtual machine
+
+00:51:53.920 --> 00:52:03.840
+ on the desktop app. So those kind of permissions and what it has access to is the blast radius is
+
+00:52:03.840 --> 00:52:10.800
+ kind of limited with that architecture from a broad kind of feature standpoint. Connectors,
+
+00:52:10.800 --> 00:52:17.360
+ so MTPs or connectors are going to inherit those source permissions from you. So think of it as
+
+00:52:17.360 --> 00:52:25.840
+ you logging into these different connectors, you're kind of authenticating them. Claude is not
+
+00:52:25.840 --> 00:52:31.200
+ going to access anything that you don't have access to. So for keeping things that are meant to stay
+
+00:52:31.200 --> 00:52:36.080
+ within one specific team or related to one matter, it's not going to be able to access
+
+00:52:36.080 --> 00:52:41.600
+ anything that you can't. Projects are, I think, are another good kind of workspace delineation
+
+00:52:41.600 --> 00:52:48.000
+ tool there so that we are able to share resources and work with Claude collaboratively, but scope
+
+00:52:48.000 --> 00:52:54.480
+ to a specific team or client or what have you. And then RBAC is something that we've rolled
+
+00:52:54.480 --> 00:53:00.720
+ out recently within Claude for Enterprise, so Enterprise, Claude for Work plans. So that can
+
+00:53:00.720 --> 00:53:06.720
+ kind of help limit who has access to certain capabilities. We're going to be rolling out more
+
+00:53:06.720 --> 00:53:11.760
+ capabilities and kind of continuing to enhance those features in the future, so look out for
+
+00:53:11.760 --> 00:53:16.480
+ that. And then the last thing that I would say is like compliance, auditing, logging, that's all
+
+00:53:16.480 --> 00:53:22.640
+ available to be exported. So it kind of gives us, it has that record of who ran what, what was
+
+00:53:22.640 --> 00:53:29.040
+ accessed. So it's all visible to your organization for kind of auditing purposes. Mark, anything
+
+00:53:29.040 --> 00:53:34.160
+ you would add there? Yeah, I would just call out that our commercial plans all offer these type of
+
+00:53:34.160 --> 00:53:39.520
+ admin-based controls. So you can set things up so that only approved apps and connectors in the
+
+00:53:39.520 --> 00:53:45.600
+ directory that your employees are able to install those. Yeah, I think our compliance API is very
+
+00:53:45.600 --> 00:53:52.560
+ robust. It can help with data loss prevention or other eDiscovery needs. And I would acknowledge
+
+00:53:52.560 --> 00:53:58.640
+ that there is rogue IT, that people are using consumer grade plans and that our commercial
+
+00:53:58.640 --> 00:54:04.640
+ offerings are a great way to ensure that we're able to meet the needs of your organization.
+
+00:54:04.640 --> 00:54:11.600
+ Please visit our trust center, trust.anthropic.com that has all this information and more. Yeah.
+
+00:54:11.600 --> 00:54:19.840
+ Wonderful. So we also did get a question around how legal work can oftentimes involve very long
+
+00:54:19.840 --> 00:54:28.880
+ documents, which can also lead to context degradation. So curious how Claude's legal team
+
+00:54:28.880 --> 00:54:36.880
+ also addresses those types of situations as well. I think this is why I love co-work so much is that
+
+00:54:36.880 --> 00:54:44.640
+ the agentic harness allows things to swarm and make plans and execute and distill a lot of the
+
+00:54:45.360 --> 00:54:50.240
+ mass corpus of knowledge that legal teams often have or encounter in their work and make sense
+
+00:54:50.240 --> 00:54:58.720
+ of it all. In chat-based or turn-based conversations with AI, yeah, you get that degradation. But when
+
+00:54:58.720 --> 00:55:05.120
+ Claude is able to make use of a local computer, store files in the right places, and use these
+
+00:55:05.120 --> 00:55:13.760
+ types of file systems, we've really found that it's able to keep up and it doesn't have that
+
+00:55:13.760 --> 00:55:17.840
+ context rock. Yeah, Maggie, I don't know if you have anything to add on that one.
+
+00:55:17.840 --> 00:55:23.600
+ Yeah, I'll just add that we have models with really large complex, context windows,
+
+00:55:23.600 --> 00:55:28.800
+ million context windows available now, which I think helps. But also what we saw in the red
+
+00:55:28.800 --> 00:55:34.240
+ lining use case, asking Claude to cite its sources is another big thing. That way you have that
+
+00:55:34.240 --> 00:55:39.440
+ confidence that it's not hallucinated information. It's actually grounded in whatever skill or
+
+00:55:39.440 --> 00:55:44.800
+ playbook or other data that you're feeding it so that you feel more comfortable using that
+
+00:55:44.800 --> 00:55:47.600
+ information going forward rather than just kind of trusting it at face value.
+
+00:55:47.600 --> 00:55:53.520
+ Yeah, so many lawyers are concerned about ending up on the naughty list of over 2,000
+
+00:55:53.520 --> 00:56:00.480
+ court filings that have hallucinated information in them. And so ensuring that you're using tools
+
+00:56:00.480 --> 00:56:07.840
+ and connectors to ground these AI systems in real case law or your playbooks. And then, again,
+
+00:56:07.840 --> 00:56:12.640
+ keeping a human in the loop. This is supposed to empower lawyers to get their best thinking done.
+
+00:56:12.640 --> 00:56:20.320
+ We acknowledge that it's not always 100% perfect. And you still need to review and make sure this
+
+00:56:20.320 --> 00:56:25.760
+ work is accurate and reflects your client's needs. So yeah, I think it's a great place to stop because
+
+00:56:25.760 --> 00:56:32.800
+ we're so excited about these systems and what they can do. And we know things are just going
+
+00:56:32.800 --> 00:56:38.080
+ to keep getting better. So thank you so much for your time today. And again, reach out, use these
+
+00:56:38.080 --> 00:56:43.920
+ resources, and let us know what you're building. Thank you. Thanks, everyone. Thank you, everyone.
+
+00:56:43.920 --> 00:56:47.040
+ Have a good one.
+

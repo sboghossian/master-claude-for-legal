@@ -1,0 +1,591 @@
+ Okay, awesome. Let's go ahead and get started. Thank you all for answering the polls.
+ I'm excited to kind of walk through all of the results as well. I'm Nancy from our marketing
+ team here at Enthropic. Thank you so much all for joining us today. We're excited to have you all
+ since, you know, since we launched the legal plugin a few months ago, we've really just seen
+ so such overwhelming demand here at Enthropic around how to use co-work for legal. So this
+ webinar really is aimed at teaching you some best practices directly from our own legal and applied
+ AI teams. So without further ado, let's go ahead and dive in here. So first, the top question that
+ we almost always get with these webinars is will this session be recorded? And yes, it will be,
+ and we will make sure to send this to everyone at the end of the session. Second of all, this is
+ very much intended to be an interactive session. So please do enter your questions into the chat
+ window. And we will answer as many as we can. You'll also see an upvoting function so you
+ can upvote the questions that you would most like to see answered. And finally, give us feedback. We
+ run a lot of these webinars and we read every comment. We're always working to make these
+ sessions as valuable as we can. So now I'm excited to turn it over to my wonderful colleagues here,
+ Mark, Pike, and Maggie Russo. So I'll let them introduce themselves.
+ Awesome. Thank you so much. Hi, everybody. I'm Mark Pike. I'm a member of Anthropic's legal team
+ and the product lead for Claude for the legal industry. I've been here at Anthropic for two
+ and a half years, which in AI time definitely feels like a decade's worth of change. I'm joined by my
+ colleague, Maggie Russo, who will be driving most of what you see live. Maggie, why don't you go
+ ahead and introduce yourself as well? Thanks, Mark. Hi, everyone. My name is Maggie Russo.
+ I'm on the applied AI team here at Anthropic. And our team kind of sits across product, engineering,
+ research, and of course, our grow to market team. And we work with our customers to make sure they're
+ getting the most out of Claude. And one of the things that I've been able to do while at Anthropic
+ is work really closely with our customers in the legal industry. So I'm super excited to share some
+ of those learnings today and walk through a live demo a little bit later on. Thanks, Maggie. So quick
+ thing before we dive in here. I'm excited to say that over 20,000 of you registered for this webinar.
+ That is absolutely insane to me. I've never seen a number like that for a legal session in my career.
+ It tells me the question here has really changed. I think like a year ago lawyers were asking whether
+ to even use AI. And now everybody's asking how to use it well on real work. I actually pulled people
+ on LinkedIn last week. Feel free to find me on LinkedIn and follow along. But I asked people on
+ LinkedIn to comment what they were building with Claude already. And I got back a snapshot of what
+ the community has been figuring out to build with Claude. Solo practitioners, building their own
+ contract and matter management systems from scratch. In-house legal ops teams, open sourcing
+ their outside counsel management playbooks on GitHub so peers can fork them and build on top of
+ each other. Trial teams are building purpose built back ends for large litigation matters.
+ In research builders, we're wiring millions of statutes and regulator decisions across dozens
+ of jurisdictions into Claude via MCP. You'll see the same building blocks that they're using. These
+ skills and plug-ins and connectors. They're going to show up in everything that Maggie and I walk
+ through today. There's actually one story that stopped me in my tracks. A lawyer named, or sorry,
+ a paralegal named Andrew reached out and emailed me this week. He was part of a four-person pro
+ bono team, two lawyers, two paralegals, up against an MLaw 200 firm and an elder abuse case,
+ a pro bono case. Andrew built a tool on our API that sat at the counsel's table during this trial.
+ It was pulling in cross-examination angles, sometimes before opposing counsel could even
+ finish asking the question. And they were able to walk out with the large jury verdict for their
+ client. These tools that we're building here in Enthropic are democratizing us to the best legal
+ support, not just for big law firms and in-house legal teams, but for many who need that support.
+ So I encourage you to think of what you could build today and meet this moment.
+ So with that, I want to do a hands-on exercise here. I want you to really feel the range of this
+ tool right away. I think we're going to actually drop this exact prompt into the chat so you can
+ cut and paste it into your own clod. It connects to your email and calendar, your Slack or your teams,
+ and can create a briefing of your day, who you're meeting with, what's outstanding, what to read
+ before you walk into a meeting. This is the kind of great chief of staff I think all of us want to
+ have who might drop a brief on our desk at 8 a.m. Who doesn't want their own personalized chief of
+ staff. I'll also confess, I took this same prompt and I asked it to write me a daily horoscope that
+ reads from my actual calendar. And with Claude's help, I reverse engineered my kid's toy sticker
+ printer. It's this little Bluetooth printer. And I asked it to give me a horoscope of the day and it
+ says, "You're going to crush your webinar today." So it's awesome. It's sort of a silly fun example,
+ but it raises a serious point here. The same setup, calendar, email, a scheduled task is what
+ runs your morning briefing. It can also be what helps you with an MSA review against a playbook.
+ It can help you with NDA triage, regulatory assessments, wired in once, and it's wired for
+ all of these use cases. And this really is a working session. It's not just a demo. These
+ are going to be real documents, real workflows, real questions. So let's continue to get into it here.
+ We're going to show you a different way of working. You can delegate real legal tasks to Claude. It's
+ going to read the same matter files your team does, run the workflows that you run every week,
+ and carry context across Word, PowerPoint, Excel, your email, so nothing gets lost in the handoff.
+ And it's not theoretical. Our own legal team at Anthropic uses Claude every day for this type of
+ work, contract review, research, and the work that used to eat up hours. We call it amp-fooding. We
+ refer to ourselves as ants here at Anthropic. So we like to amp-food what we're building.
+ Many of you are interested in technology, but aren't builders yourselves. The first time I saw
+ Claude take action on something for me, not just to answer a question, but actually do the work,
+ it really changed how I thought about my own job. My engineering colleagues had that moment with
+ Claude Code last year, and I'm feeling empowered now with co-work. And that's what we're hoping
+ you learned today. So how does Claude know my legal work? I'd like to present these four pillars.
+ One is connecting to your live data via model context protocol, or MCPs. These are the USBCs
+ of Claude, of AI. It's an open protocol that helps you connect things from your matter management
+ system, things like iManage or Net Documents, pulling in stuff from CLMs, Drive, Outlook,
+ the full Microsoft staff. Claude reads the same matter files your team does.
+ It's not a static upload that goes stale the moment a new draft lands. It's live across
+ these systems where your work actually lives. The second is that it has legal skills. The workflows
+ your team runs every week are codified, NDA review, contract redlining, privileged log drafting,
+ matter intake, clause library checks, checklist, precedent search, deal point analysis. Claude
+ doesn't just start from a blank page on the work you do hundreds of times a year. It pulls from
+ that corpus of knowledge that you've created within your department and can help empower
+ new employees who maybe didn't even know to look in these places. And again, it understands these
+ playbooks. Claude reads the agreement structure the way a lawyer does. It tracks defined terms
+ across exhibits and schedules. It explains in plain English what a clause actually does
+ and flags exactly where the risk sits, not just doing a keyword search or an index. It actually
+ has comprehension of how the document holds together. And then it carries that context across
+ apps. The red line you ran in Word can become a summary slide in a PowerPoint, can then become
+ an email that you draft and send to a client. One thread, no re-explaining to the AI how these
+ things work, no copy/paste handoffs between these tools. The work moves with you.
+ And I like to ground things here in calling out that anthropics have been at the frontier
+ for the past 18 months. Our models have been the best in the world at coding.
+ And I think if you had told me a few years ago when I started anthropic that the best
+ model in the world for coding would also be good for legal work, I would have been shocked.
+ But it turns out you don't need to fine-tune models to give Claude the engineer a legal degree.
+ Instead, you just need to give these tools access, the same tools that the lawyers use,
+ every day to get their work done. And that's what helps it become a great teammate within
+ the legal context. All right. I'm going to take things back a couple of years. How many of you
+ remember your first experience interacting with generative AI? Probably fall of 2022 with chat
+ GPT or in 2023 using Claude as a more of a like chat interface. You ask a question, you get an
+ answer. You were getting summaries. Maybe you were writing first drafts. There were probably a bit of
+ hallucinations as well. But then something happened. Last year, it was only happening
+ for developers. We launched Claude code and developers got access to something more powerful.
+ AI that could actually do things, not just answer questions, but build things, work agentically,
+ ship new products and features with incredible speed. Claude code changed what's possible for
+ engineers. And now, we're beginning to bring other functions into the fold here. Beyond
+ engineering. Cowork does that same work for knowledge workers. It's a desktop agent for
+ users to handle complex multi-step tasks using Claude. And Claude helps get it done. It's the
+ same engine as Claude code. No terminal required. Whenever I look back at terminal, I still think
+ of the movie "The Matrix," these screens with all this code running across it. Cowork is in the four
+ corners of an application that is in a familiar interface for those of us who are used to working
+ with things like Microsoft Word and Word documents. It's still early. We're iterating rapidly. But
+ we've already seen so much interest in some very cool use cases by many of you, which makes us
+ confident transformations can continue to happen. The transformation happening inside of anthropic
+ legal looks a bit like this. We're using Claude to do contract review, red lines in 20 minutes
+ instead of hours. Our litigation team is using it to do transcript search or expert prep. We're
+ doing privacy impact assessments, things that used to take hours can now happen in 20, 30 minutes.
+ Our IP team is using it to do patent prioritization, to surface patentable ideas from product briefs
+ and GitHub repositories. They're using Claude agents to scan those things and then move with
+ the type of speed that a hyper growth company like ours really needs. But where to get started? Well,
+ I recently analyzed 742 JIRA tickets, which is an oddly specific number so you know I'm not making
+ it up right now. That kind of analysis would not have been possible for someone like me who doesn't
+ know how to do data analysis very well. I used the plugin. I invoked that plugin in Claude and then
+ had it read the repository of all those recent client intake matters that we received using JIRA.
+ Claude did all this in a co-work session. The output, here it is, the output helped me identify
+ some trends. I noticed that NDA triage, this is by the way synthesized data. I'm not going to leak
+ our secret sauce of our actual work, but it identified that we do way too much NDA triage
+ and we were spending a lot of time with busy work on that. Open source software questions were really
+ taking up a lot of time for our IP team. We saw these patterns emerge. We identified where that
+ busy work was and then the next step was to ask Claude, "Okay, how can we build automations to
+ actually help us get better work done and move with the type of speed we need to?" And so I asked
+ Claude, "Help me build a plugin that actually helps us automate a lot of this work." That's how I
+ helped create the legal plugin here at Anthropic and it really made an impact on the industry and
+ I've been excited to see others in the community build on that and build their own skills and
+ plugins that you can integrate with these tools and systems. Now, I've shared a lot here. I want
+ to pass it over to Maggie, who's going to provide more of a live demo showing these legal use cases
+ and really get hands on keyboards so you can see this working. So over to you, Maggie.
+ Awesome. Thank you so much, Mark. All right, let me pull up my screen. And while I'm doing that,
+ I did see a question in the chat come up regarding the legal plugin and folks asking where they can
+ actually install this. So because I'm going to be using a couple of different skills and things from
+ the plugin, I'll just walk through this right now. I'll show it again in more depth and kind of talk
+ about how you can actually customize using Claude a little bit later in the demo. But just so that
+ folks can follow along, if you go into Cowork and customize here, either in your personal plugins or
+ org plugins, you should be able to see under anthropic and partners the legal plugin here.
+ And this will give you a little bit of an overview of the skills that it has and the connectors.
+ And then you can just go ahead and hit this install button and then that will add the plugin for you.
+ We will also send out these directions after the call, I believe, or the information is linked
+ in our resources. But again, that's customize, go to plugins, and then just search for the legal
+ plugin under anthropic and partners. And you should have that there. Alright, so going through
+ a couple different demos today, I wanted to kind of show you what an average day in the life of
+ a member of the anthropic legal team might look like and mark you're the expert here. So please
+ keep me honest and chime in with your anecdotal evidence, but wanted to walk through a couple
+ different flows. So we're going to start with a really common problem and task, which is prepping
+ for a meeting that you maybe didn't have quite enough time to prep for. And I know that not
+ everyone has access to co-work yet. So I wanted to start with an example in chat, and then we'll
+ flip over to co-work and show a more long running task, as well as working with Claude directly in
+ the Microsoft Word add-in. Okay, so to start, I'm going to be working inside of a project. So I
+ have this project pinned here. It's called Outside Council Harrington Web, which is a fake firm that
+ we're working with as our outside counsel. And you can think of projects, really, as shared
+ workspaces. So in this example, my whole legal team would have access to it. I can add my team
+ members there. I can add instructions for how I want to work with Claude within this project,
+ as well as tools to use with it. So I have my G Suite here connecting my calendar and drive.
+ And I can also add files directly. So I just have a firm overview here of Harrington Web,
+ kind of who we work with. That's going to be available to every conversation in the project,
+ for everyone in the project. So these instructions, these files, it's basically just allowing
+ my colleagues who might pick this up later today or tomorrow to have the exact same context that
+ I do so that they're not starting from zero. All right, so let's see how it would help me
+ prep for a meeting. So if I go to my calendar here, it's a light day for me. I've just got
+ one meeting here at 2 p.m. And outside counsel QBR, I can see the attendees and the agenda here. I've
+ got some files linked for my internal team to look at, some notes from prior meetings, maybe some,
+ looks like some spend information in a CSV file. And then I also have some email threads in Gmail
+ from previous correspondents with this firm. So I'm going to go into chat, and I'm going to ask it
+ to use a skill. And you'll see that here in a second. Basically, I'm going to say use the meeting
+ brief skill to prep me for my 2 p.m. QBR with Harrington Web today, pull from my calendar email
+ and Google Drive. So you see the first thing that's happening in this chat is that Claude is reading
+ the meeting brief skill. Now, this is based off of, this is a personal skill that I'm just using for
+ the demo, but it's based off of the meeting briefing skill that is part of the plugin.
+ So if you have the plugin installed, you'll be able to use this directly. And you'll notice
+ that I didn't actually use a slash command or anything special to make sure that the skill is
+ being used. I just used its name. I could also use a description like I'm prepping for the meeting,
+ help me create a brief for it. And Claude will know that that is what I'm talking about.
+ And then as Claude is working here, we can see that it's using the tools it has access to via
+ my connectors, which again, we're going to go back into the customize tab in a little bit today and
+ kind of talk a bit more about how to set those things up. But we can see that it's used these
+ integrations. It's looked at my calendar events, it's searched through my email threads and searched
+ my Google Drive files. And now it has everything I need to prep this briefing. So we can see that
+ it's loaded a pretty comprehensive briefing here. And it's able to give me a participants table so
+ it knows from the calendar event, who Diane and Marcus are from the Harrington web team kind of
+ what their their role on the call is, I've got a rough agenda. And then the really cool part is
+ that it's pulling in open issues that I maybe wouldn't have noticed ahead of time. So one thing
+ I'll call out is hey, like we have a draft out for an engagement contract that has a different
+ rate than what we have in the email thread. So that's flying that from our review as something
+ that I either want to talk about on the call or address prior to the meeting today. Looks
+ like we have some action items that we dropped and kind of forgot to do from our last meeting,
+ which is likely pulling from previous meeting notes. And we can see that Claude is actually
+ giving me its sources here of where those things came from, as well as some other open items,
+ right. So I've got some talking points and things that might come up in the meeting.
+ And I'm walking into this with a much better, much more prepared than I would have been.
+ If I was just trying to read across all of these, you know, disparate notes and emails and things
+ like that on my own ahead of the meeting. So one thing I can do to take this a step further
+ is say, hey, Claude, draft this as an internal email to my team. And what Claude is going to do
+ is go and add. So actually, I didn't even plan for this, but it's using our system prompt to say,
+ hey, I need to add a draft before sending. I'm going to allow it to go into my Gmail,
+ via the Gmail MCP, and go ahead and draft an internal team note to the anthropic legal team
+ members that are going to be on this meeting with me. And so that way I'm able to say,
+ hey, this is not only useful for me, but I can also share this with my team and make sure that
+ everyone has this context as well. You know, I might have also asked Claude to create a calendar
+ invite, for example, maybe an hour before the meeting or 30 minutes before, and attach this as
+ Google Drive Doc or something like that. But if I go into my-- yeah, go ahead, Mark.
+ I was just going to chime in. A lot of times I meet with customers and lawyers generally,
+ they're very concerned about AI taking action without their approval. And so I think that
+ prompt is a great example of keeping a human in the loop. So for lawyers, you want to ensure that
+ you are checking things for hallucinations or making sure it's not speaking to things you
+ didn't want it to. And so I think for a lot of lawyers, that system prompt is a really good
+ solution to something that the people have raised questions about. So I'm glad that popped up.
+ Absolutely. Yeah, we'll actually look at that in a little bit more detail. Great call, Mark,
+ in how to set up the connectors. So you can actually set up for your own personal preference.
+ Of course, your organization might have some settings already enforced there, but
+ what you would want Claude to ask for permission for versus what you're OK with it taking
+ direct action on. So great point. But I allowed it in that case just once to go and create this
+ draft. So if I go into my email now, I can see I have this draft email created already with email
+ addresses for my teammates. And I can go ahead and review this and then send it if it looks good.
+ So this is just one pretty basic example of something that I could do that would help save
+ me some time. I'm sure we've all had those moments where we know we have a meeting coming up and
+ there's things that we still need to review ahead of time. So just a really simple example you could
+ apply today, something you could do today, regardless if you are in chat or coworker or
+ call that AI on the Web. So that's chat. So this is kind of where chat can start to hit its ceiling.
+ There's a lot of powerful capabilities, but chat is basically reading what I appointed at rate.
+ So it's working within a project or I'm adding files directly to the conversation
+ and then it's handing me back a deliverable. But it's not necessarily going to open a folder on
+ my laptop, chain multiple tools together to accomplish a specific outcome that I give it.
+ For example, like taking this doc that we wrote and making edits to it, filing it in the matter
+ folder for a particular case or something like that. Those are three multiple asks across the
+ conversation. So let's move over to cowork and kind of take a look at this of how we could do
+ something that's a little bit more long running. So let's flip the rules here a little bit. So
+ we're no longer the anthropic legal team. We're going to pretend to be our friends at Harrington
+ Web. So it's the same firm that we were just going to meet with. They have their own kind of similar
+ problem. And we're going to pretend here that we are Marcus, who was one of the people on the call,
+ the associate, and that he has five NDAs sitting in this folder on his local machine that are waiting
+ for review. So if I open up this folder, you can see that I have cowork pointed at it. This two
+ cowork NDA triage folder, you can see within the incoming NDAs folder, I have these five NDAs.
+ And I also have a playbook, right? So this is a representative file of, hey, this is how the
+ organization is set up to triage these. But in your case, this might be a living breeding document
+ that we're connected to via an MCP. It might be something in Google Drive that we're pointing out,
+ or it might even be a skill that your team has actually created. But the important thing about
+ cowork is that it's kind of like a club of hands, right? It can read folders, it can open Word docs,
+ it can write files, run things in parallel. So what I'm going to do is keep it pointed here,
+ and basically ask it to triage these NDAs using a skill, and look at that playbook that we have
+ there. So I'm going to go ahead and kick this off. And I'm going to say I have five NDAs in the
+ incoming NDAs folder, use the triage NDA skill, and you can see this time I'm invoking it with
+ a slash command to review each one. So this is going to kick off. And we can see the progress
+ bar up here. We might actually for a longer running task later see that build a plan. But because this
+ is using a skill, it has a plan that it knows it needs to execute against based on a workflow
+ we've given that. So with that, and while this is running, let's actually jump back into the
+ customize tab so we can take a closer look at this. So here we have the legal plugin. So we touched on
+ this a little bit earlier, but this has basically been put together in collaboration with our team.
+ So Mark has played a huge role in this. So thank you, Mark, with coming up with, you know, skills,
+ connections, things that are going to really help you augment some tasks, you know, just by
+ installing the plugin and using it with Clon. So if we go look at our skills, yeah, go for it, Mark.
+ I was going to say, yes, I built the plugin. The weird thing is I always tell people not to use
+ it out of the box, which is a weird thing to say. This is this thing we launched, don't use it out
+ of the box. It's at its best when it has actually been remixed and incorporates your own company's
+ voice and risk matrices and your playbooks and your fallback language. And so, you know, it's
+ like a you would maybe you wouldn't wear a suit that you bought off the rack, you would get it
+ tailored to ensure it fits you well. Same thing with with these playbooks and plugins and skills.
+ So as you can see under the hood that Maggie's showing you, there's just these plain text files
+ that incorporate things like how you would typically do an NDA triage. But you should feed
+ it your existing work. And it's very good at helping you create skills. It's kind of recursive.
+ You can use Claude to create skills that then Claude then uses. So yeah, yeah, I'm glad you
+ brought that one up. It's a good segue into the skill creator skill. So as Mark mentioned, this is
+ a way that you can actually talk to Claude about a task that you would like to create as a repeatable
+ workflow. And it will help you do that either directly in line in a conversation, which we'll
+ see in a bit here, or based on maybe a text file or something else or word doc that you have created
+ on the kind of already walks through that process. But yeah, great point, Mark, you really do want to
+ kind of customize these things. You want to add your own flavor, add your own travel knowledge
+ so that it's more personalized, more customized to your organization. And there's an incredible
+ community of skills that are being created on GitHub and the other third party platforms. So
+ I always love reading on LinkedIn when people drop new ones, and I give them a test bin. So
+ check them out. Yeah, yeah, yeah. So the plugin comes with all of these preloaded. I think I have
+ one or two that are that are outdated here. So ignore those. But this is the skill that we were
+ using and co-work currently. And we'll flip back to that task in a second. But within my own personal
+ skills, if I have something that I've created, or I've downloaded from my organization and added
+ some customization for my team, I can also share those within my team just using this button.
+ So adding people within my team or like a listserv or something that I want to share that skill with.
+ And then as Mark mentioned, having kind of like an organizational marketplace that your admin can
+ control is a great way to distribute for folks that might actually be managing their organization's
+ skills library. It's a way to kind of share those across the organization so that you don't have
+ lots of different kind of disparate skills that aren't available to everyone. So it's really a
+ way to kind of democratize that organizational knowledge and make sure that people are following
+ best practices, as well as enabling people to really speed up the automation of their work.
+ And if you think about it, if you type all of this into cloud, that's a huge prompt.
+ We can invoke this with just a slash command or a single sentence, something very, very simple.
+ I'll also talk about connectors while we're here. So I think this was something that I saw some
+ folks in the chat asked me about. So I'll just use the Gmail connector as an example.
+ I have a couple different types of tools within this MCP. So read only tools and write delete
+ tools. And you can see all of these. By default, we can start to always allow needs approval,
+ which is what you saw Claude ask me before in Gmail, or blocked, which means it's not able to
+ happen within working with Claude. You can also set them to be custom. So what the connector comes
+ with out of the box or what your organization kind of ships out of the box for that connector.
+ You might want to be a bit more conservative. So you could switch these to needs approval.
+ I could switch any of these to needs approval instead of always allow.
+ So it's really just about what you feel comfortable with. And you can update these over time.
+ So that's kind of how you can customize and have some more control over what Claude is able to do
+ on your behalf, first kind of working with you and with your permission.
+ All right, so let's jump back into our task here. And let's see what Claude has been able to do.
+ And while we were talking through the customize customization options.
+ So it looks like Claude has been able to write our triage report, which we can open up here.
+ And it has flagged a couple different issues for us to look at. So I'm going to scroll to the top
+ here. But we can see that it triaged all five NDAs in our folder. And it used every single one
+ of these NDA documents to basically come up with this summary, right? So we have five incoming NDAs.
+ They each have a specific classification. And we can see that three of these are classified
+ as high risk. And if we go a little bit further within the report, they each have different areas
+ of risk called out. So if I go down to let's see one of the red ones, like next gen AI Corp.
+ It has a red classification here. Here's the part the receiving party, which is us.
+ And then I can see the actual detailed results here. So again, this is all criteria that's set
+ within the skill that the prompt that I actually gave it within co-work was one sentence, right?
+ Use the skill triage these NDAs. But what I get is a super robust review of everything within these
+ documents that I can actually use as a handoff to go into Microsoft Word directly. So I can scroll
+ through this a little bit more, but definitely encourage folks to use this. This is also I think
+ pretty applicable to like the contract review skill. I don't know, Mark, if you have other
+ kind of examples that are sort of akin to this. But yeah, like commercial redlining is another
+ huge one. Wow, the Q&A is really popping off a lot of great questions in there that we can follow
+ up on. But yes, it's quite easy to create these types of skills and playbooks and to ensure that
+ they're only available to people within your department. And I like to think of it as like,
+ imagine a new hire joined your legal team. What knowledge would you like that new hire to have
+ about how you do legal work? And that's what Claude is. It's effectively a co-worker, co-work.
+ So you're giving it all the legal knowledge and access to those. But it's possible to set
+ that up in a way so that other people at the company aren't accessing those same skills.
+ And you can really ensure that you've got the right information barriers and set things up
+ in a privileged way on our commercial offerings. I would emphasize that. There's been a lot of
+ rulings recently. I get a lot of questions at CLEs about this. Our enterprise plan offers the
+ ability for you to ensure that you're maintaining privilege within the boundaries of using Claude
+ with those of you on the legal team. So yeah. And I've loved creating documents, memos,
+ doing NDA triage, commercial redlining inside of Claude. But I think what you're about to show
+ with Claude for Word is so powerful. This is something that we've just released in the past
+ few weeks. And I'm excited to see what other surfaces we can bring that to. But it's Claude
+ meeting you where you are inside of your word processing environment, which for those of us
+ who are lawyers, that's where we spend a lot of our time. So this has been a great breakthrough
+ for us and our team and our productivity. So starting over in co-work, but then shipping it
+ over to Claude for Word. So yeah, Maggie, why don't you take it from there? Yeah, thanks, Mark.
+ Yeah, I kind of view this. I think I saw some questions earlier about Claude code and like
+ using the difference. I almost think of using the word adding is kind of similar of using the
+ terminal versus an IDE, if folks are familiar with that, like an environment where you can see
+ diffs or edits to the code in real time. This is kind of like the same idea, right? So if I open
+ the Claude add-in here on the right, I can see now that I have my NDA documents. So Claude didn't
+ make any edits to this yet directly in co-work. It just produced that triage report for me, right?
+ And I think this next-gen AI one was the worst offender according to the report. So I'm going
+ to open up and actually have it go through and do the red lines directly within Word.
+ So for folks that haven't used this yet, if you just go to add-ins within Word,
+ if you have access, you should see Claude there. And then you'll be prompted, I believe, on your
+ first sign-in to just log into your account. But once you're in here, you'll see that there's some
+ suggested skills that are specific to working within Microsoft Word. I have access to all my
+ other skills that I was using before. So you can work with it a very similar way that you would
+ work within chat or within co-work. But what I'm actually going to do right now is add this file
+ to it. So if I go back to my webinar here and go to this folder that we're working in, I have
+ this triage report file, right? So I'm going to upload this and just say based on the report,
+ start redlining the NDA. And we can check here and make sure that this is being added. Okay,
+ great. So we have the triage report, and then I can say based on this, start redlining this NDA,
+ and I will go ahead and kick this task off. So what this is going to do is it's actually going
+ to go through and read the report. I could also if this was just in line in co-work, copy and paste
+ it and put it in the chat, I could create this as a Word document and add that directly in Word or
+ work across two different files. But Claudia is going to go ahead and kind of review the work
+ that's already been done here. It's pulling in what we've already flagged as the most high-risk
+ issues. And then it's going to ask me for permission to go ahead and deliver these as track
+ changes. So I'm going to give it that approval. And then it's going to kick off and start working
+ here. One thing that's really cool about all of the add-ins for Microsoft Office, and I'm going
+ to go ahead and allow this, is that they can kind of share context across them. So let's say I
+ wasn't working on an NDA. I was working on like a meeting brief, for example. Something I could have
+ done, I might have mentioned this when we were in chat, is actually create the meeting briefing as a
+ Word document. I could have that open, chatting with Claude about the briefing and the agenda and
+ the talking points that I want to cover, and then open up PowerPoint and start to create a deck for
+ that, right? So that's another great use of working across the products that you're working in every
+ day today. Same thing for Excel, right? If there's information related to an analysis of some sort,
+ they need to pull into a briefing. Claude is going to share that context, which is super useful when
+ flipping back and forth between those different tools. So we can see now that Claude has gone
+ ahead and staged these red lines for us. So we can jump to each one. We can see that it's actually
+ giving us the reasoning for it. So we know that this triage reports reasoning is grounded in this
+ skill. We know that this skill is actually using our playbook. So it's kind of like a nested sort
+ of system there for grounding these results and suggestions into what our organization determines
+ is the way we want to do this work. And then I can go ahead and either dismiss or apply each one here,
+ right? I could apply all, but I can basically go through and agree with these red lines or change
+ them and do this directly within Word. So this is just one example. I think, Mark, you mentioned a
+ couple other ones, right? But working directly within Microsoft Word and kind of having Claude
+ in that sidebar table to chat with him and use it as an assistant as you're going through these types
+ of tasks. Yeah, I mentioned redlining, you know, sales agreements. I'm a product lawyer by training.
+ And so I love to read through my launch calendar product briefs. And I have a checklist of issues
+ that frequently come up when we're launching certain types of products. And so being able to
+ use that checklist as a skill and leave comments from my product managers and engineers so that
+ they're aware of issues that might be popping up. And then yeah, the context switching, like we don't
+ just live in Word documents. Oftentimes we'll do this. And if you're at a law firm, you're creating
+ a pitch for a client, and maybe that's in a PowerPoint, or maybe you're working on a large
+ M&A matter, and you need to go over to Excel and keep track of things in a spreadsheet and even do
+ some data analysis there. Sort of that like entire office agent trilogy, those three important
+ surfaces that we often work on, and then also incorporating email. And this is so powerful
+ because it can share context. And on top of it, you can update the skills and plugins over time.
+ You can tell Claude, you know what, you keep getting this wrong. Can we actually update the skill
+ so that going forward, other lawyers on my team know that this is how we approach these things.
+ It's really cool. The other thing I've loved seeing in the community is like,
+ well, I think many of us coming up in law school, maybe we're on journal, and you had to do blue
+ booking or other formatting exercises. And it feels like every state and local jurisdiction
+ and courthouse has different formatting needs. I'm not a litigator, but I've heard this feedback
+ a lot about how difficult it is to get Word documents to be formatted the right way. There's
+ some incredible community skills that help people format Word documents to look the way you need them
+ to. And this is only just the start. We just launched this product recently, with the pace
+ of innovation that's happening right now, and how quickly we're able to improve these documents,
+ or formatting skills, things are only going to get better over time. So I'm really enthused about
+ what I'm seeing here. Yeah. Awesome. Thanks so much, Mark. Yeah, speaking of creating skills
+ out of these types of flows, I think one thing that's really cool that we haven't addressed it
+ is actually creating or generating a new skill off of something that you've just worked with
+ Claude to do. So for example, I've used a skill obviously in this task to perform the sort of
+ workflow of triaging the NDA documents. But there's a lot of ways that I could extend this
+ from what I've done. My likely next steps, if I were just to use this, would be to go through in
+ Word and either approve or dismiss or maybe modify some of those red lines. After that, I'm probably
+ going to go and draft an email to the other council and kind of explain what our requested
+ changes are, maybe attach the document, or maybe I'll send it to another person on my team for review
+ first. So there's a lot of steps that come after this. And I think as you get more and more
+ comfortable working with Claude and more qualified, as we say, you can kind of add in more and more of
+ those things to a skill or some other repeated workflow. So for example, I could paste a prompt
+ in like this that says, save what we just did as a skill called daily NDA intake, or contract review
+ intake, or anything that's going to be a big part of your day-to-day. I want to scan the watch folder,
+ which I can point Claude at, for new NDAs. And that might be something in your drive.
+ And then say triage it against the playbook using parallel sub-agents, produce the risk report as a
+ docx file or draft red lines for anything high risk, and then file the outputs into this specific
+ file path and draft the emails. So this is going to actually ask me to create a skill file.
+ And I could also just as easily create this in conversation with Claude or use the skill
+ creator skill to do this. So it's going to actually go and package this up.
+ And then I'd be able to run it on demand. The other interesting thing, and actually,
+ if I go up here, you can click turn this into a skill, which will kind of kick off that prompt for
+ you. But the other really cool feature of this is the schedule feature. So if I click this,
+ that's actually going to kick off the slash schedule. And what that allows me to do is set
+ this up as a task that I run on a daily basis. Maggie, I've got a great example of a schedule.
+ Yeah, go for it. So my teammate Pamela, she joined a few months ago and she's on our regulatory team.
+ And she was chatting with co-work and frequently having to look up updates in the regulatory space,
+ news articles. And then she would spend about two hours a day synthesizing all of the latest news
+ for regulatory enforcement and new policies and things that were happening globally.
+ She threw a conversation with Claude after scheduling lots of these types of exercises,
+ realized she could create a daily newspaper and host it within our Google sites. So she
+ actually built a regulatory tracker that we all use. And so something that used to take her two
+ hours every day, Claude was able to schedule it. And then she was able to actually create an external
+ resource, hosting it within our Google site, so that other people can read it over a cup of coffee
+ in the morning. I know we talked about that chief of staff earlier as well. And having that a daily
+ brief be ready at 8am every morning. That's another great example of something that you can just,
+ it's repeatable work. I would encourage all of you right now, if you have hands on keyboard,
+ what are things you could do that you feel like are a bit energy draining and repetitive that you
+ do on a daily basis? What could you do to have Claude help you schedule those to help you hit
+ the ground running? And just go ahead and schedule that repeatable work and maybe even publish them
+ outwards into Slack or Teams or post them on a Google site so that your teammates are visiting
+ them as well. That's how I've really been able to up level my work in the past few months,
+ using these type of cron jobs or scheduled tasks. Yeah, yeah, absolutely, Margaret. I love that,
+ that kind of research agent, basically, that your team built, because it's not something that's just
+ available to that person on your team, or they're running it daily for themselves. It's now updating
+ automatically or on whatever kind of scheduled cadence. And it's available to everyone. So I think
+ that that follows a kind of a common path of identifying those more complex long running tasks
+ that you're doing manually, automating for them for yourself, and then figuring out how you can
+ kind of scale or multiply your impact there across your organization. So super cool example.
+ I just wanted to kind of flip over to show what this would look like if we were to run
+ that more long running skill with all the different steps. So I just ran this earlier,
+ and basically, what it did is instead of you can see, instead of creating just the triage report,
+ it actually created each individual document in Word with the red lines directly. It actually went
+ into my email and created a draft for each of the red lines. So I can see for each of these companies
+ that I had been working with within Claude, I have an actual draft email with what we
+ are proposing that I can then go and attach the file to once I've reviewed it.
+ So it's created a lot more assets than our initial conversation. And these are all available then for
+ me to pick this up. So if I go into the scheduled tasks window here, I can create a new task,
+ and I can call it daily NDA. I can run this as a skill, or I can just give it the prompt
+ itself for exactly what I want it to do. But basically, I would take that folder. Let's say
+ there's a working folder or somewhere where you expect these files that you want it to pick up
+ to live. I can set this on, let's say, a daily basis at 8 a.m. or 9 a.m. And so every day when
+ I'm coming into work or sitting down to start my day, I'm not actually having to kick this off and
+ kind of watch the task complete on its own. It's already waiting for me. So again, this is just
+ like a really kind of, I won't say simple because there are a lot of complex steps involved here,
+ but a way that you can set yourself up to be more of a manager than a doer in some cases.
+ You think of Claude as kind of your team of agents working for you. So you have this at
+ your disposal to run work in the way you want it, schedule it, and have it run on a repeatable basis.
+ Okay, I think we've got about 10 minutes left. So I'll just end with this, that we kind of covered
+ a couple of different services, right? Chat, co-work, working within Word and other office products.
+ But the main takeaway is that it's the same model underneath all of it, right? We're using Claude,
+ same family of models available within these products. And that same tribal knowledge that
+ you're creating via skills, plugins, MCPs, is driving those standards, right? So anywhere that
+ you're able to kind of add in your institutional knowledge of how you want Claude to run and work
+ with you, it's able to propagate that across all the areas that you're working with Claude.
+ So that's kind of giving you that ability to hand that work off, schedule it, have Claude do it for
+ you, and then focus your time on strategic work and making those judgment calls and all the things
+ that are most critical. Okay, that's all I had, Marcela. Let me stop sharing my screen here so
+ we can jump back into the slides. Perfect. Yeah, I think there's just a few key steps for success
+ here. So we talked about setting up those MCP connectors, getting started with the legal plugin,
+ Maggie showed you where to navigate and find that within Claude, and then working across apps like
+ the new Word add-in. So those are the key steps for success there. And we just want to emphasize
+ that Claude really meets your team where they're already working. So Claude for Excel and PowerPoint,
+ Claude for Word, and then co-work using things like the desktop application can really help you
+ with work that spans these different systems, pull things together. Co-work is so powerful. It's
+ using local compute and sort of working in a sandbox and using the power of your computer
+ along with Claude to get this type of work done in a safe environment, which is so important for those
+ of us who work in the legal industry. Let's see. I'd mentioned the JIRA analysis I did earlier.
+ We looked at 700 plus tickets from the past few months of legal work. If you right now are looking
+ for how to get started within your own legal team, maybe you work in-house at a large enterprise,
+ maybe you're in a small firm, maybe you're a large firm, maybe you work in public service,
+ have Claude analyze your busy work and then provide suggestions. That's how you can really
+ solve that cold start problem. Connect it to your email inbox. What is the energy draining work?
+ Another quick example for me is every Friday, we write like a weekly newsletter to share with our
+ cross-functional stakeholders of what the legal team has been up to. I dread that Friday morning
+ reminder. It's like an hour of busy work of compiling. I manage a team of other product
+ lawyers. I have to compile all of their wins for the week and synthesize it. And I don't like doing
+ work about the work. And I think that's what Claude is so good at, is taking that busy work.
+ For those of you who remember the movie Office Space, the TPS reports of the world, Claude is
+ very good at helping understand the progress, grounding itself in existing wins that your
+ department has had over the past year. Share the old weekly newsletters and tell it, this is the
+ high bar we keep ourselves to for success in our department. Write me a newsletter for the week
+ that shows the other similar type of wins. Don't be sycophantic and just tell me we did your work.
+ Show me what's actually impactful based on what other people are saying and draft that weekly
+ newsletter. So this is how I would suggest that you use Claude in your work to identify the best
+ next steps for you. We've got a few minutes here where we can maybe take some questions. I've been
+ skimming the chat all along. Wow. Incredible questions coming in. I think we're going to send
+ out a link to this webinar later. Please share it with your teammates as well. Hit us up on LinkedIn.
+ Reach out to our support team. We've got so many talented people here at Anthropic who are here
+ waiting to help you in your legal department transform. We can help with that. So please
+ reach out. We're here to support you. Nancy, I don't know if you're around and want to share
+ some of the questions from the chat or maybe some of the poll results. What we got going on?
+ You are on mute though. Sorry about that. Yes. We have a lot of wonderful questions. So we can spend
+ the rest of the time hitting some of the ones that were the most upvoted across the group.
+ So one question that came in was how is your team specifically dealing with attorney-client
+ privilege when using Claude? It's such a good question. I briefly touched on that earlier.
+ There's been some recent rulings about this. I think the whole industry is really sort of waking
+ up to this moment that lawyers are using AI to get their best work done. And it reminds me of
+ some of the conversations I've read about that were happening in the 1990s around whether or
+ not lawyers could use email or in the early 2000s about using cloud software, cloud-based
+ solutions and SaaS. Now, the Heppner ruling I think is one that on LinkedIn a lot of people
+ are discussing. This was a non-attorney using a consumer plan who didn't have things set up and
+ they were working at their own direction. For lawyers who are using Claude on our commercial
+ offerings, our team and enterprise plan, or a prosumer and have their privacy settings set
+ up correctly, I'm not your lawyer. You should speak to your own lawyer about privilege. But I
+ think we are quite confident here that you can set things up to be able to use Claude in a privileged
+ manner and maintain privilege. Yeah. So it's a great question. I would love to see policymakers
+ and other CLEs address this more because people are using this and it's going to keep happening.
+ I think, again, it helps us provide the best support for our clients. The ABA actually has
+ ethics rules that tell lawyers we need to stay up to date on technology and be aware of how it works.
+ That is our duty to our clients to understand these things and help provide the best client
+ services we can. So that's a great question though. Awesome. Great. We also did have a
+ couple of questions thematically that came up around security. So would love any sort of
+ general best practices as well as how you keep information, especially sensitive case files
+ secure and confidential across the line. Yeah. Yeah, go ahead. I'll take a stab at it. And Mark,
+ feel free to add specific to how your team is working with Claude. But from just like a broad
+ security standpoint, so co-work specifically is running within an isolated virtual machine
+ on the desktop app. So those kind of permissions and what it has access to is the blast radius is
+ kind of limited with that architecture from a broad kind of feature standpoint. Connectors,
+ so MTPs or connectors are going to inherit those source permissions from you. So think of it as
+ you logging into these different connectors, you're kind of authenticating them. Claude is not
+ going to access anything that you don't have access to. So for keeping things that are meant to stay
+ within one specific team or related to one matter, it's not going to be able to access
+ anything that you can't. Projects are, I think, are another good kind of workspace delineation
+ tool there so that we are able to share resources and work with Claude collaboratively, but scope
+ to a specific team or client or what have you. And then RBAC is something that we've rolled
+ out recently within Claude for Enterprise, so Enterprise, Claude for Work plans. So that can
+ kind of help limit who has access to certain capabilities. We're going to be rolling out more
+ capabilities and kind of continuing to enhance those features in the future, so look out for
+ that. And then the last thing that I would say is like compliance, auditing, logging, that's all
+ available to be exported. So it kind of gives us, it has that record of who ran what, what was
+ accessed. So it's all visible to your organization for kind of auditing purposes. Mark, anything
+ you would add there? Yeah, I would just call out that our commercial plans all offer these type of
+ admin-based controls. So you can set things up so that only approved apps and connectors in the
+ directory that your employees are able to install those. Yeah, I think our compliance API is very
+ robust. It can help with data loss prevention or other eDiscovery needs. And I would acknowledge
+ that there is rogue IT, that people are using consumer grade plans and that our commercial
+ offerings are a great way to ensure that we're able to meet the needs of your organization.
+ Please visit our trust center, trust.anthropic.com that has all this information and more. Yeah.
+ Wonderful. So we also did get a question around how legal work can oftentimes involve very long
+ documents, which can also lead to context degradation. So curious how Claude's legal team
+ also addresses those types of situations as well. I think this is why I love co-work so much is that
+ the agentic harness allows things to swarm and make plans and execute and distill a lot of the
+ mass corpus of knowledge that legal teams often have or encounter in their work and make sense
+ of it all. In chat-based or turn-based conversations with AI, yeah, you get that degradation. But when
+ Claude is able to make use of a local computer, store files in the right places, and use these
+ types of file systems, we've really found that it's able to keep up and it doesn't have that
+ context rock. Yeah, Maggie, I don't know if you have anything to add on that one.
+ Yeah, I'll just add that we have models with really large complex, context windows,
+ million context windows available now, which I think helps. But also what we saw in the red
+ lining use case, asking Claude to cite its sources is another big thing. That way you have that
+ confidence that it's not hallucinated information. It's actually grounded in whatever skill or
+ playbook or other data that you're feeding it so that you feel more comfortable using that
+ information going forward rather than just kind of trusting it at face value.
+ Yeah, so many lawyers are concerned about ending up on the naughty list of over 2,000
+ court filings that have hallucinated information in them. And so ensuring that you're using tools
+ and connectors to ground these AI systems in real case law or your playbooks. And then, again,
+ keeping a human in the loop. This is supposed to empower lawyers to get their best thinking done.
+ We acknowledge that it's not always 100% perfect. And you still need to review and make sure this
+ work is accurate and reflects your client's needs. So yeah, I think it's a great place to stop because
+ we're so excited about these systems and what they can do. And we know things are just going
+ to keep getting better. So thank you so much for your time today. And again, reach out, use these
+ resources, and let us know what you're building. Thank you. Thanks, everyone. Thank you, everyone.
+ Have a good one.

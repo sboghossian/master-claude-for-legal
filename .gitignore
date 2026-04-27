@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (in case anyone adds analysis scripts later)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Node (in case anyone adds tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local config / secrets — never commit
+.env
+.env.local
+*.local
+
+# Working files
+*.tmp
+*.bak
+*.orig
+
+# Anthropic Cowork local artifacts (if anyone runs it from this dir)
+.cowork/
+.claude/
+
+# Personal customization that contributors might add but shouldn't commit
+my-*.md
+local-*.md
+WIP-*.md
