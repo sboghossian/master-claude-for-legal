@@ -187,4 +187,4 @@ Total elapsed time: typically 4-8 weeks for an enterprise legal-AI vendor evalua
 
 This questionnaire is informed by industry-standard vendor evaluation practices and the specific risks of AI in legal work. It is not exhaustive; vendors with novel architectures may require additional probing. It is also not legal advice. Have your own counsel review before adopting as a firm standard.
 
-MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

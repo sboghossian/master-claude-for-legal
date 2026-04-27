@@ -181,4 +181,4 @@ To make the morning brief recurring, use `/schedule` and target this skill again
 
 ## Provenance
 
-Inspired by Maggie Russo's live demo of the meeting brief skill in the *Claude for Legal Teams* webinar (April 2026, Anthropic). Generalized starter version. MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+Inspired by Maggie Russo's live demo of the meeting brief skill in the *Claude for Legal Teams* webinar (April 2026, Anthropic). Generalized starter version. MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

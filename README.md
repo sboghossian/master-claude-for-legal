@@ -125,7 +125,7 @@ Three options depending on your tooling.
 ### Cowork (recommended for legal teams)
 
 ```bash
-git clone https://github.com/HAQQ-Inc/master-claude-for-legal.git
+git clone https://github.com/sboghossian/master-claude-for-legal.git
 cd master-claude-for-legal
 # Open Cowork → Customize → Plugins → Local → Add → point to this directory
 ```
@@ -135,7 +135,7 @@ The skills in `skills/` will appear under your personal plugins. Reference docs 
 ### Claude Code
 
 ```bash
-git clone https://github.com/HAQQ-Inc/master-claude-for-legal.git ~/.claude/plugins/master-claude-for-legal
+git clone https://github.com/sboghossian/master-claude-for-legal.git ~/.claude/plugins/master-claude-for-legal
 # Then in any Claude Code session:
 /plugin install master-claude-for-legal
 ```

@@ -169,4 +169,4 @@ The original Pamela pattern (regulatory tracker) is a daily variant. To run this
 
 ## Provenance
 
-Built from Mark Pike's "Friday newsletter" example in the *Claude for Legal Teams* webinar (April 2026, Anthropic). The non-sycophantic instruction is verbatim from Mark. The Pamela-tracker daily variant is in the same lineage. MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+Built from Mark Pike's "Friday newsletter" example in the *Claude for Legal Teams* webinar (April 2026, Anthropic). The non-sycophantic instruction is verbatim from Mark. The Pamela-tracker daily variant is in the same lineage. MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

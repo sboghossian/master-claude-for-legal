@@ -182,4 +182,4 @@ The pattern: produce → verify → review flags → fix → re-verify → file.
 
 ## Provenance
 
-Built to address the over-2,000 documented court filings containing hallucinated citations as of 2026, referenced by Mark Pike in the *Claude for Legal Teams* webinar. The two-mode framework (Mode 1 fabrication, Mode 2 paraphrase-as-quote) is HAQQ's editorial expansion. MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+Built to address the over-2,000 documented court filings containing hallucinated citations as of 2026, referenced by Mark Pike in the *Claude for Legal Teams* webinar. The two-mode framework (Mode 1 fabrication, Mode 2 paraphrase-as-quote) is HAQQ's editorial expansion. MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

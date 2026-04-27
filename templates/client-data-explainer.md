@@ -103,4 +103,4 @@ Then run the document past your general counsel for final approval.
 
 This template is informed by emerging best practices in legal-AI client communication and the ABA's published guidance on lawyer use of AI as of 2026. It is not legal advice. Adopt only after your own counsel review.
 
-MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

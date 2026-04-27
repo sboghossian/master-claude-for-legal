@@ -214,4 +214,4 @@ This is a starting template. Edit before deploying. Specifically:
 
 This template is informed by: ABA Model Rules 1.1, 1.6, 5.1, 5.3, and the rapidly developing case law on AI in legal practice (Heppner ruling and the broader documented set of 2,000+ filings with hallucinated citations as of 2026). It is not, and is not intended as, legal advice. Have your own counsel review before adopting.
 
-MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

@@ -143,4 +143,4 @@ After running version-diff, common follow-ups:
 
 ## Provenance
 
-Starter version. MIT licensed. Part of master-claude-for-legal: github.com/HAQQ-Inc/master-claude-for-legal
+Starter version. MIT licensed. Part of master-claude-for-legal: github.com/sboghossian/master-claude-for-legal

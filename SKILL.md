@@ -97,4 +97,4 @@ This skill does not:
 
 This skill pack was assembled from the public *Claude for Legal Teams* webinar Anthropic ran in April 2026 (Mark Pike, Anthropic legal product lead; Maggie Russo, applied AI), the 51 audience questions submitted during that session, and HAQQ's experience deploying legal AI to ~9,800 firms. Direct quotes from Mark and Maggie appear in `references/four-pillars.md` and elsewhere with attribution.
 
-The companion long-form analysis is at [haqq.ai/blog/claude-for-legal-teams-questions-answered](https://haqq.ai/blog/claude-for-legal-teams-questions-answered). MIT licensed. PRs welcome at [github.com/HAQQ-Inc/master-claude-for-legal](https://github.com/HAQQ-Inc/master-claude-for-legal).
+The companion long-form analysis is at [haqq.ai/blog/claude-for-legal-teams-questions-answered](https://haqq.ai/blog/claude-for-legal-teams-questions-answered). MIT licensed. PRs welcome at [github.com/sboghossian/master-claude-for-legal](https://github.com/sboghossian/master-claude-for-legal).
