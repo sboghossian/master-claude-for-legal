@@ -1,0 +1,5127 @@
+WEBVTT
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:248762880
+
+1
+00:00:05.839 --> 00:00:08.480
+hey everyone thank you so much for joining
+
+2
+00:00:08.480 --> 00:00:11.599
+us on this lovely friday earlier this week
+
+3
+00:00:11.599 --> 00:00:14.445
+we released several new capabilities to make claude
+
+4
+00:00:14.505 --> 00:00:18.024
+an amazing thinking partner across many different types
+
+5
+00:00:18.024 --> 00:00:20.765
+of work for various types of legal teams
+
+6
+00:00:20.984 --> 00:00:23.304
+and in this session we're really really excited
+
+7
+00:00:23.304 --> 00:00:25.244
+to be going into all of the capabilities
+
+8
+00:00:25.384 --> 00:00:27.570
+that we launched in detail and walk through
+
+9
+00:00:27.570 --> 00:00:29.730
+how you can start to really take advantage
+
+10
+00:00:29.730 --> 00:00:32.689
+of everything that we've released this week so
+
+11
+00:00:32.689 --> 00:00:34.850
+without further ado let's pull a quick video
+
+12
+00:00:34.850 --> 00:01:05.155
+on the new updates that we announced amazing
+
+13
+00:01:06.015 --> 00:01:09.375
+always love those jazzy vibes great so let's
+
+14
+00:01:09.375 --> 00:01:15.694
+go to the next slide okay so first
+
+15
+00:01:15.694 --> 00:01:18.430
+a few quick logistical notes so the top
+
+16
+00:01:18.430 --> 00:01:20.189
+question that we always get is can i
+
+17
+00:01:20.189 --> 00:01:22.510
+get a recording of this session and we
+
+18
+00:01:22.510 --> 00:01:25.870
+definitely will be sharing a recording with you
+
+19
+00:01:25.870 --> 00:01:27.629
+all so if you do need to drop
+
+20
+00:01:27.629 --> 00:01:29.310
+at any point or want to share this
+
+21
+00:01:29.310 --> 00:01:31.305
+with a colleague we've got you covered there
+
+22
+00:01:31.864 --> 00:01:34.665
+secondly we want this to be interactive and
+
+23
+00:01:34.665 --> 00:01:36.584
+so we highly encourage you to use the
+
+24
+00:01:36.584 --> 00:01:39.465
+q and a tab in the webinar portal
+
+25
+00:01:39.465 --> 00:01:41.965
+to drop in questions at any point so
+
+26
+00:01:42.344 --> 00:01:44.344
+there are thousands of you online so we
+
+27
+00:01:44.344 --> 00:01:46.125
+won't be able to get to every question
+
+28
+00:01:46.459 --> 00:01:49.259
+but please upvote questions that you're interested in
+
+29
+00:01:49.259 --> 00:01:51.420
+and we'll make sure to answer the top
+
+30
+00:01:51.420 --> 00:01:55.340
+upvoted questions and finally we love your feedback
+
+31
+00:01:55.340 --> 00:01:57.979
+we're constantly trying to learn and improve from
+
+32
+00:01:57.979 --> 00:02:00.094
+the feedback that you share so we'll share
+
+33
+00:02:00.094 --> 00:02:02.015
+a short survey towards the end of the
+
+34
+00:02:02.015 --> 00:02:04.254
+session and we truly appreciate you taking the
+
+35
+00:02:04.254 --> 00:02:08.114
+time to fill that out so from here
+
+36
+00:02:08.495 --> 00:02:11.955
+i'm so excited to introduce mark and harry
+
+37
+00:02:12.430 --> 00:02:14.990
+they are our wonderful speakers for today who
+
+38
+00:02:14.990 --> 00:02:17.709
+will be beating you throughout everything that we
+
+39
+00:02:17.709 --> 00:02:20.030
+announced and just the moment that we're in
+
+40
+00:02:20.030 --> 00:02:22.270
+and how to take advantage of everything so
+
+41
+00:02:22.590 --> 00:02:25.015
+take it away mark and harry thank you
+
+42
+00:02:25.015 --> 00:02:27.495
+so much nancy hi everybody i'm mark pike
+
+43
+00:02:27.495 --> 00:02:30.775
+i'm an associate general counsel at anthrobic i'm
+
+44
+00:02:30.775 --> 00:02:33.335
+also the product lead for our club for
+
+45
+00:02:33.335 --> 00:02:37.669
+legal industry efforts here and i'm as surprised
+
+46
+00:02:37.669 --> 00:02:39.189
+as you are to to be a lawyer
+
+47
+00:02:39.189 --> 00:02:41.849
+who's building tools in this moment i'm nontechnical
+
+48
+00:02:42.870 --> 00:02:45.830
+but it's been so fun to build these
+
+49
+00:02:45.830 --> 00:02:47.430
+things and hear all the feedback from the
+
+50
+00:02:47.430 --> 00:02:50.150
+community and see all the interest in this
+
+51
+00:02:50.150 --> 00:02:53.914
+space harry why don't you introduce yourself yeah
+
+52
+00:02:53.914 --> 00:02:56.155
+mark thanks so much i'll be joining mark
+
+53
+00:02:56.155 --> 00:02:57.514
+today my name is harry i am from
+
+54
+00:02:57.514 --> 00:02:59.435
+the applied ai team here we sit at
+
+55
+00:02:59.435 --> 00:03:03.114
+the intersection of research product engineering as well
+
+56
+00:03:03.114 --> 00:03:05.270
+as go to market which means i get
+
+57
+00:03:05.270 --> 00:03:07.030
+to work with folks like mark that are
+
+58
+00:03:07.030 --> 00:03:10.230
+so talented internally on working on products like
+
+59
+00:03:10.230 --> 00:03:12.469
+claude for legal as well as a variety
+
+60
+00:03:12.469 --> 00:03:14.710
+of all of our different customers and it's
+
+61
+00:03:14.710 --> 00:03:18.169
+very surprising but maybe less so these days
+
+62
+00:03:18.230 --> 00:03:20.954
+how applicable claude is across a variety of
+
+63
+00:03:20.954 --> 00:03:23.754
+use cases which we'll dive into legal of
+
+64
+00:03:23.754 --> 00:03:26.235
+course today so mark i'll let you take
+
+65
+00:03:26.235 --> 00:03:30.794
+it away awesome so yeah harry it is
+
+66
+00:03:30.794 --> 00:03:32.314
+a bit surprising right now to see the
+
+67
+00:03:32.314 --> 00:03:35.030
+amount of interest but maybe it shouldn't be
+
+68
+00:03:35.030 --> 00:03:38.550
+lawyers for a long time have dealt with
+
+69
+00:03:38.550 --> 00:03:42.010
+large volumes of information massive stacks of documents
+
+70
+00:03:42.550 --> 00:03:45.590
+and ai is uniquely qualified to be able
+
+71
+00:03:45.590 --> 00:03:48.215
+to make sense of those and so with
+
+72
+00:03:48.594 --> 00:03:50.675
+our launch this week we saw so much
+
+73
+00:03:50.675 --> 00:03:53.235
+interest from the community you can see some
+
+74
+00:03:53.235 --> 00:03:55.555
+of the headlines there's over 50 articles written
+
+75
+00:03:55.555 --> 00:03:58.034
+about this earlier this week and all of
+
+76
+00:03:58.034 --> 00:04:00.275
+them so positive in in talking about this
+
+77
+00:04:00.275 --> 00:04:02.730
+moment we find ourselves in where ai is
+
+78
+00:04:02.730 --> 00:04:06.169
+transforming the industry i've just been really enthused
+
+79
+00:04:06.169 --> 00:04:07.689
+to see all the feedback that people are
+
+80
+00:04:07.689 --> 00:04:09.290
+providing and it it really does feel like
+
+81
+00:04:09.290 --> 00:04:12.889
+the start of something so we had over
+
+82
+00:04:12.889 --> 00:04:15.210
+20,000 people register for the last webinar and
+
+83
+00:04:15.210 --> 00:04:17.974
+so many of you thousands of you watching
+
+84
+00:04:18.354 --> 00:04:21.735
+live right now so this is awesome and
+
+85
+00:04:21.875 --> 00:04:23.235
+i'm really excited to be part of it
+
+86
+00:04:23.235 --> 00:04:26.115
+with you i've got one ask for all
+
+87
+00:04:26.115 --> 00:04:27.634
+of you up front right now is to
+
+88
+00:04:27.634 --> 00:04:30.420
+not watch this like a cle i've been
+
+89
+00:04:30.420 --> 00:04:33.220
+on cles before i i know what it's
+
+90
+00:04:33.220 --> 00:04:38.660
+like like please open a tab open up
+
+91
+00:04:38.660 --> 00:04:40.819
+claude right now and try things as we
+
+92
+00:04:40.819 --> 00:04:43.060
+go along this is an awesome opportunity to
+
+93
+00:04:43.060 --> 00:04:45.704
+do hands on keyboard learning and we want
+
+94
+00:04:45.704 --> 00:04:48.024
+this to be educational so that you can
+
+95
+00:04:48.024 --> 00:04:49.544
+get a better feel for what what these
+
+96
+00:04:49.544 --> 00:04:51.544
+new plug ins are what these new connectors
+
+97
+00:04:51.544 --> 00:04:52.745
+are and you can make the most of
+
+98
+00:04:52.745 --> 00:04:58.910
+it so let's do it so alright where
+
+99
+00:04:58.910 --> 00:05:01.389
+are we right this moment i wanna reflect
+
+100
+00:05:01.389 --> 00:05:05.250
+back a little bit so earlier this year
+
+101
+00:05:07.150 --> 00:05:09.470
+february we launched the the first legal plug
+
+102
+00:05:09.470 --> 00:05:10.654
+in and and it was a bit of
+
+103
+00:05:10.654 --> 00:05:13.855
+an experiment what came back surprised us lawyers
+
+104
+00:05:13.855 --> 00:05:16.495
+returning to claude cowork at a higher rate
+
+105
+00:05:16.495 --> 00:05:20.335
+than any other knowledge work profession that's the
+
+106
+00:05:20.335 --> 00:05:23.879
+signal it's huge and so that really led
+
+107
+00:05:23.879 --> 00:05:26.519
+us to invest more into this space and
+
+108
+00:05:26.519 --> 00:05:28.279
+that's where we are today we launched a
+
+109
+00:05:28.279 --> 00:05:33.399
+connected legal stack 20 plus mcp connectors harry's
+
+110
+00:05:33.399 --> 00:05:35.080
+gonna talk a little bit more later about
+
+111
+00:05:35.080 --> 00:05:40.305
+what mcps are model context protocol based on
+
+112
+00:05:40.305 --> 00:05:42.064
+the last webinar many of you asked for
+
+113
+00:05:42.064 --> 00:05:43.824
+more of a glossary at the at the
+
+114
+00:05:43.824 --> 00:05:46.225
+outset to make sure we're explaining what these
+
+115
+00:05:46.225 --> 00:05:47.824
+tools are and what they do and i
+
+116
+00:05:47.824 --> 00:05:49.764
+promise you we're gonna go through that today
+
+117
+00:05:50.225 --> 00:05:53.125
+we also launched 12 practice area plug ins
+
+118
+00:05:53.610 --> 00:05:55.529
+for in house and and for people who
+
+119
+00:05:55.529 --> 00:05:57.689
+work in law firms as well and public
+
+120
+00:05:57.689 --> 00:06:01.129
+service roles we also are meeting lawyers where
+
+121
+00:06:01.129 --> 00:06:03.689
+they are legal professionals where they are with
+
+122
+00:06:03.689 --> 00:06:06.794
+claude and word outlook excel and powerpoint so
+
+123
+00:06:06.794 --> 00:06:08.954
+that claude is inside of these documents with
+
+124
+00:06:08.954 --> 00:06:10.314
+you to help you get your best work
+
+125
+00:06:10.314 --> 00:06:13.035
+done on those surfaces and i think that's
+
+126
+00:06:13.035 --> 00:06:15.115
+part of why we've seen so much interest
+
+127
+00:06:15.115 --> 00:06:19.329
+from legal professionals right now agentic tools a
+
+128
+00:06:19.329 --> 00:06:21.970
+year ago were largely for developers but with
+
+129
+00:06:21.970 --> 00:06:24.610
+cowork and with plug ins like this claude
+
+130
+00:06:24.610 --> 00:06:27.250
+is meeting you where you already are so
+
+131
+00:06:27.250 --> 00:06:29.490
+we're so excited about that we'll also talk
+
+132
+00:06:29.490 --> 00:06:31.410
+a bit more about these access to justice
+
+133
+00:06:31.410 --> 00:06:35.064
+partnerships and how claude is helping democratize access
+
+134
+00:06:35.125 --> 00:06:38.485
+to ai legal tooling and then we'll we'll
+
+135
+00:06:38.485 --> 00:06:40.745
+talk more about where we're going with agentic
+
+136
+00:06:40.805 --> 00:06:43.925
+matter work many of these plug ins also
+
+137
+00:06:43.925 --> 00:06:47.009
+work as managed agents they can help with
+
+138
+00:06:47.009 --> 00:06:50.050
+multistep matters end to end they can look
+
+139
+00:06:50.050 --> 00:06:53.490
+out on the horizon and be always on
+
+140
+00:06:53.490 --> 00:06:55.169
+so that they can see if there a
+
+141
+00:06:55.169 --> 00:06:57.409
+new law has come out and trigger a
+
+142
+00:06:57.409 --> 00:07:00.785
+workflow based on that or if a development
+
+143
+00:07:00.785 --> 00:07:03.105
+happens in a case it can alert you
+
+144
+00:07:03.105 --> 00:07:04.944
+to that and let you know that it
+
+145
+00:07:04.944 --> 00:07:07.285
+needs to kick off something from your playbook
+
+146
+00:07:08.305 --> 00:07:10.545
+so again the through line for all these
+
+147
+00:07:10.545 --> 00:07:13.009
+is we didn't start with let's build legal
+
+148
+00:07:13.009 --> 00:07:16.709
+ai we started with legal professionals using claude
+
+149
+00:07:16.850 --> 00:07:19.730
+watch what they actually did heard feedback from
+
+150
+00:07:19.730 --> 00:07:21.589
+you all and then we built from there
+
+151
+00:07:23.089 --> 00:07:26.545
+so that's where we are i wanna ground
+
+152
+00:07:26.545 --> 00:07:29.045
+things for a minute in like what is
+
+153
+00:07:29.345 --> 00:07:32.884
+claude and claude is all of these things
+
+154
+00:07:32.944 --> 00:07:35.105
+claude is the model layer so i'm gonna
+
+155
+00:07:35.105 --> 00:07:37.824
+start at the bottom here at the foundation
+
+156
+00:07:37.824 --> 00:07:40.560
+are the models we're a frontier lab anthropic
+
+157
+00:07:40.620 --> 00:07:42.620
+was founded as a research lab to help
+
+158
+00:07:42.620 --> 00:07:45.579
+make safe ai and nothing else matters if
+
+159
+00:07:45.579 --> 00:07:48.479
+the models aren't at the frontier and safe
+
+160
+00:07:48.539 --> 00:07:50.459
+and so we work closely with partners to
+
+161
+00:07:50.459 --> 00:07:53.019
+ensure our models stay at the frontier for
+
+162
+00:07:53.019 --> 00:07:56.535
+legal reasoning i'm i'm very excited to to
+
+163
+00:07:56.535 --> 00:07:58.855
+look at things like harvey's big law bench
+
+164
+00:07:58.855 --> 00:08:00.615
+and figure out ways that we can ensure
+
+165
+00:08:00.615 --> 00:08:02.775
+that our model remains at the frontier in
+
+166
+00:08:02.775 --> 00:08:05.254
+these types of benchmarks on top of those
+
+167
+00:08:05.254 --> 00:08:10.160
+models it's a platform apis tools managed agents
+
+168
+00:08:10.459 --> 00:08:12.220
+this is an operating system for you to
+
+169
+00:08:12.220 --> 00:08:14.539
+build with and on top of this platform
+
+170
+00:08:14.539 --> 00:08:17.819
+we build applications together this means a few
+
+171
+00:08:17.819 --> 00:08:21.099
+things claude is alongside your people accelerating and
+
+172
+00:08:21.099 --> 00:08:24.154
+transforming your work it's clawed inside of your
+
+173
+00:08:24.154 --> 00:08:27.754
+systems customized to your processes and the engine
+
+174
+00:08:27.754 --> 00:08:29.754
+brings all this together to create agents that
+
+175
+00:08:29.754 --> 00:08:32.815
+can take on useful roles in your organization
+
+176
+00:08:35.990 --> 00:08:38.870
+so as i mentioned the the model needs
+
+177
+00:08:38.870 --> 00:08:40.629
+to be good for this to to all
+
+178
+00:08:40.629 --> 00:08:44.950
+work claude leads on many legal benchmarks claude
+
+179
+00:08:44.950 --> 00:08:49.084
+opus 4.7 scored over 90% on harvey's bigwallbench
+
+180
+00:08:49.384 --> 00:08:51.324
+the highest score of any other clog model
+
+181
+00:08:51.625 --> 00:08:53.384
+and we have lots of quotes here from
+
+182
+00:08:53.384 --> 00:08:56.024
+some of our top partners about how clog
+
+183
+00:08:56.024 --> 00:08:58.745
+can consistently win benchmarks and help them get
+
+184
+00:08:58.745 --> 00:09:01.245
+their best work done inside of their applications
+
+185
+00:09:01.544 --> 00:09:06.540
+for their customers so we didn't train a
+
+186
+00:09:06.540 --> 00:09:08.860
+separate legal model i wanna call that out
+
+187
+00:09:08.860 --> 00:09:10.700
+as well if you had told me a
+
+188
+00:09:10.700 --> 00:09:12.379
+few years ago that the best model in
+
+189
+00:09:12.379 --> 00:09:15.019
+the world for doing legal work would also
+
+190
+00:09:15.019 --> 00:09:16.460
+be the best model in the world for
+
+191
+00:09:16.460 --> 00:09:19.105
+coding i would have been surprised but it
+
+192
+00:09:19.105 --> 00:09:20.944
+turns out that if you give these models
+
+193
+00:09:20.944 --> 00:09:23.284
+access to the same tools that lawyers use
+
+194
+00:09:23.424 --> 00:09:26.065
+that's what helps make them good at legal
+
+195
+00:09:26.065 --> 00:09:30.004
+work so we need to ground them in
+
+196
+00:09:30.850 --> 00:09:35.350
+primary sources and authoritative work with citation faithfulness
+
+197
+00:09:36.290 --> 00:09:39.169
+to ensure that claude can understand these long
+
+198
+00:09:39.169 --> 00:09:43.090
+documents with consistency through large context windows and
+
+199
+00:09:43.090 --> 00:09:47.254
+following nuanced instructions those are all general reasoning
+
+200
+00:09:47.254 --> 00:09:48.855
+skills and they're things that our model are
+
+201
+00:09:48.934 --> 00:09:53.414
+is really good at already so again don't
+
+202
+00:09:53.414 --> 00:09:55.254
+take it from us listen to our partners
+
+203
+00:09:55.254 --> 00:10:03.200
+on this as well and let's keep moving
+
+204
+00:10:03.200 --> 00:10:09.759
+through here and we through through deploying these
+
+205
+00:10:09.759 --> 00:10:11.920
+types of tools again cloud can be the
+
+206
+00:10:11.920 --> 00:10:13.920
+best at that type of work i like
+
+207
+00:10:13.920 --> 00:10:17.865
+to think of this a bit as i
+
+208
+00:10:17.865 --> 00:10:19.384
+i reflect back to our first legal plug
+
+209
+00:10:19.384 --> 00:10:22.024
+in which was very generic i heard so
+
+210
+00:10:22.024 --> 00:10:24.024
+much feedback on linkedin where people were kinda
+
+211
+00:10:24.024 --> 00:10:26.425
+dunking on it and saying like oh i
+
+212
+00:10:26.425 --> 00:10:29.325
+looked at the skills and they're they're very
+
+213
+00:10:29.610 --> 00:10:31.529
+plain it's like how how would this work
+
+214
+00:10:31.529 --> 00:10:34.089
+well for our legal department or our law
+
+215
+00:10:34.089 --> 00:10:36.409
+firm and i would say you're right don't
+
+216
+00:10:36.409 --> 00:10:38.730
+use it out of the box instead it's
+
+217
+00:10:38.730 --> 00:10:40.730
+like buying an off the rack suit it's
+
+218
+00:10:40.730 --> 00:10:42.250
+gonna be better when you get it custom
+
+219
+00:10:42.250 --> 00:10:44.894
+tailored to fit you well and so with
+
+220
+00:10:44.894 --> 00:10:47.774
+these new 12 practice area plug ins all
+
+221
+00:10:47.774 --> 00:10:50.414
+of them have a custom onboarding experience that
+
+222
+00:10:50.414 --> 00:10:53.375
+asks you about your practice your company your
+
+223
+00:10:53.375 --> 00:10:55.615
+playbooks and it tailors it out of the
+
+224
+00:10:55.615 --> 00:10:58.480
+box it it really helps meet you where
+
+225
+00:10:58.480 --> 00:11:01.759
+you are and so instead of just having
+
+226
+00:11:01.759 --> 00:11:04.159
+one legal plug in we now have 12
+
+227
+00:11:04.159 --> 00:11:07.120
+of these practice area plug ins things for
+
+228
+00:11:07.120 --> 00:11:10.445
+in house lawyers like commercial product privacy employment
+
+229
+00:11:10.445 --> 00:11:15.404
+employment governance and regulatory corporate litigation and ip
+
+230
+00:11:15.404 --> 00:11:18.285
+things that either in house or people working
+
+231
+00:11:18.285 --> 00:11:20.544
+at law firms can can tackle as well
+
+232
+00:11:20.684 --> 00:11:24.330
+and then we also launched plugins for law
+
+233
+00:11:24.330 --> 00:11:26.809
+students that focus on the socratic method so
+
+234
+00:11:26.809 --> 00:11:28.490
+it's less focused on giving you the right
+
+235
+00:11:28.490 --> 00:11:30.990
+answers and it's more about the learning process
+
+236
+00:11:31.610 --> 00:11:33.929
+as well as a legal clinic plugin that
+
+237
+00:11:33.929 --> 00:11:37.690
+helps ensure there's supervision and then also a
+
+238
+00:11:37.690 --> 00:11:40.264
+legal builder hub which is a bit recursive
+
+239
+00:11:40.485 --> 00:11:43.524
+it helps you build new plug ins and
+
+240
+00:11:43.524 --> 00:11:46.325
+skills and it also helps you review open
+
+241
+00:11:46.325 --> 00:11:48.745
+source or other community plug ins and skills
+
+242
+00:11:48.884 --> 00:11:51.044
+to ensure that they're meeting the governance needs
+
+243
+00:11:51.044 --> 00:11:56.299
+of your organization these are all or many
+
+244
+00:11:56.299 --> 00:11:58.779
+of these are cookbooks that are deployable as
+
+245
+00:11:58.779 --> 00:12:00.620
+cloud managed agents for those of you watching
+
+246
+00:12:00.620 --> 00:12:02.779
+that are in the legal technology space you
+
+247
+00:12:02.779 --> 00:12:05.615
+can deploy these plugins they're open source we
+
+248
+00:12:05.615 --> 00:12:07.534
+want you to remix them we want you
+
+249
+00:12:07.534 --> 00:12:10.254
+to to edit them and we're so excited
+
+250
+00:12:10.254 --> 00:12:12.095
+to see what you build with these and
+
+251
+00:12:12.095 --> 00:12:13.934
+we think this is just a start again
+
+252
+00:12:13.934 --> 00:12:15.954
+we've launched one legal plug in in february
+
+253
+00:12:16.174 --> 00:12:18.754
+it's now may the there's gonna be incremental
+
+254
+00:12:18.815 --> 00:12:21.440
+progress along the way and there's so many
+
+255
+00:12:22.700 --> 00:12:24.379
+different types of legal work that we haven't
+
+256
+00:12:24.379 --> 00:12:26.540
+even scratched the surface on here and i'd
+
+257
+00:12:26.540 --> 00:12:29.660
+be excited to see people building plugins for
+
+258
+00:12:29.660 --> 00:12:33.044
+immigration law or environmental law or tax law
+
+259
+00:12:33.204 --> 00:12:35.204
+there's so much more that we could do
+
+260
+00:12:35.524 --> 00:12:38.245
+to build out that taxonomy and ensure that
+
+261
+00:12:38.245 --> 00:12:40.004
+we are helping lawyers get their best work
+
+262
+00:12:40.004 --> 00:12:42.004
+done and i wanna see what you build
+
+263
+00:12:42.004 --> 00:12:44.184
+so please share on linkedin and and elsewhere
+
+264
+00:12:45.204 --> 00:12:46.804
+so we're we're really excited to be part
+
+265
+00:12:46.804 --> 00:12:51.250
+of this journey together as a community so
+
+266
+00:12:51.250 --> 00:12:53.429
+if plugins are the brain in these playbooks
+
+267
+00:12:53.889 --> 00:12:56.690
+connectors are the hands this is how claude
+
+268
+00:12:56.690 --> 00:12:59.250
+reaches into where your documents already live and
+
+269
+00:12:59.250 --> 00:13:02.264
+it's it's not just copy paste theater so
+
+270
+00:13:02.264 --> 00:13:06.024
+starting in one one application having to cut
+
+271
+00:13:06.024 --> 00:13:08.184
+and paste a large body of information put
+
+272
+00:13:08.184 --> 00:13:10.424
+it in another this is coverage across the
+
+273
+00:13:10.424 --> 00:13:15.570
+stack things like contracts or clm tools many
+
+274
+00:13:15.570 --> 00:13:17.330
+of the best of breed solutions here are
+
+275
+00:13:17.330 --> 00:13:20.850
+now part of our mcp community and are
+
+276
+00:13:20.850 --> 00:13:24.850
+available to connect inside of cloud things like
+
+277
+00:13:24.850 --> 00:13:29.115
+documents and deal rooms research case law things
+
+278
+00:13:29.115 --> 00:13:32.634
+like that fiduciary grade ai we're so excited
+
+279
+00:13:32.634 --> 00:13:35.274
+about our partnership with thomson reuters and co
+
+280
+00:13:35.274 --> 00:13:37.995
+counsel where you can ensure that you are
+
+281
+00:13:37.995 --> 00:13:41.934
+grounding your work in these authoritative primary sources
+
+282
+00:13:42.149 --> 00:13:44.149
+and you can do deep research and and
+
+283
+00:13:44.149 --> 00:13:47.830
+tap into thomson reuters solutions and maybe kick
+
+284
+00:13:47.830 --> 00:13:49.590
+off a journey in claude and once you
+
+285
+00:13:49.590 --> 00:13:52.149
+need to do deeper work go into their
+
+286
+00:13:52.149 --> 00:13:54.735
+portal and continue to do your research there
+
+287
+00:13:55.774 --> 00:13:57.615
+these are all built on mcp which is
+
+288
+00:13:57.615 --> 00:14:00.414
+an open standard and two things that means
+
+289
+00:14:00.414 --> 00:14:02.894
+for you your it and security teams can
+
+290
+00:14:02.894 --> 00:14:06.914
+govern them centrally with allow lists audit trails
+
+291
+00:14:07.054 --> 00:14:09.149
+and scopes and the other thing is if
+
+292
+00:14:09.149 --> 00:14:11.309
+your tool isn't on the slide you can
+
+293
+00:14:11.309 --> 00:14:13.309
+build the connector so again the door is
+
+294
+00:14:13.309 --> 00:14:16.910
+open i'd highlight some of the other tools
+
+295
+00:14:16.910 --> 00:14:19.629
+available here things like ediscovery we've heard from
+
+296
+00:14:19.629 --> 00:14:22.245
+so many litigators who are excited to be
+
+297
+00:14:22.245 --> 00:14:24.585
+able to make sense of large bodies of
+
+298
+00:14:24.644 --> 00:14:27.524
+of depositions and spot themes and and make
+
+299
+00:14:27.524 --> 00:14:30.725
+sense of of information using claude we're also
+
+300
+00:14:30.725 --> 00:14:33.225
+really excited about these legal ai and networks
+
+301
+00:14:34.659 --> 00:14:37.779
+harvey has mcp connectors so you can tap
+
+302
+00:14:37.779 --> 00:14:40.179
+into their all in one solutions and and
+
+303
+00:14:40.179 --> 00:14:43.700
+their incredible product offering that they have love
+
+304
+00:14:43.700 --> 00:14:46.440
+has a an amazing community of skill builders
+
+305
+00:14:46.764 --> 00:14:48.684
+that we can tap into as well things
+
+306
+00:14:48.684 --> 00:14:51.324
+like solve intelligence for patent and and ip
+
+307
+00:14:51.324 --> 00:14:54.065
+work the l suite has launched two mcps
+
+308
+00:14:54.204 --> 00:14:56.924
+not just one but two and then our
+
+309
+00:14:56.924 --> 00:15:00.384
+public service connectors as well things like boardwise
+
+310
+00:15:00.740 --> 00:15:03.240
+courtroom five describe and the free law project
+
+311
+00:15:04.019 --> 00:15:06.019
+i'll talk a bit more about democratizing legal
+
+312
+00:15:06.019 --> 00:15:10.100
+access in a second i wanna just highlight
+
+313
+00:15:10.100 --> 00:15:12.179
+again the claude works where lawyers work and
+
+314
+00:15:12.179 --> 00:15:14.419
+where your legal team works directly inside of
+
+315
+00:15:14.419 --> 00:15:17.434
+microsoft three sixty five and carrying matter context
+
+316
+00:15:17.495 --> 00:15:21.334
+across all of these apps so we're not
+
+317
+00:15:21.334 --> 00:15:22.934
+asking you all to learn a new tool
+
+318
+00:15:22.934 --> 00:15:24.934
+we're putting cloud inside of these tools and
+
+319
+00:15:24.934 --> 00:15:28.054
+it carries matter context so for word you
+
+320
+00:15:28.054 --> 00:15:30.659
+can do drafting or redlining or clause by
+
+321
+00:15:30.659 --> 00:15:34.019
+clause comparison against your playbook you can track
+
+322
+00:15:34.019 --> 00:15:36.740
+changes where you already work all day harry's
+
+323
+00:15:36.740 --> 00:15:38.419
+gonna do a awesome demo in a second
+
+324
+00:15:38.419 --> 00:15:41.639
+that i'm really excited about doing tabular review
+
+325
+00:15:41.779 --> 00:15:46.514
+happening inside of excel and then for many
+
+326
+00:15:46.514 --> 00:15:48.674
+of us oftentimes we do our legal analysis
+
+327
+00:15:48.674 --> 00:15:50.035
+but then we have to go into a
+
+328
+00:15:50.035 --> 00:15:53.634
+boardroom or present in in front of others
+
+329
+00:15:53.634 --> 00:15:56.514
+to share our legal research and analysis and
+
+330
+00:15:56.514 --> 00:15:59.240
+claude can help you with your powerpoints to
+
+331
+00:15:59.240 --> 00:16:00.600
+to be able to create those types of
+
+332
+00:16:00.600 --> 00:16:03.500
+summaries and client updates from the matter record
+
+333
+00:16:04.360 --> 00:16:06.039
+so we're really excited to do a demo
+
+334
+00:16:06.039 --> 00:16:09.080
+about these in a second and again claude
+
+335
+00:16:09.080 --> 00:16:11.320
+cowork is powering many of this with multi
+
+336
+00:16:11.320 --> 00:16:14.365
+document work you can kick things off in
+
+337
+00:16:14.365 --> 00:16:16.605
+cowork and create a document and then dive
+
+338
+00:16:16.605 --> 00:16:19.804
+into it so that claude continues and it
+
+339
+00:16:19.804 --> 00:16:22.204
+understands the context and then we also have
+
+340
+00:16:22.204 --> 00:16:24.524
+claude projects which is a persistent matter workspace
+
+341
+00:16:24.524 --> 00:16:27.000
+where the precedents and prior drafts can all
+
+342
+00:16:27.000 --> 00:16:29.419
+be saved and carry across all these conversations
+
+343
+00:16:33.559 --> 00:16:35.639
+and this is the slide i care about
+
+344
+00:16:35.639 --> 00:16:39.195
+most personally frontier ai for legal shouldn't only
+
+345
+00:16:39.195 --> 00:16:42.014
+belong to to firms with huge innovation budgets
+
+346
+00:16:42.795 --> 00:16:44.555
+it's really important to many of us inside
+
+347
+00:16:44.555 --> 00:16:48.875
+of anthropic's legal department that that we ensure
+
+348
+00:16:48.875 --> 00:16:51.195
+that we were dom democratizing legal access with
+
+349
+00:16:51.195 --> 00:16:53.774
+this launch and had access to justice connectors
+
+350
+00:16:53.915 --> 00:16:56.740
+live things like free law project with millions
+
+351
+00:16:56.740 --> 00:17:00.659
+of opinions citation data and dockets things like
+
+352
+00:17:00.659 --> 00:17:03.959
+describe for primary law research in courtroom five
+
+353
+00:17:04.659 --> 00:17:07.460
+i loved that sonia ebron from the ceo
+
+354
+00:17:07.460 --> 00:17:09.845
+of courtroom five shared this on linkedin and
+
+355
+00:17:09.845 --> 00:17:13.305
+talked about how over 80% of civil litigants
+
+356
+00:17:13.845 --> 00:17:16.325
+show up without a lawyer today and we're
+
+357
+00:17:16.325 --> 00:17:17.525
+so excited that we can be part of
+
+358
+00:17:17.525 --> 00:17:20.005
+this justice tech movement and ensure that these
+
+359
+00:17:20.005 --> 00:17:23.230
+tools are available for more people who need
+
+360
+00:17:23.230 --> 00:17:25.950
+them most right now and so i wanna
+
+361
+00:17:25.950 --> 00:17:29.250
+call out that through claude for nonprofits qualifying
+
+362
+00:17:29.309 --> 00:17:33.230
+clinics public defenders nonprofits get discounted pricing so
+
+363
+00:17:33.230 --> 00:17:35.984
+if you're listening right now and that's of
+
+364
+00:17:35.984 --> 00:17:37.664
+interest to you please check out cloud for
+
+365
+00:17:37.664 --> 00:17:41.664
+nonprofits to get those discounts so again if
+
+366
+00:17:41.664 --> 00:17:45.265
+i i wanna i i wanna just quickly
+
+367
+00:17:45.265 --> 00:17:47.759
+quote something sonia yvonne shared she said that
+
+368
+00:17:47.759 --> 00:17:49.359
+cloud helps people meet them where they are
+
+369
+00:17:49.359 --> 00:17:51.119
+in the moment they're scared and searching for
+
+370
+00:17:51.119 --> 00:17:54.160
+answers that's the bar whether it's a solo
+
+371
+00:17:54.160 --> 00:17:56.880
+practitioner a small gc office a legal aid
+
+372
+00:17:56.880 --> 00:17:59.279
+clinic it's the same leverage for anyone listening
+
+373
+00:17:59.279 --> 00:18:05.345
+to this call right now alright wanna share
+
+374
+00:18:05.345 --> 00:18:07.505
+some quotes i'm not gonna read all these
+
+375
+00:18:07.505 --> 00:18:10.404
+off but there's three different vantage points here
+
+376
+00:18:10.865 --> 00:18:13.744
+we've got a law firm who we're excited
+
+377
+00:18:13.744 --> 00:18:16.220
+to partner with talking about not just how
+
+378
+00:18:16.220 --> 00:18:17.980
+they use it but how they're helping us
+
+379
+00:18:17.980 --> 00:18:21.179
+co develop and learn from feedback from law
+
+380
+00:18:21.179 --> 00:18:24.079
+firms that are working with clients to incorporate
+
+381
+00:18:24.299 --> 00:18:29.014
+ai into into their workflows i wanna share
+
+382
+00:18:29.315 --> 00:18:32.034
+from accenture and then i also wanna give
+
+383
+00:18:32.034 --> 00:18:34.194
+a call a shout out to crosby ryan
+
+384
+00:18:34.194 --> 00:18:36.375
+daniels has a great a great quote here
+
+385
+00:18:36.514 --> 00:18:38.754
+about how cloud for word is putting agents
+
+386
+00:18:38.754 --> 00:18:47.409
+inside of daily workflows and here at anthropic
+
+387
+00:18:47.409 --> 00:18:50.849
+legal we consider ourselves customer zero we don't
+
+388
+00:18:50.849 --> 00:18:52.609
+just sell ai to legal teams we're using
+
+389
+00:18:52.609 --> 00:18:55.329
+it ourselves whether it's our commercial team doing
+
+390
+00:18:55.329 --> 00:18:58.075
+contract review to cut down on the time
+
+391
+00:18:58.075 --> 00:18:59.434
+it takes us to do red lines at
+
+392
+00:18:59.434 --> 00:19:02.554
+a at a hypergrowth company like anthropic doing
+
+393
+00:19:02.554 --> 00:19:06.234
+litigation support doing transcript searches doing privacy impact
+
+394
+00:19:06.234 --> 00:19:08.315
+assessments and cutting down our time it takes
+
+395
+00:19:08.315 --> 00:19:10.315
+to to do those reviews so we can
+
+396
+00:19:10.315 --> 00:19:13.319
+focus on strategic decisions and then things like
+
+397
+00:19:13.319 --> 00:19:17.079
+patent prioritization patentable ideas surface from product briefs
+
+398
+00:19:17.079 --> 00:19:22.440
+and code alright enough from me let's hear
+
+399
+00:19:22.440 --> 00:19:24.279
+from harry i'd love to see some live
+
+400
+00:19:24.279 --> 00:19:26.279
+demos this is whatever i wants to see
+
+401
+00:19:26.279 --> 00:19:28.494
+they wanna see this at work so let
+
+402
+00:19:28.494 --> 00:19:30.494
+me pass it over to harry to do
+
+403
+00:19:30.494 --> 00:19:32.335
+a live demo of some corporate m and
+
+404
+00:19:32.335 --> 00:19:37.855
+a work amazing okay so let me share
+
+405
+00:19:37.855 --> 00:19:41.234
+my screen mark and i will just switch
+
+406
+00:19:41.454 --> 00:19:47.889
+over and mark keep me honest give me
+
+407
+00:19:47.889 --> 00:19:50.129
+a quick thumbs up when you can see
+
+408
+00:19:50.129 --> 00:19:56.295
+what's on the screen looks great okay so
+
+409
+00:19:56.455 --> 00:19:59.414
+we're getting in box today the reason we're
+
+410
+00:19:59.414 --> 00:20:02.535
+setting some stage here is because i am
+
+411
+00:20:02.535 --> 00:20:05.335
+harry in real life i am obviously not
+
+412
+00:20:05.335 --> 00:20:07.835
+this persona but i'm taking on the persona
+
+413
+00:20:08.134 --> 00:20:11.849
+of corporate counsel in house at a company
+
+414
+00:20:11.909 --> 00:20:16.470
+called pluto so we are currently undergoing the
+
+415
+00:20:16.470 --> 00:20:20.630
+m and a process of acme for their
+
+416
+00:20:20.630 --> 00:20:23.750
+data assets so there is a virtual data
+
+417
+00:20:23.750 --> 00:20:25.471
+room that we're looking at here or a
+
+418
+00:20:25.471 --> 00:20:28.884
+virtual deal room with a variety of different
+
+419
+00:20:28.884 --> 00:20:31.765
+material contracts whether it's you know order forms
+
+420
+00:20:31.765 --> 00:20:34.805
+dpas sows etcetera and this should be familiar
+
+421
+00:20:34.805 --> 00:20:36.085
+to quite a few of you on the
+
+422
+00:20:36.085 --> 00:20:39.700
+line today in terms of actually parsing through
+
+423
+00:20:39.700 --> 00:20:43.460
+these taking you know very minute looks at
+
+424
+00:20:43.460 --> 00:20:45.720
+the the data here in front of you
+
+425
+00:20:46.180 --> 00:20:48.579
+so i wanna pop over to obviously what
+
+426
+00:20:48.579 --> 00:20:50.740
+we'll be talking about here today which is
+
+427
+00:20:50.740 --> 00:20:54.125
+co work so a lot of you on
+
+428
+00:20:54.125 --> 00:20:56.205
+this webinar today may have already played around
+
+429
+00:20:56.205 --> 00:20:58.205
+with co work at varying degrees i'm already
+
+430
+00:20:58.205 --> 00:21:00.525
+reading through the q and a and i'm
+
+431
+00:21:00.525 --> 00:21:02.705
+smiling because a lot of folks you know
+
+432
+00:21:02.765 --> 00:21:05.644
+are have experienced across a variety of the
+
+433
+00:21:05.644 --> 00:21:08.039
+spectrum whether you've you know you're interested in
+
+434
+00:21:08.039 --> 00:21:09.799
+claude and and you haven't hopped in yet
+
+435
+00:21:09.799 --> 00:21:11.900
+or you've been using it and you're really
+
+436
+00:21:12.200 --> 00:21:14.359
+knocking on the door of becoming a power
+
+437
+00:21:14.359 --> 00:21:17.480
+user hopefully we'll show things that resonate with
+
+438
+00:21:17.480 --> 00:21:19.720
+both camps today and everyone in between so
+
+439
+00:21:19.960 --> 00:21:22.944
+where do we start with cowork and claude
+
+440
+00:21:22.944 --> 00:21:25.585
+desktop in general so i'm on the page
+
+441
+00:21:25.585 --> 00:21:28.224
+that's called customize if i go back to
+
+442
+00:21:28.224 --> 00:21:30.404
+my main page you can see the customize
+
+443
+00:21:31.025 --> 00:21:32.944
+button on the left hand side this is
+
+444
+00:21:32.944 --> 00:21:36.779
+where you can actually add the relevant whether
+
+445
+00:21:36.779 --> 00:21:39.740
+it's the plug ins and i wanna emphasize
+
+446
+00:21:39.740 --> 00:21:42.779
+plug ins again i know mark talked about
+
+447
+00:21:42.940 --> 00:21:44.539
+you know this question came up in our
+
+448
+00:21:44.539 --> 00:21:47.259
+last webinar what are plug ins within the
+
+449
+00:21:47.259 --> 00:21:50.134
+cloud ecosystem right and plug ins are and
+
+450
+00:21:50.134 --> 00:21:52.855
+you can i i think the illustration does
+
+451
+00:21:52.855 --> 00:21:55.734
+a better job than myself at illustrating what
+
+452
+00:21:55.734 --> 00:21:57.174
+plug ins actually are but they are a
+
+453
+00:21:57.174 --> 00:21:59.894
+toolbox you can think of each individual plug
+
+454
+00:21:59.894 --> 00:22:02.375
+in as its own toolbox and within the
+
+455
+00:22:02.375 --> 00:22:05.670
+toolbox itself the different tools to actually help
+
+456
+00:22:05.670 --> 00:22:08.390
+accomplish your day to day workflows can be
+
+457
+00:22:08.390 --> 00:22:10.710
+things like skills they can be things like
+
+458
+00:22:10.710 --> 00:22:14.470
+connectors which relate to the mcp protocol that
+
+459
+00:22:14.470 --> 00:22:16.730
+mark mentioned previously and they can also be
+
+460
+00:22:17.315 --> 00:22:19.875
+things called agents which i won't dive as
+
+461
+00:22:19.875 --> 00:22:21.954
+much into today but there's a variety of
+
+462
+00:22:21.954 --> 00:22:23.954
+tools in this toolbox and on the outside
+
+463
+00:22:23.954 --> 00:22:25.954
+of this toolbox you might label it something
+
+464
+00:22:25.954 --> 00:22:29.400
+like corporate league corporate legal or commercial legal
+
+465
+00:22:29.720 --> 00:22:32.519
+or ip legal etcetera and this is a
+
+466
+00:22:32.519 --> 00:22:35.320
+great segue into our plug in marketplace and
+
+467
+00:22:35.320 --> 00:22:37.480
+if you open up the marketplace you can
+
+468
+00:22:37.480 --> 00:22:39.000
+see i just clicked that plus button and
+
+469
+00:22:39.000 --> 00:22:41.640
+i clicked the marketplace button there is a
+
+470
+00:22:41.640 --> 00:22:43.980
+variety of different plugins that you can install
+
+471
+00:22:44.039 --> 00:22:46.704
+obviously i will go to the legal plugins
+
+472
+00:22:46.704 --> 00:22:49.444
+first and you can see those 12 different
+
+473
+00:22:49.664 --> 00:22:52.304
+plugins that we just released that mark mentioned
+
+474
+00:22:52.304 --> 00:22:57.904
+previously in ip employment you know litigation product
+
+475
+00:22:57.904 --> 00:22:59.849
+etcetera but if i click into one of
+
+476
+00:22:59.849 --> 00:23:03.369
+these so by clicking the commercial legal you
+
+477
+00:23:03.369 --> 00:23:05.769
+can see all of the individual again these
+
+478
+00:23:05.769 --> 00:23:08.330
+tools that are part of this toolbox in
+
+479
+00:23:08.330 --> 00:23:10.730
+general so the connectors that are relevant some
+
+480
+00:23:10.730 --> 00:23:12.330
+of the skills that you'll have at your
+
+481
+00:23:12.330 --> 00:23:14.474
+fingertips to actually operate on as well as
+
+482
+00:23:14.474 --> 00:23:17.275
+the individual agents yourself and it's very easy
+
+483
+00:23:17.275 --> 00:23:18.954
+to install all you click is the plus
+
+484
+00:23:18.954 --> 00:23:21.275
+button and this should be available to you
+
+485
+00:23:21.275 --> 00:23:23.674
+in your cloud desktop instance as well as
+
+486
+00:23:23.674 --> 00:23:26.015
+connectors i have yes i have an idea
+
+487
+00:23:26.394 --> 00:23:28.154
+i've been following the chat and it seems
+
+488
+00:23:28.154 --> 00:23:30.740
+like people wanna learn more about what's actually
+
+489
+00:23:30.799 --> 00:23:33.839
+inside of these plugins to maybe help mystify
+
+490
+00:23:33.839 --> 00:23:36.420
+it a bit do you think we could
+
+491
+00:23:36.480 --> 00:23:38.799
+actually show them the github folder to to
+
+492
+00:23:38.799 --> 00:23:41.839
+like maybe demystify and and help them see
+
+493
+00:23:41.839 --> 00:23:44.974
+under the hood yeah let's pull up that
+
+494
+00:23:44.974 --> 00:23:46.974
+github folder give me a second to get
+
+495
+00:23:46.974 --> 00:23:48.734
+there unless you have it on your side
+
+496
+00:23:48.734 --> 00:23:50.494
+but i can pull it up very quickly
+
+497
+00:23:50.494 --> 00:23:52.654
+on my side i'll drop it in the
+
+498
+00:23:52.654 --> 00:23:55.054
+chat to you okay i think i have
+
+499
+00:23:55.054 --> 00:23:57.630
+it here yeah here we go perfect okay
+
+500
+00:23:57.630 --> 00:24:01.230
+we're we're good to go so for those
+
+501
+00:24:01.230 --> 00:24:04.269
+not familiar with our legal plugins they are
+
+502
+00:24:04.269 --> 00:24:09.069
+accessible and open sourced online publicly for everyone
+
+503
+00:24:09.069 --> 00:24:11.809
+to not just peruse through but i think
+
+504
+00:24:12.325 --> 00:24:15.045
+mark made a great point previously but actually
+
+505
+00:24:15.045 --> 00:24:17.205
+building these legal plugins as well you have
+
+506
+00:24:17.205 --> 00:24:19.684
+a legal builder hub to help make your
+
+507
+00:24:19.684 --> 00:24:24.265
+plugins compliant and custom and really fit around
+
+508
+00:24:24.325 --> 00:24:27.365
+what your workflows are wherever you work out
+
+509
+00:24:27.365 --> 00:24:29.919
+of so all of these plugins are held
+
+510
+00:24:29.919 --> 00:24:33.380
+in different folders in a github repository now
+
+511
+00:24:33.519 --> 00:24:35.279
+when i say the word github and when
+
+512
+00:24:35.279 --> 00:24:37.440
+i say repository a lot of folks that
+
+513
+00:24:37.440 --> 00:24:40.819
+are maybe not coming from technical backgrounds often
+
+514
+00:24:41.275 --> 00:24:42.954
+you know there's a little bit bit of
+
+515
+00:24:42.954 --> 00:24:45.434
+hesitancy when actually looking at a screen like
+
+516
+00:24:45.434 --> 00:24:48.414
+this i wanna emphasize all of these folders
+
+517
+00:24:48.795 --> 00:24:52.075
+hold plugins that are written in complete natural
+
+518
+00:24:52.075 --> 00:24:54.474
+language i e english so if we click
+
+519
+00:24:54.474 --> 00:24:56.315
+into one of these and mark i would
+
+520
+00:24:56.315 --> 00:24:59.710
+love yeah let's do commercial legal commentary over
+
+521
+00:24:59.710 --> 00:25:02.269
+this as well let's let's let's go to
+
+522
+00:25:02.269 --> 00:25:06.750
+commercial legal so as harry just shared they're
+
+523
+00:25:06.750 --> 00:25:08.830
+they're all written i'll hand off to you
+
+524
+00:25:08.830 --> 00:25:10.670
+mark yeah thanks yeah i was just gonna
+
+525
+00:25:10.670 --> 00:25:13.684
+say they're all written in natural plain language
+
+526
+00:25:13.845 --> 00:25:16.404
+they should be easy to to follow it's
+
+527
+00:25:16.404 --> 00:25:19.125
+just like a little different for lawyers to
+
+528
+00:25:19.125 --> 00:25:21.525
+be you know in the github space we're
+
+529
+00:25:21.525 --> 00:25:24.484
+we're used to working in in microsoft word
+
+530
+00:25:24.484 --> 00:25:26.085
+documents and things like that and so i
+
+531
+00:25:26.085 --> 00:25:31.420
+was sort of surprised when suddenly a few
+
+532
+00:25:31.420 --> 00:25:33.839
+months ago i was pushing code into github
+
+533
+00:25:34.619 --> 00:25:37.740
+but after a a little bit of tinkering
+
+534
+00:25:37.740 --> 00:25:39.820
+i realized that it wasn't that weird this
+
+535
+00:25:39.820 --> 00:25:42.284
+is sort of the way that lawyers are
+
+536
+00:25:42.284 --> 00:25:44.784
+doing work today as as lawyers and builders
+
+537
+00:25:45.085 --> 00:25:46.524
+so as you can see in the commercial
+
+538
+00:25:46.524 --> 00:25:50.625
+council plug in there's a list of skills
+
+539
+00:25:51.484 --> 00:25:53.005
+and we're gonna go through the cold start
+
+540
+00:25:53.005 --> 00:25:56.099
+interview in a second which as i mentioned
+
+541
+00:25:56.159 --> 00:25:58.559
+helps you tailor the thing to your own
+
+542
+00:25:58.559 --> 00:26:01.679
+department's needs let's click through to the skills
+
+543
+00:26:01.679 --> 00:26:04.639
+folder at the top if you scroll up
+
+544
+00:26:04.799 --> 00:26:07.759
+yeah let's do it yep and so each
+
+545
+00:26:07.759 --> 00:26:10.994
+skill should be loading let's yeah let's do
+
+546
+00:26:10.994 --> 00:26:16.115
+like nda review perfect let's do it and
+
+547
+00:26:16.115 --> 00:26:19.394
+then click on the markdown file and there
+
+548
+00:26:19.394 --> 00:26:20.994
+it is it's it's just like a set
+
+549
+00:26:20.994 --> 00:26:24.349
+of prepackaged instructions written in plain language that
+
+550
+00:26:24.349 --> 00:26:26.750
+helps give claude what it needs to know
+
+551
+00:26:26.750 --> 00:26:28.829
+how to tackle the work and then once
+
+552
+00:26:28.829 --> 00:26:32.190
+it's paired with your own playbook it knows
+
+553
+00:26:32.190 --> 00:26:34.509
+what to do and that's it it's that
+
+554
+00:26:34.509 --> 00:26:37.775
+simple the the screen that harry was on
+
+555
+00:26:37.775 --> 00:26:40.515
+earlier inside of our app is just installing
+
+556
+00:26:40.734 --> 00:26:44.015
+this code and these instructions underneath the hood
+
+557
+00:26:44.015 --> 00:26:46.755
+in a prepackaged way and then you customize
+
+558
+00:26:46.815 --> 00:26:50.095
+it through interacting with claude and it saves
+
+559
+00:26:50.095 --> 00:26:55.029
+those files locally with your profile so that's
+
+560
+00:26:55.029 --> 00:26:56.809
+what's going on underneath the hood and github
+
+561
+00:26:56.950 --> 00:26:58.710
+maybe we switch back to the app and
+
+562
+00:26:58.710 --> 00:27:00.630
+show them how to actually put it to
+
+563
+00:27:00.630 --> 00:27:05.804
+action absolutely and i wanna emphasize something that
+
+564
+00:27:05.804 --> 00:27:08.924
+mark said you customize this paired with claude
+
+565
+00:27:08.924 --> 00:27:12.204
+so when you see a a markdown file
+
+566
+00:27:12.204 --> 00:27:14.684
+like that even though it is written in
+
+567
+00:27:14.684 --> 00:27:16.924
+english in plain language it can be a
+
+568
+00:27:16.924 --> 00:27:18.764
+little daunting to actually know what to put
+
+569
+00:27:18.764 --> 00:27:22.710
+in the file i i wanna give a
+
+570
+00:27:22.710 --> 00:27:25.690
+a very short anecdote i work with obviously
+
+571
+00:27:25.750 --> 00:27:29.109
+legal teams hr teams finance teams etcetera but
+
+572
+00:27:29.109 --> 00:27:31.049
+also a lot of engineering teams and even
+
+573
+00:27:31.109 --> 00:27:33.190
+developers and engineers that are not familiar with
+
+574
+00:27:33.190 --> 00:27:36.535
+the cloud ecosystem they also have marks on
+
+575
+00:27:36.535 --> 00:27:38.295
+how to customize this do i need to
+
+576
+00:27:38.295 --> 00:27:40.535
+write this full markdown file myself do i
+
+577
+00:27:40.535 --> 00:27:41.894
+you know do i have to follow a
+
+578
+00:27:41.894 --> 00:27:44.615
+certain format make it simple for yourself you
+
+579
+00:27:44.615 --> 00:27:47.195
+can absolutely pair with claude when actually customizing
+
+580
+00:27:47.734 --> 00:27:50.250
+or changing the skills and the markdown files
+
+581
+00:27:50.490 --> 00:27:53.450
+within the plugins themselves if we click over
+
+582
+00:27:53.450 --> 00:27:57.150
+the corporate legal plugin which i will demonstrate
+
+583
+00:27:57.210 --> 00:27:59.849
+today you can see there's this customize button
+
+584
+00:27:59.849 --> 00:28:02.190
+if i click that button it's gonna actually
+
+585
+00:28:02.890 --> 00:28:06.265
+preload a prompt that says customize the corporate
+
+586
+00:28:06.265 --> 00:28:08.105
+legal plug in for me based on my
+
+587
+00:28:08.105 --> 00:28:10.424
+company what is gonna happen if i actually
+
+588
+00:28:10.424 --> 00:28:12.345
+click enter is gonna ask me a few
+
+589
+00:28:12.345 --> 00:28:15.305
+questions on how to customize the plug in
+
+590
+00:28:15.305 --> 00:28:17.549
+the skills in it the connectors in it
+
+591
+00:28:17.630 --> 00:28:20.190
+and how it responds and correlates to all
+
+592
+00:28:20.190 --> 00:28:22.350
+the playbooks and the rules from my use
+
+593
+00:28:22.350 --> 00:28:25.710
+case and my role so again use claude
+
+594
+00:28:25.710 --> 00:28:28.990
+to obviously install download and use the plug
+
+595
+00:28:28.990 --> 00:28:30.830
+ins but also to customize and iterate on
+
+596
+00:28:30.830 --> 00:28:32.225
+the work that you're doing in your day
+
+597
+00:28:32.225 --> 00:28:36.424
+to day as well okay hey i've got
+
+598
+00:28:36.424 --> 00:28:37.785
+mark mark why don't you help me oh
+
+599
+00:28:37.785 --> 00:28:40.105
+yeah go ahead i'm i'm monitoring the the
+
+600
+00:28:40.105 --> 00:28:41.945
+questions i'm gonna chime in every now and
+
+601
+00:28:41.945 --> 00:28:43.984
+then oh please yeah yeah yeah this is
+
+602
+00:28:44.105 --> 00:28:45.900
+keep it interactive someone someone had a great
+
+603
+00:28:45.900 --> 00:28:47.740
+question like what if what if my office
+
+604
+00:28:47.740 --> 00:28:49.340
+or my legal team doesn't already have a
+
+605
+00:28:49.340 --> 00:28:52.539
+playbook and that's such a good question a
+
+606
+00:28:52.539 --> 00:28:55.580
+lot of times the like body of decisions
+
+607
+00:28:55.580 --> 00:28:57.580
+that exist inside of a company are scattered
+
+608
+00:28:57.580 --> 00:29:01.955
+and disparate sources and claude is so good
+
+609
+00:29:01.955 --> 00:29:03.555
+at helping make sense of all those and
+
+610
+00:29:03.555 --> 00:29:06.115
+helping you create a playbook so if you
+
+611
+00:29:06.115 --> 00:29:08.355
+don't already have one to help claude customize
+
+612
+00:29:08.355 --> 00:29:10.275
+the plug in for your department you could
+
+613
+00:29:10.275 --> 00:29:12.355
+say claude help me create a playbook look
+
+614
+00:29:12.355 --> 00:29:14.115
+through this folder of all of our previous
+
+615
+00:29:14.115 --> 00:29:17.440
+existing decisions and and help me i've i've
+
+616
+00:29:17.440 --> 00:29:19.519
+done that on a number of matters here
+
+617
+00:29:19.519 --> 00:29:22.640
+at anthropic where you know we've been in
+
+618
+00:29:22.640 --> 00:29:24.880
+a slack channel making decisions over the course
+
+619
+00:29:24.880 --> 00:29:26.799
+of months and months and i can point
+
+620
+00:29:26.799 --> 00:29:28.559
+it at that channel and it makes sense
+
+621
+00:29:28.559 --> 00:29:30.775
+of those decisions and creates a playbook for
+
+622
+00:29:30.775 --> 00:29:34.455
+us so yeah yeah and and to add
+
+623
+00:29:34.455 --> 00:29:38.315
+on to what mark said truly you get
+
+624
+00:29:38.535 --> 00:29:40.715
+a lot more out of these plug ins
+
+625
+00:29:41.015 --> 00:29:43.335
+by having some of these connectors and data
+
+626
+00:29:43.335 --> 00:29:47.269
+sources actually enabled certainly you can drag and
+
+627
+00:29:47.269 --> 00:29:50.950
+drop files to co work and your session
+
+628
+00:29:50.950 --> 00:29:53.109
+that you're in but you'll notice that even
+
+629
+00:29:53.109 --> 00:29:54.470
+the session that i'm in i have a
+
+630
+00:29:54.470 --> 00:29:58.089
+couple connectors integrated whether it's box slack etcetera
+
+631
+00:29:58.815 --> 00:30:00.974
+and there's a variety of different connectors that
+
+632
+00:30:00.974 --> 00:30:03.315
+correlate with the different plugins that are available
+
+633
+00:30:03.855 --> 00:30:07.054
+today so without further ado mark let's both
+
+634
+00:30:07.054 --> 00:30:10.815
+jump into the persona of a corporate in
+
+635
+00:30:10.815 --> 00:30:15.970
+house counsel at plutoco so we've already loaded
+
+636
+00:30:15.970 --> 00:30:18.769
+the plug in into our cloud desktop and
+
+637
+00:30:18.769 --> 00:30:21.170
+we are now gonna start the cold interview
+
+638
+00:30:21.250 --> 00:30:24.150
+cold start interview process so like mark said
+
+639
+00:30:24.450 --> 00:30:27.825
+previously we don't just install the plug in
+
+640
+00:30:27.825 --> 00:30:29.424
+and expect claude to know everything i think
+
+641
+00:30:29.424 --> 00:30:31.125
+i saw a q and a previously on
+
+642
+00:30:31.265 --> 00:30:33.424
+hallucinations and we can certainly address that a
+
+643
+00:30:33.424 --> 00:30:34.944
+little bit more so at the tail end
+
+644
+00:30:34.944 --> 00:30:38.384
+of this webinar however even two minutes upfront
+
+645
+00:30:38.384 --> 00:30:41.105
+or maybe a full fifteen minute interview is
+
+646
+00:30:41.105 --> 00:30:44.619
+gonna eliminate some of those hallucinations that just
+
+647
+00:30:44.619 --> 00:30:47.580
+generative ai makes in general with very little
+
+648
+00:30:47.580 --> 00:30:50.240
+context because you're giving it the key components
+
+649
+00:30:50.299 --> 00:30:52.380
+of how it can operate within your business
+
+650
+00:30:52.380 --> 00:30:54.619
+and your workflow so for the purpose of
+
+651
+00:30:54.619 --> 00:30:57.434
+the demo i'm gonna click the quick corporate
+
+652
+00:30:57.434 --> 00:30:59.914
+legal setup certainly if you are actually doing
+
+653
+00:30:59.914 --> 00:31:03.274
+this in full you might definitely prefer the
+
+654
+00:31:03.274 --> 00:31:06.095
+the actual full setup and you'll notice that
+
+655
+00:31:06.315 --> 00:31:09.755
+it offers some some very much more critical
+
+656
+00:31:09.755 --> 00:31:11.515
+questions so who's gonna be using this day
+
+657
+00:31:11.515 --> 00:31:14.200
+to day is it a lawyer or legal
+
+658
+00:31:14.200 --> 00:31:17.559
+professional a nonlawyer etcetera i am in this
+
+659
+00:31:17.559 --> 00:31:19.319
+case in this persona a legal professional so
+
+660
+00:31:19.319 --> 00:31:21.319
+that's what i'm gonna be clicking i'm in
+
+661
+00:31:21.319 --> 00:31:23.240
+house and m and a you can cert
+
+662
+00:31:23.319 --> 00:31:25.835
+certainly certainly select more than one but i'm
+
+663
+00:31:25.835 --> 00:31:27.914
+gonna continue with this and mark keep me
+
+664
+00:31:27.914 --> 00:31:30.394
+keep me honest based on our scenario does
+
+665
+00:31:30.394 --> 00:31:32.394
+this seem like what you'd select yourself as
+
+666
+00:31:32.394 --> 00:31:35.115
+well yeah that sounds great that's exactly a
+
+667
+00:31:35.115 --> 00:31:36.815
+a great thing to click for this persona
+
+668
+00:31:37.355 --> 00:31:39.115
+what you're highlighting here is also some of
+
+669
+00:31:39.115 --> 00:31:42.349
+the guardrails we have in place so you
+
+670
+00:31:42.349 --> 00:31:44.669
+know a a lot of people are calling
+
+671
+00:31:44.669 --> 00:31:46.349
+out like what if i'm a legal professional
+
+672
+00:31:46.349 --> 00:31:49.789
+or i'm a student there's guardrails that ensure
+
+673
+00:31:49.789 --> 00:31:53.309
+that people are important decisions are getting flagged
+
+674
+00:31:53.309 --> 00:31:56.315
+for an attorney's review and so that's something
+
+675
+00:31:56.315 --> 00:31:59.914
+that's important to us to prevent unauthorized practice
+
+676
+00:31:59.914 --> 00:32:02.255
+of law and to ensure that people are
+
+677
+00:32:02.394 --> 00:32:05.775
+seeing things flagged for review if there's citations
+
+678
+00:32:05.835 --> 00:32:07.910
+that need to be verified i'm also seeing
+
+679
+00:32:07.910 --> 00:32:10.309
+some questions in there about practicing in other
+
+680
+00:32:10.309 --> 00:32:15.190
+jurisdictions so through this interview process claude can
+
+681
+00:32:15.190 --> 00:32:17.190
+learn if you are based in say brazil
+
+682
+00:32:17.190 --> 00:32:18.789
+so there's a question in the chat about
+
+683
+00:32:18.789 --> 00:32:21.509
+brazil it could then help you get set
+
+684
+00:32:21.509 --> 00:32:23.914
+up with a connector that can ground itself
+
+685
+00:32:23.914 --> 00:32:26.974
+more in the local in the local jurisdiction
+
+686
+00:32:27.115 --> 00:32:30.234
+and local law out of the box i'll
+
+687
+00:32:30.234 --> 00:32:32.954
+admit there's some us centricity in the initial
+
+688
+00:32:32.954 --> 00:32:36.599
+plug ins but through this customization process claude
+
+689
+00:32:36.599 --> 00:32:37.960
+can know that it needs to go get
+
+690
+00:32:37.960 --> 00:32:40.460
+access to other information to ground it in
+
+691
+00:32:40.519 --> 00:32:42.839
+the information that you need for your business
+
+692
+00:32:42.839 --> 00:32:45.559
+or legal practice but yeah let's go back
+
+693
+00:32:45.559 --> 00:32:50.705
+to to project and build here yeah perfect
+
+694
+00:32:50.845 --> 00:32:53.644
+yeah so for the purpose of time claude
+
+695
+00:32:53.644 --> 00:32:55.005
+is asking me to fill out a few
+
+696
+00:32:55.005 --> 00:32:56.845
+more fields i'm actually gonna go ahead and
+
+697
+00:32:56.845 --> 00:32:59.565
+skip this step again these are definitely fields
+
+698
+00:32:59.565 --> 00:33:01.085
+that you'd wanna fill in to fill out
+
+699
+00:33:01.085 --> 00:33:03.244
+your company profile in full so claude has
+
+700
+00:33:03.244 --> 00:33:05.440
+the proper context when operating on the different
+
+701
+00:33:05.440 --> 00:33:07.279
+skills and workflows that you'll be running within
+
+702
+00:33:07.279 --> 00:33:10.000
+your plugins but the most important context that
+
+703
+00:33:10.000 --> 00:33:12.720
+i do wanna give claude is that we
+
+704
+00:33:12.720 --> 00:33:15.440
+are operating on something called project anvil so
+
+705
+00:33:15.440 --> 00:33:18.075
+i'll actually queue that up as a prompt
+
+706
+00:33:18.214 --> 00:33:21.654
+so that claude knows this context again project
+
+707
+00:33:21.654 --> 00:33:24.234
+anvil is our internal name for our company
+
+708
+00:33:24.294 --> 00:33:28.394
+acquiring acme which is you know different company
+
+709
+00:33:28.694 --> 00:33:31.015
+for their data assets so we'll give claude
+
+710
+00:33:31.015 --> 00:33:33.220
+claude that context what's happening right now is
+
+711
+00:33:33.220 --> 00:33:35.299
+you'll notice that it's doing some commands and
+
+712
+00:33:35.299 --> 00:33:37.700
+again if you are curious about what it's
+
+713
+00:33:37.700 --> 00:33:39.380
+doing you can actually click through and see
+
+714
+00:33:39.380 --> 00:33:42.019
+the thought process i wanna also double down
+
+715
+00:33:42.019 --> 00:33:45.265
+on what mark said previously claude has built
+
+716
+00:33:45.265 --> 00:33:47.505
+in guardrails whether it's into the model or
+
+717
+00:33:47.505 --> 00:33:49.664
+into what's called the harness itself and the
+
+718
+00:33:49.664 --> 00:33:51.664
+harness when i refer to that word it
+
+719
+00:33:51.664 --> 00:33:54.785
+is this interface called claude cowork in claude
+
+720
+00:33:54.785 --> 00:33:58.589
+desktop it's a an agentic system that allows
+
+721
+00:33:58.589 --> 00:34:00.750
+the model to operate in the best fashion
+
+722
+00:34:00.750 --> 00:34:02.269
+that it can around the workflows that we're
+
+723
+00:34:02.269 --> 00:34:04.910
+operating on so it's asking me if it
+
+724
+00:34:04.910 --> 00:34:07.710
+can make this folder or make this directory
+
+725
+00:34:07.710 --> 00:34:09.630
+on my desktop i'm go gonna go ahead
+
+726
+00:34:09.630 --> 00:34:13.125
+and click all ways allow to give it
+
+727
+00:34:13.125 --> 00:34:14.905
+the permissions it needs to for this demo
+
+728
+00:34:15.285 --> 00:34:17.125
+but you can also only allow it one
+
+729
+00:34:17.125 --> 00:34:20.164
+time and always have claude surface those permissions
+
+730
+00:34:20.164 --> 00:34:22.724
+to you when it's actually creating folders or
+
+731
+00:34:22.724 --> 00:34:25.684
+even removing or modifying content on your behalf
+
+732
+00:34:25.684 --> 00:34:30.460
+as well so and what it's doing right
+
+733
+00:34:30.460 --> 00:34:33.019
+now is it's writing the profile based on
+
+734
+00:34:33.019 --> 00:34:34.940
+the information that i gave it so that
+
+735
+00:34:34.940 --> 00:34:37.019
+next time around it won't need to go
+
+736
+00:34:37.019 --> 00:34:39.039
+through this interview process and it knows exactly
+
+737
+00:34:39.179 --> 00:34:41.260
+you know the company profile it's operating under
+
+738
+00:34:41.260 --> 00:34:43.074
+it doesn't need to take any assumptions it
+
+739
+00:34:43.074 --> 00:34:44.755
+knows who i am as the user and
+
+740
+00:34:44.755 --> 00:34:46.914
+it knows maybe the most important workflows that
+
+741
+00:34:46.914 --> 00:34:48.474
+we'll be operating on so we'll give claude
+
+742
+00:34:48.474 --> 00:34:50.355
+a little bit of time to write what
+
+743
+00:34:50.755 --> 00:34:52.994
+we're referring to again as the markdown file
+
+744
+00:34:52.994 --> 00:34:55.074
+so that the model knows every single time
+
+745
+00:34:55.074 --> 00:34:58.280
+to load this into context when it's working
+
+746
+00:34:58.280 --> 00:35:01.000
+on these plug ins mark anything you would
+
+747
+00:35:01.000 --> 00:35:04.440
+add in terms of context when you're operating
+
+748
+00:35:04.440 --> 00:35:06.760
+with claude how is this useful in this
+
+749
+00:35:06.760 --> 00:35:09.175
+back and forth interaction in providing the the
+
+750
+00:35:09.175 --> 00:35:11.574
+necessary context for claude in terms of legal
+
+751
+00:35:11.574 --> 00:35:15.014
+workflows yeah i'd it's just so important to
+
+752
+00:35:15.014 --> 00:35:17.175
+to give claude the context that it needs
+
+753
+00:35:17.175 --> 00:35:19.114
+to to be able to be most useful
+
+754
+00:35:19.815 --> 00:35:21.815
+and so i i love to just point
+
+755
+00:35:21.815 --> 00:35:23.639
+it at all of our playbooks i love
+
+756
+00:35:23.639 --> 00:35:25.719
+giving it access to as a product lawyer
+
+757
+00:35:25.719 --> 00:35:27.480
+access to our road maps so it can
+
+758
+00:35:27.480 --> 00:35:30.119
+help me see around corners i'm also seeing
+
+759
+00:35:30.119 --> 00:35:32.599
+a lot of great questions here as you're
+
+760
+00:35:32.599 --> 00:35:35.295
+clicking through on permissioning systems people are very
+
+761
+00:35:35.375 --> 00:35:40.574
+curious about like security and trust and i
+
+762
+00:35:40.574 --> 00:35:43.934
+i wanna emphasize that we are confident that
+
+763
+00:35:43.934 --> 00:35:47.054
+the cloud enterprise plan provides you with the
+
+764
+00:35:47.054 --> 00:35:50.194
+right settings and controls you need to maintain
+
+765
+00:35:50.255 --> 00:35:53.430
+privilege and confidentiality of your important client information
+
+766
+00:35:54.450 --> 00:35:57.010
+there's no training by default on our commercial
+
+767
+00:35:57.010 --> 00:36:00.950
+plans the team plan and enterprise plan and
+
+768
+00:36:01.250 --> 00:36:02.849
+i would encourage you all to check out
+
+769
+00:36:02.849 --> 00:36:04.784
+our trust center to learn more about that
+
+770
+00:36:05.344 --> 00:36:07.204
+i know it's a big question right now
+
+771
+00:36:07.585 --> 00:36:10.885
+there's a lot of changing law around ai
+
+772
+00:36:10.944 --> 00:36:15.105
+and privilege and i i think there's important
+
+773
+00:36:15.105 --> 00:36:17.409
+discussions happening in this space right now but
+
+774
+00:36:17.409 --> 00:36:19.170
+we are confident that the tools we provide
+
+775
+00:36:19.170 --> 00:36:20.849
+allow you to configure things in a way
+
+776
+00:36:20.849 --> 00:36:23.809
+that meets your needs so i would invite
+
+777
+00:36:23.809 --> 00:36:25.670
+you to check out the trust center there
+
+778
+00:36:26.289 --> 00:36:30.155
+in terms of data security as well check
+
+779
+00:36:30.155 --> 00:36:31.675
+out our our trust center for all of
+
+780
+00:36:31.675 --> 00:36:34.315
+the security credentials we have again we are
+
+781
+00:36:34.315 --> 00:36:37.034
+not training by your data by default on
+
+782
+00:36:37.034 --> 00:36:40.474
+our commercial plans which should enable you to
+
+783
+00:36:40.474 --> 00:36:42.155
+set things up and configure things in a
+
+784
+00:36:42.155 --> 00:36:45.199
+way to meet your needs there's also a
+
+785
+00:36:45.199 --> 00:36:47.440
+number of people who are having trouble finding
+
+786
+00:36:47.440 --> 00:36:50.960
+the plug ins anywhere you have co work
+
+787
+00:36:50.960 --> 00:36:52.960
+available the plug ins should be available in
+
+788
+00:36:52.960 --> 00:36:55.359
+the marketplace if you're not seeing them it
+
+789
+00:36:55.359 --> 00:36:57.465
+could be an indicator that your admin if
+
+790
+00:36:57.545 --> 00:36:59.724
+you're on a commercial plan are making use
+
+791
+00:37:00.025 --> 00:37:02.844
+of these role based access controls and other
+
+792
+00:37:03.305 --> 00:37:06.985
+admin settings to review things so reach out
+
+793
+00:37:06.985 --> 00:37:09.644
+to your it team or your admins to
+
+794
+00:37:09.864 --> 00:37:11.704
+get these unblocked and and go through a
+
+795
+00:37:11.704 --> 00:37:14.230
+review with them to ensure you have access
+
+796
+00:37:14.230 --> 00:37:19.349
+if you want to use them yeah perfect
+
+797
+00:37:19.349 --> 00:37:21.349
+while while you were speaking mark it looks
+
+798
+00:37:21.349 --> 00:37:23.190
+like claude finished up here in terms of
+
+799
+00:37:23.190 --> 00:37:27.764
+writing that practice profile so it activated the
+
+800
+00:37:27.764 --> 00:37:29.364
+m and a module we're an in house
+
+801
+00:37:29.364 --> 00:37:32.005
+attorney it knows what connectors are connected and
+
+802
+00:37:32.005 --> 00:37:33.925
+it has some deal context on project handle
+
+803
+00:37:33.925 --> 00:37:37.224
+now so what we'll run now is refer
+
+804
+00:37:37.284 --> 00:37:40.289
+to or use an a different prompt to
+
+805
+00:37:40.449 --> 00:37:43.250
+refer to the virtual deal room in terms
+
+806
+00:37:43.250 --> 00:37:45.170
+of that folder box and you'll notice how
+
+807
+00:37:45.170 --> 00:37:49.170
+i'm not explicitly invoking the box mcp i'm
+
+808
+00:37:49.170 --> 00:37:52.710
+not saying hey please use the box mcp
+
+809
+00:37:52.769 --> 00:37:54.894
+i'm just referring to a name of the
+
+810
+00:37:54.894 --> 00:37:57.615
+tool that these contracts are in and then
+
+811
+00:37:57.615 --> 00:38:00.095
+giving maybe some supplementary info like the deal
+
+812
+00:38:00.095 --> 00:38:04.575
+lead in terms of the corp corp dev
+
+813
+00:38:04.575 --> 00:38:07.135
+persona as well as the target signing etcetera
+
+814
+00:38:07.135 --> 00:38:10.190
+outside counsel for you know for plutoco as
+
+815
+00:38:10.190 --> 00:38:13.250
+well and then i did refer to a
+
+816
+00:38:13.469 --> 00:38:15.730
+skill so let's go ahead and hit enter
+
+817
+00:38:15.789 --> 00:38:18.029
+and i do wanna actually click into the
+
+818
+00:38:18.029 --> 00:38:22.125
+skill to give everyone watching an inside look
+
+819
+00:38:22.125 --> 00:38:23.885
+onto what what that skill is again we
+
+820
+00:38:23.885 --> 00:38:26.204
+reviewed what some of the commercial legal plug
+
+821
+00:38:26.204 --> 00:38:29.824
+in skills looked like such as nda review
+
+822
+00:38:29.885 --> 00:38:32.224
+however we if we click into tabular review
+
+823
+00:38:32.605 --> 00:38:35.630
+within the cloud desktop setup you can easily
+
+824
+00:38:35.849 --> 00:38:39.309
+see exactly what takes place behind the scenes
+
+825
+00:38:39.609 --> 00:38:43.210
+so what's important to know and you this
+
+826
+00:38:43.210 --> 00:38:45.210
+is something that you you can just know
+
+827
+00:38:45.210 --> 00:38:47.449
+once in terms of how cloud works cloud
+
+828
+00:38:47.449 --> 00:38:49.449
+actually takes a look at the description of
+
+829
+00:38:49.449 --> 00:38:53.155
+each scale first to see how one needs
+
+830
+00:38:53.155 --> 00:38:55.175
+to use it so this is a very
+
+831
+00:38:55.315 --> 00:38:57.875
+optimized description that mark and our product team
+
+832
+00:38:57.875 --> 00:39:00.054
+worked on to make sure that claude understands
+
+833
+00:39:00.355 --> 00:39:02.275
+how to operate the skill and then it
+
+834
+00:39:02.275 --> 00:39:04.710
+loads the full skill into the session itself
+
+835
+00:39:04.869 --> 00:39:07.130
+so you can see there is a full
+
+836
+00:39:07.190 --> 00:39:09.589
+step by step process of how the skill
+
+837
+00:39:09.589 --> 00:39:12.969
+exactly should operate and then a lot more
+
+838
+00:39:13.269 --> 00:39:15.909
+specific context around the skill itself so the
+
+839
+00:39:15.909 --> 00:39:20.105
+purpose of the skill what information aka context
+
+840
+00:39:20.105 --> 00:39:23.485
+to load into the system and then certain
+
+841
+00:39:23.545 --> 00:39:27.065
+steps and actually documenting out the details of
+
+842
+00:39:27.065 --> 00:39:30.525
+each of those steps so confirming the documents
+
+843
+00:39:30.744 --> 00:39:33.659
+the schema of those documents building the schema
+
+844
+00:39:33.659 --> 00:39:35.980
+itself in terms of you know change of
+
+845
+00:39:35.980 --> 00:39:40.300
+controls classifications assignments doing some sample runs we
+
+846
+00:39:40.300 --> 00:39:43.659
+don't wanna run you know this tabular review
+
+847
+00:39:43.659 --> 00:39:45.980
+on 200 or 500 documents if we don't
+
+848
+00:39:45.980 --> 00:39:48.494
+test against maybe three to five documents first
+
+849
+00:39:48.715 --> 00:39:50.954
+and then start running against all the documents
+
+850
+00:39:50.954 --> 00:39:53.275
+in your deal room and then finally at
+
+851
+00:39:53.275 --> 00:39:56.635
+the bottom i do want to emphasize it
+
+852
+00:39:56.635 --> 00:40:00.494
+does verification so every cell within the spreadsheet
+
+853
+00:40:00.635 --> 00:40:04.650
+the output deliverable here is indeed a spreadsheet
+
+854
+00:40:04.950 --> 00:40:06.890
+it will get some kind of source citation
+
+855
+00:40:07.349 --> 00:40:09.670
+or a flag state if it cannot be
+
+856
+00:40:09.670 --> 00:40:12.869
+verified so again doubling down on what mark
+
+857
+00:40:12.869 --> 00:40:16.735
+said previously in terms of compliance security as
+
+858
+00:40:16.735 --> 00:40:18.515
+well as some of the questions around hallucinations
+
+859
+00:40:19.375 --> 00:40:22.255
+our models have built in safeguards but even
+
+860
+00:40:22.255 --> 00:40:23.614
+on top of that you can actually write
+
+861
+00:40:23.614 --> 00:40:26.835
+your skills within your plugins to ensure that
+
+862
+00:40:26.894 --> 00:40:28.894
+claude takes another look at the look that
+
+863
+00:40:28.894 --> 00:40:31.760
+it's doing while it's actually analyzing these documents
+
+864
+00:40:33.340 --> 00:40:37.019
+perfect so while it's doing that i'm actually
+
+865
+00:40:37.019 --> 00:40:40.059
+gonna go ahead into act without asking mode
+
+866
+00:40:40.059 --> 00:40:43.605
+so i'll i'll click yes continue for the
+
+867
+00:40:43.605 --> 00:40:46.965
+purpose of you know accepting all of these
+
+868
+00:40:46.965 --> 00:40:50.324
+changes but also for the demo because i
+
+869
+00:40:50.324 --> 00:40:52.565
+know this may take a little bit of
+
+870
+00:40:52.565 --> 00:40:54.664
+time to actually run through all 30 contracts
+
+871
+00:40:55.364 --> 00:40:58.579
+within the virtual deal room i've preloaded an
+
+872
+00:40:58.579 --> 00:41:01.780
+excel file so let's say the run has
+
+873
+00:41:01.780 --> 00:41:04.260
+finished and we are now done with the
+
+874
+00:41:04.260 --> 00:41:06.260
+tableau review in terms of the output of
+
+875
+00:41:06.260 --> 00:41:08.660
+the tableau review so we can see all
+
+876
+00:41:08.660 --> 00:41:11.460
+30 contracts have been reviewed the review date
+
+877
+00:41:11.460 --> 00:41:14.315
+indeed is today and we have a target
+
+878
+00:41:14.315 --> 00:41:16.875
+signing date claude filled all of this in
+
+879
+00:41:16.875 --> 00:41:19.994
+and it did surface six next steps so
+
+880
+00:41:19.994 --> 00:41:23.434
+whether it's drafting disclosure schedules exceptions whether it's
+
+881
+00:41:23.434 --> 00:41:25.674
+briefing the deal lead themselves whether it's building
+
+882
+00:41:25.674 --> 00:41:28.420
+the closing checklist these are six different next
+
+883
+00:41:28.420 --> 00:41:30.260
+steps that claude can help us take and
+
+884
+00:41:30.260 --> 00:41:33.079
+then it certainly surfaced some of the headline
+
+885
+00:41:33.140 --> 00:41:36.019
+numbers in terms of severity blocking high medium
+
+886
+00:41:36.019 --> 00:41:38.500
+and low so for the prompt that we're
+
+887
+00:41:38.500 --> 00:41:41.445
+gonna run it's gonna be fairly simple for
+
+888
+00:41:41.445 --> 00:41:44.724
+c eight and c 12 which are data
+
+889
+00:41:44.724 --> 00:41:47.925
+pulse and skyforge it actually surfaced that there
+
+890
+00:41:47.925 --> 00:41:50.485
+might be some data rights deal breakers in
+
+891
+00:41:50.485 --> 00:41:52.244
+the m and a process and to actually
+
+892
+00:41:52.244 --> 00:41:53.925
+take a closer look at what this looks
+
+893
+00:41:53.925 --> 00:41:55.409
+like if i go to the findings by
+
+894
+00:41:55.409 --> 00:41:57.730
+category tab you can see this is highlighted
+
+895
+00:41:57.730 --> 00:42:00.289
+here as a blocking severity as well so
+
+896
+00:42:00.289 --> 00:42:03.010
+again surfaced from clod so i'm actually gonna
+
+897
+00:42:03.010 --> 00:42:05.889
+run this prompt it's gonna it says pull
+
+898
+00:42:05.889 --> 00:42:08.625
+the exact clog language in each of these
+
+899
+00:42:08.864 --> 00:42:12.465
+different contracts and then put it into a
+
+900
+00:42:12.465 --> 00:42:15.105
+new column next to the flag so it
+
+901
+00:42:15.105 --> 00:42:18.704
+should insert in column h and then have
+
+902
+00:42:18.704 --> 00:42:20.784
+the box deep link there as well in
+
+903
+00:42:20.784 --> 00:42:22.304
+case i actually need to look at the
+
+904
+00:42:22.304 --> 00:42:24.809
+whole document and peruse back to the actual
+
+905
+00:42:24.809 --> 00:42:27.630
+deal room itself and then confirm that these
+
+906
+00:42:27.690 --> 00:42:31.049
+contracts are identical to do that verification work
+
+907
+00:42:31.049 --> 00:42:32.889
+for you now when i moved from i
+
+908
+00:42:32.889 --> 00:42:36.864
+wanna highlight something real quick harry did something
+
+909
+00:42:36.864 --> 00:42:40.625
+really slick there he started off inside of
+
+910
+00:42:40.625 --> 00:42:45.345
+claude using a plug in claude cowork through
+
+911
+00:42:45.345 --> 00:42:49.744
+the plan created an excel document locally on
+
+912
+00:42:49.744 --> 00:42:52.909
+his computer he then opened up that document
+
+913
+00:42:53.449 --> 00:42:55.929
+and the same claude that has all the
+
+914
+00:42:55.929 --> 00:42:58.170
+context of his playbooks is available in the
+
+915
+00:42:58.170 --> 00:43:00.170
+right nav there and so he's using the
+
+916
+00:43:00.170 --> 00:43:02.170
+same plug in with the same skills it
+
+917
+00:43:02.170 --> 00:43:04.429
+has all the context of his existing session
+
+918
+00:43:04.715 --> 00:43:06.315
+and he's just now working on a new
+
+919
+00:43:06.315 --> 00:43:09.215
+surface with all of that available and so
+
+920
+00:43:09.914 --> 00:43:11.994
+claude is moving with you it knows all
+
+921
+00:43:11.994 --> 00:43:14.074
+this information it's working in the types of
+
+922
+00:43:14.074 --> 00:43:16.795
+programs and applications that we already work in
+
+923
+00:43:16.795 --> 00:43:19.989
+as lawyers and it knows what's important to
+
+924
+00:43:19.989 --> 00:43:22.349
+your company and so i think we did
+
+925
+00:43:22.349 --> 00:43:24.549
+a bit of a like food network thing
+
+926
+00:43:24.549 --> 00:43:26.150
+there where it's like we we showed you
+
+927
+00:43:26.150 --> 00:43:27.909
+how we were putting all the the ingredients
+
+928
+00:43:27.909 --> 00:43:29.269
+together and then we pulled the thing out
+
+929
+00:43:29.269 --> 00:43:30.974
+of the oven but what happened was we
+
+930
+00:43:30.974 --> 00:43:33.795
+went from claude inside of the enterprise plan
+
+931
+00:43:34.094 --> 00:43:36.894
+over to another program and this is the
+
+932
+00:43:36.894 --> 00:43:39.534
+output that claude created and now we're talking
+
+933
+00:43:39.534 --> 00:43:41.694
+with that same claude that has all the
+
+934
+00:43:41.694 --> 00:43:44.335
+context it didn't wipe its memory of what
+
+935
+00:43:44.335 --> 00:43:45.989
+it is and what we were doing and
+
+936
+00:43:46.070 --> 00:43:49.429
+and it's just effortlessly continuing the workflow alongside
+
+937
+00:43:49.429 --> 00:43:52.070
+of you and then yeah from here we
+
+938
+00:43:52.070 --> 00:43:54.070
+could go back and and do some other
+
+939
+00:43:54.070 --> 00:43:55.349
+stuff which i think we'll do in a
+
+940
+00:43:55.349 --> 00:43:57.590
+second but that's it's the same cloud going
+
+941
+00:43:57.590 --> 00:43:59.110
+with you with the same plug ins and
+
+942
+00:43:59.110 --> 00:44:01.844
+context pulling from those same markdown files that
+
+943
+00:44:01.844 --> 00:44:05.364
+we created during that onboarding process and it's
+
+944
+00:44:05.364 --> 00:44:07.605
+so effortless it feels quite magical the first
+
+945
+00:44:07.605 --> 00:44:10.344
+time you use it this is pretty transformational
+
+946
+00:44:10.565 --> 00:44:15.430
+in my eyes so yeah yeah and like
+
+947
+00:44:15.430 --> 00:44:17.349
+mark said and thank you for that segue
+
+948
+00:44:17.349 --> 00:44:19.030
+i i didn't do a proper introduction on
+
+949
+00:44:19.030 --> 00:44:20.950
+on the interface that we're looking at this
+
+950
+00:44:20.950 --> 00:44:23.289
+is one of the add add ins within
+
+951
+00:44:23.430 --> 00:44:27.164
+the microsoft suite to use claude so claude
+
+952
+00:44:27.164 --> 00:44:29.644
+for excel as well as this can be
+
+953
+00:44:29.644 --> 00:44:31.724
+connected to a variety of different tools in
+
+954
+00:44:31.724 --> 00:44:33.905
+the o three sixty five suite as well
+
+955
+00:44:34.125 --> 00:44:37.505
+like word like powerpoint like outlook as well
+
+956
+00:44:37.885 --> 00:44:40.125
+so your claude can actually not only connect
+
+957
+00:44:40.125 --> 00:44:42.460
+to cowork but it can connect across the
+
+958
+00:44:42.460 --> 00:44:44.860
+tool that you usually work in across these
+
+959
+00:44:44.860 --> 00:44:47.820
+different services as well and like mark said
+
+960
+00:44:47.820 --> 00:44:50.000
+it does not lose context so it understands
+
+961
+00:44:50.059 --> 00:44:51.820
+the file that it's looking at and also
+
+962
+00:44:51.820 --> 00:44:53.739
+deep links within the file so if i
+
+963
+00:44:53.739 --> 00:44:55.815
+need to let's say click to a different
+
+964
+00:44:55.815 --> 00:44:57.494
+tab and i need to find the tab
+
+965
+00:44:57.494 --> 00:44:59.335
+that that claude is referring to with the
+
+966
+00:44:59.335 --> 00:45:01.414
+output that that it's giving me i can
+
+967
+00:45:01.414 --> 00:45:03.835
+click into you know the findings by category
+
+968
+00:45:04.135 --> 00:45:06.215
+and then go into each of the cells
+
+969
+00:45:06.215 --> 00:45:09.380
+that actually that it's referencing in terms of
+
+970
+00:45:09.380 --> 00:45:11.460
+the output and it looks like claude did
+
+971
+00:45:11.460 --> 00:45:14.440
+tell me that yes the clauses are identical
+
+972
+00:45:14.500 --> 00:45:18.659
+in both contracts and i know from my
+
+973
+00:45:18.659 --> 00:45:21.400
+side because i have knowledge of the demo
+
+974
+00:45:22.505 --> 00:45:25.625
+the ai vendor context is higher risk in
+
+975
+00:45:25.625 --> 00:45:29.465
+terms of subcategory because of the nature of
+
+976
+00:45:29.465 --> 00:45:31.704
+the vendor themselves so what we're gonna do
+
+977
+00:45:31.704 --> 00:45:34.344
+is we we have some knowledge of you
+
+978
+00:45:34.344 --> 00:45:36.985
+know the material contracts we've done some analysis
+
+979
+00:45:36.985 --> 00:45:40.239
+in this excel how do we now brief
+
+980
+00:45:40.239 --> 00:45:42.880
+the proper stakeholders within this process so let's
+
+981
+00:45:42.880 --> 00:45:45.039
+go back to claude and let's open up
+
+982
+00:45:45.039 --> 00:45:48.480
+a new task and we are gonna go
+
+983
+00:45:48.480 --> 00:45:52.585
+ahead and let me go ahead and parse
+
+984
+00:45:52.585 --> 00:45:55.864
+this out just so it's easier to see
+
+985
+00:45:55.864 --> 00:45:58.985
+let's brief the lead on this deal and
+
+986
+00:45:58.985 --> 00:46:01.465
+and write the exact summary based on that
+
+987
+00:46:01.465 --> 00:46:03.305
+file that we were just in so some
+
+988
+00:46:03.305 --> 00:46:05.960
+details in terms of data rights findings as
+
+989
+00:46:05.960 --> 00:46:08.699
+well as maybe the consent schedule for contract
+
+990
+00:46:08.760 --> 00:46:11.559
+nine and twenty three and then simply just
+
+991
+00:46:11.559 --> 00:46:14.359
+post it into the private deal channel in
+
+992
+00:46:14.359 --> 00:46:17.159
+slack for any review and i wanna emphasize
+
+993
+00:46:17.159 --> 00:46:19.559
+here i'm i'm just using slack as a
+
+994
+00:46:19.559 --> 00:46:24.894
+tool however you can certainly use outlook you
+
+995
+00:46:24.894 --> 00:46:26.414
+can use other tools that you might be
+
+996
+00:46:26.414 --> 00:46:29.155
+working on you can use word to draft
+
+997
+00:46:29.215 --> 00:46:32.335
+some kind of review statement etcetera and actually
+
+998
+00:46:32.335 --> 00:46:35.454
+have the review summary land there so if
+
+999
+00:46:35.454 --> 00:46:38.389
+you'll notice that again claude is finding the
+
+1000
+00:46:38.389 --> 00:46:40.789
+tools it already has the context of who
+
+1001
+00:46:40.789 --> 00:46:42.809
+i am because we created that company profile
+
+1002
+00:46:43.029 --> 00:46:45.269
+as well as the user profile so now
+
+1003
+00:46:45.269 --> 00:46:47.750
+it's just creating the right tasks and again
+
+1004
+00:46:47.750 --> 00:46:49.605
+if you're not as familiar with co work
+
+1005
+00:46:49.684 --> 00:46:52.005
+you'll see that on the top right there
+
+1006
+00:46:52.005 --> 00:46:54.085
+is a progress bar so you have a
+
+1007
+00:46:54.085 --> 00:46:57.065
+clear indicator of where you are with cowork
+
+1008
+00:46:57.125 --> 00:46:59.284
+as you're operating in it and where cowork
+
+1009
+00:46:59.284 --> 00:47:03.204
+is going one common piece of feedback that
+
+1010
+00:47:03.204 --> 00:47:05.869
+we often get from users of ai in
+
+1011
+00:47:05.869 --> 00:47:07.869
+general is hey if i put something into
+
+1012
+00:47:07.869 --> 00:47:09.630
+a chat interface i have no idea where
+
+1013
+00:47:09.630 --> 00:47:11.150
+it's gonna end up and the steps that
+
+1014
+00:47:11.150 --> 00:47:12.930
+it's gonna take to get there and cowork
+
+1015
+00:47:13.070 --> 00:47:15.950
+is a tool that we surface to not
+
+1016
+00:47:15.950 --> 00:47:19.789
+only help you build really robust deliverables in
+
+1017
+00:47:19.789 --> 00:47:23.105
+the form of powerpoints excels word documents and
+
+1018
+00:47:23.105 --> 00:47:25.344
+and other deliverables but also give you a
+
+1019
+00:47:25.344 --> 00:47:27.184
+sneak peek into what the model is truly
+
+1020
+00:47:27.184 --> 00:47:29.824
+thinking and actually steer it along the way
+
+1021
+00:47:29.824 --> 00:47:32.704
+as well so it's gonna draft that exec
+
+1022
+00:47:32.704 --> 00:47:35.119
+summary it's gonna search the proper channels in
+
+1023
+00:47:35.119 --> 00:47:38.000
+terms of my slack and then it's gonna
+
+1024
+00:47:38.000 --> 00:47:41.440
+go ahead and not post but ask me
+
+1025
+00:47:41.440 --> 00:47:44.480
+if it's okay to post before actually slacking
+
+1026
+00:47:44.480 --> 00:47:46.574
+the deal channel so we'll let it think
+
+1027
+00:47:46.574 --> 00:47:48.414
+for maybe a minute or so do you
+
+1028
+00:47:48.414 --> 00:47:50.434
+wanna leave some time for some questions afterwards
+
+1029
+00:47:50.894 --> 00:47:52.894
+but mark any other questions from the chat
+
+1030
+00:47:52.894 --> 00:47:55.054
+or maybe some context that you'd like to
+
+1031
+00:47:55.054 --> 00:47:57.074
+to throw in here on how you use
+
+1032
+00:47:58.014 --> 00:48:00.094
+claude for communication in your day to day
+
+1033
+00:48:00.094 --> 00:48:03.130
+as well this is exactly the hero use
+
+1034
+00:48:03.130 --> 00:48:05.690
+case for me where i'm trying to distill
+
+1035
+00:48:05.690 --> 00:48:08.190
+a memo or some sort of legal guidance
+
+1036
+00:48:08.489 --> 00:48:10.730
+and then communicating it out in my voice
+
+1037
+00:48:10.730 --> 00:48:13.769
+and tone so claude knows how i typically
+
+1038
+00:48:13.769 --> 00:48:17.734
+communicate to executives it knows my emoji preferences
+
+1039
+00:48:17.875 --> 00:48:20.835
+inside of slack as a former slack product
+
+1040
+00:48:20.835 --> 00:48:23.394
+counsel that is so important to me and
+
+1041
+00:48:23.394 --> 00:48:25.474
+so it looks quite similar to what you're
+
+1042
+00:48:25.474 --> 00:48:29.714
+showing right now so sometimes i'll say that's
+
+1043
+00:48:29.714 --> 00:48:31.300
+good but could you make this a little
+
+1044
+00:48:31.300 --> 00:48:34.679
+bit more concise please and that's something claude's
+
+1045
+00:48:34.739 --> 00:48:37.780
+quite good at this is so much of
+
+1046
+00:48:37.780 --> 00:48:39.539
+what being an in house lawyer looks like
+
+1047
+00:48:39.539 --> 00:48:44.585
+today it's moving these contacts across different programs
+
+1048
+00:48:44.644 --> 00:48:49.764
+pulling in information grounding claude in information from
+
+1049
+00:48:49.764 --> 00:48:53.125
+the various connectors synthesizing it and keeping a
+
+1050
+00:48:53.125 --> 00:48:55.204
+human in the loop it's still me doing
+
+1051
+00:48:55.204 --> 00:48:57.989
+the legal work it's in my voice i'm
+
+1052
+00:48:57.989 --> 00:49:00.309
+reviewing things it's just helping me with some
+
+1053
+00:49:00.309 --> 00:49:03.590
+of the more tedious busy work and and
+
+1054
+00:49:03.590 --> 00:49:05.430
+really ensuring that it frees me up to
+
+1055
+00:49:05.430 --> 00:49:07.829
+do my best work i think about the
+
+1056
+00:49:07.829 --> 00:49:11.224
+movie office space with the tps reports nobody
+
+1057
+00:49:11.224 --> 00:49:14.105
+wants to do tps reports they wanna be
+
+1058
+00:49:14.105 --> 00:49:16.744
+focusing on important strategic work that's why many
+
+1059
+00:49:16.744 --> 00:49:18.425
+of us went to law school so we
+
+1060
+00:49:18.425 --> 00:49:21.224
+could be impactful look how clean that looks
+
+1061
+00:49:21.224 --> 00:49:23.065
+i like i couldn't have done a summary
+
+1062
+00:49:23.065 --> 00:49:27.280
+action table many lawyers get frustrated with formatting
+
+1063
+00:49:27.820 --> 00:49:30.380
+claude is so good at formatting so no
+
+1064
+00:49:30.380 --> 00:49:32.860
+matter what jurisdiction you're in if you if
+
+1065
+00:49:32.860 --> 00:49:35.500
+there's a local courthouse where they need double
+
+1066
+00:49:35.500 --> 00:49:39.045
+spaces and title case then you need to
+
+1067
+00:49:39.045 --> 00:49:42.244
+do blue booking citations properly claude can be
+
+1068
+00:49:42.244 --> 00:49:44.565
+really good at setting that up and with
+
+1069
+00:49:44.565 --> 00:49:46.484
+these new plug ins there's guardrails in place
+
+1070
+00:49:46.484 --> 00:49:48.484
+to alert you to things that you need
+
+1071
+00:49:48.484 --> 00:49:50.324
+to review to make sure you're not the
+
+1072
+00:49:50.324 --> 00:49:52.160
+next lawyer who ends up on the naughty
+
+1073
+00:49:52.160 --> 00:49:55.059
+list of people who have submitted hallucinated citations
+
+1074
+00:49:55.360 --> 00:49:58.720
+in a courtroom filing this is probably a
+
+1075
+00:49:58.720 --> 00:50:02.160
+good time to to transition and maybe nancy
+
+1076
+00:50:02.160 --> 00:50:04.800
+i know you've been reading the the the
+
+1077
+00:50:04.800 --> 00:50:08.295
+q and a in the chat i've been
+
+1078
+00:50:08.295 --> 00:50:10.155
+sort of trying to follow along as well
+
+1079
+00:50:10.295 --> 00:50:12.215
+i'll i'll kick it off with one which
+
+1080
+00:50:12.215 --> 00:50:14.695
+was a lot of people were asking you
+
+1081
+00:50:14.695 --> 00:50:17.335
+know i've plugged the cloud commercial plans the
+
+1082
+00:50:17.335 --> 00:50:19.514
+team plan and enterprise plan with our preconfigured
+
+1083
+00:50:19.734 --> 00:50:22.420
+defaults people were asking if these plug ins
+
+1084
+00:50:22.420 --> 00:50:24.900
+are available on our consumer plans like free
+
+1085
+00:50:24.900 --> 00:50:27.059
+pro and max as well as whether or
+
+1086
+00:50:27.059 --> 00:50:30.360
+not that can be configured for confidentiality and
+
+1087
+00:50:30.579 --> 00:50:34.934
+and model training privacy preferences as well anywhere
+
+1088
+00:50:35.074 --> 00:50:37.414
+co work is available these plugins are available
+
+1089
+00:50:38.114 --> 00:50:40.034
+so i believe that's on pro and max
+
+1090
+00:50:40.034 --> 00:50:42.114
+on the consumer plan as well as team
+
+1091
+00:50:42.114 --> 00:50:44.994
+and enterprise plan but the plugins are open
+
+1092
+00:50:44.994 --> 00:50:48.514
+source and available the skills are available you
+
+1093
+00:50:48.514 --> 00:50:52.829
+can reconfigure them on any surface where you're
+
+1094
+00:50:52.829 --> 00:50:56.510
+working with claude or elsewhere you do need
+
+1095
+00:50:56.510 --> 00:50:59.070
+to pay attention to your privacy preferences if
+
+1096
+00:50:59.070 --> 00:51:01.309
+you're on a consumer plan and toggle off
+
+1097
+00:51:01.309 --> 00:51:03.070
+training if that's something that's of interest to
+
+1098
+00:51:03.070 --> 00:51:04.664
+you i would also point you to the
+
+1099
+00:51:04.664 --> 00:51:07.005
+anthropic trust center there's a link right there
+
+1100
+00:51:07.305 --> 00:51:09.805
+our privacy center also has a lot of
+
+1101
+00:51:10.664 --> 00:51:12.925
+questions that are or a lot of faqs
+
+1102
+00:51:12.985 --> 00:51:15.385
+related to how to configure your settings to
+
+1103
+00:51:15.385 --> 00:51:18.099
+meet your needs there oh my gosh there
+
+1104
+00:51:18.099 --> 00:51:20.179
+are so many questions from brazil in the
+
+1105
+00:51:20.179 --> 00:51:21.780
+q and a as well shout out to
+
+1106
+00:51:21.780 --> 00:51:24.360
+all the lawyers from brazil who are here
+
+1107
+00:51:24.659 --> 00:51:27.860
+claude is very good at understanding multiple languages
+
+1108
+00:51:27.860 --> 00:51:30.019
+and as i mentioned earlier you can set
+
+1109
+00:51:30.019 --> 00:51:33.204
+it up to be configured to local law
+
+1110
+00:51:33.204 --> 00:51:34.984
+i would love to see more plug ins
+
+1111
+00:51:35.764 --> 00:51:38.965
+and more partners reach out to know local
+
+1112
+00:51:38.965 --> 00:51:43.284
+laws and regulatory needs and if if you
+
+1113
+00:51:43.284 --> 00:51:44.965
+follow me on linkedin or if you wanna
+
+1114
+00:51:44.965 --> 00:51:47.469
+reach out i will pass through information on
+
+1115
+00:51:47.469 --> 00:51:49.789
+our product partnerships team if you are building
+
+1116
+00:51:49.789 --> 00:51:52.349
+in this space and have solutions that will
+
+1117
+00:51:52.349 --> 00:51:55.089
+help us scale and reach audiences and lawyers
+
+1118
+00:51:55.309 --> 00:52:00.265
+and legal professionals worldwide again claude is very
+
+1119
+00:52:00.265 --> 00:52:03.385
+good at understanding different languages and even if
+
+1120
+00:52:03.385 --> 00:52:05.485
+we didn't write the skills in your language
+
+1121
+00:52:05.785 --> 00:52:08.585
+it will understand when you talk to it
+
+1122
+00:52:08.585 --> 00:52:11.144
+in your native language and will translate those
+
+1123
+00:52:11.144 --> 00:52:13.739
+skills on the fly nancy i'll pass it
+
+1124
+00:52:13.739 --> 00:52:16.320
+to you if you have any yeah absolutely
+
+1125
+00:52:16.940 --> 00:52:19.019
+there's a question that i or a theme
+
+1126
+00:52:19.019 --> 00:52:20.860
+of questions too in the chat that i've
+
+1127
+00:52:20.860 --> 00:52:23.500
+really loved around how to sort of build
+
+1128
+00:52:23.500 --> 00:52:27.255
+up the skill set around you know upskilling
+
+1129
+00:52:27.474 --> 00:52:29.394
+in the ways that you know mark you
+
+1130
+00:52:29.394 --> 00:52:31.795
+and harry have shown for folks that are
+
+1131
+00:52:31.795 --> 00:52:34.355
+really looking to become like the builder within
+
+1132
+00:52:34.355 --> 00:52:37.155
+their organization so i think you would both
+
+1133
+00:52:37.155 --> 00:52:39.655
+have really relevant context to share on that
+
+1134
+00:52:40.789 --> 00:52:43.349
+sure harry do you wanna go first yeah
+
+1135
+00:52:43.349 --> 00:52:45.269
+i i will and this is a common
+
+1136
+00:52:45.269 --> 00:52:47.929
+thing you know not just if you're practicing
+
+1137
+00:52:47.989 --> 00:52:50.630
+law but any kind of function across the
+
+1138
+00:52:50.630 --> 00:52:56.695
+organization is again claude is your coworker not
+
+1139
+00:52:56.695 --> 00:52:58.295
+just a tool that you're using or a
+
+1140
+00:52:58.295 --> 00:53:00.635
+chatbot right and i think as you're approaching
+
+1141
+00:53:01.494 --> 00:53:06.135
+different levels of ai fluency you start to
+
+1142
+00:53:06.135 --> 00:53:08.789
+understand how to actually give claude the proper
+
+1143
+00:53:08.789 --> 00:53:11.190
+context to build what you need so i
+
+1144
+00:53:11.190 --> 00:53:12.869
+would say that's the most important part of
+
+1145
+00:53:12.869 --> 00:53:14.950
+actually being a builder is providing the right
+
+1146
+00:53:14.950 --> 00:53:18.489
+information for claude to understand how you operate
+
+1147
+00:53:18.630 --> 00:53:21.750
+understand how your organization operates and understand your
+
+1148
+00:53:21.750 --> 00:53:25.135
+workflows very intimately so i think what mark
+
+1149
+00:53:25.135 --> 00:53:27.934
+said previously about hey these plugins are just
+
+1150
+00:53:27.934 --> 00:53:30.494
+a start so we've started you with 12
+
+1151
+00:53:30.494 --> 00:53:32.654
+different plugins that you can actually play around
+
+1152
+00:53:32.654 --> 00:53:34.734
+with and and use certainly for day to
+
+1153
+00:53:34.734 --> 00:53:37.099
+day however it's just with a click of
+
+1154
+00:53:37.099 --> 00:53:38.780
+a button that you can actually customize these
+
+1155
+00:53:38.780 --> 00:53:41.680
+plug ins for the purpose that you have
+
+1156
+00:53:41.980 --> 00:53:43.980
+specifically to your organization your day to day
+
+1157
+00:53:43.980 --> 00:53:46.699
+workflow so providing the proper information again is
+
+1158
+00:53:46.699 --> 00:53:48.525
+is my biggest tip mark what about you
+
+1159
+00:53:49.244 --> 00:53:51.724
+yeah i didn't set out to become a
+
+1160
+00:53:51.724 --> 00:53:56.045
+builder i was you know just trying to
+
+1161
+00:53:56.045 --> 00:53:58.444
+solve issues that we were spotting inside of
+
+1162
+00:53:58.444 --> 00:54:01.769
+our own legal department and i i mentioned
+
+1163
+00:54:01.769 --> 00:54:04.329
+it earlier in the the webinar that i
+
+1164
+00:54:04.329 --> 00:54:07.369
+pointed claude at our ticket queue we use
+
+1165
+00:54:07.369 --> 00:54:09.530
+jira at anthropic to do a lot of
+
+1166
+00:54:09.930 --> 00:54:13.849
+legal ticketing and i had claude analyze 742
+
+1167
+00:54:13.849 --> 00:54:15.974
+legal tickets over the past few months that's
+
+1168
+00:54:15.974 --> 00:54:17.894
+an oddly specific number so you know i'm
+
+1169
+00:54:17.894 --> 00:54:20.855
+not making it up claude analyzed all those
+
+1170
+00:54:20.855 --> 00:54:23.095
+tickets and it identified some of the bottlenecks
+
+1171
+00:54:23.095 --> 00:54:25.335
+that we were creating and at a hypergrowth
+
+1172
+00:54:25.335 --> 00:54:27.494
+company you don't wanna be the department that
+
+1173
+00:54:27.494 --> 00:54:31.360
+slows down everybody else and so claude helped
+
+1174
+00:54:31.360 --> 00:54:33.840
+me become a builder i started off by
+
+1175
+00:54:33.840 --> 00:54:36.159
+doing some marketing legal review tools to help
+
+1176
+00:54:36.159 --> 00:54:38.239
+speed that up i saw what others were
+
+1177
+00:54:38.239 --> 00:54:41.219
+building and i tried to create repeatable skills
+
+1178
+00:54:41.360 --> 00:54:43.360
+and plug ins that would help all of
+
+1179
+00:54:43.360 --> 00:54:47.585
+us many of you today are tuning in
+
+1180
+00:54:47.585 --> 00:54:49.905
+because you're you're on your journey of figuring
+
+1181
+00:54:49.905 --> 00:54:51.344
+out what these tools might be able to
+
+1182
+00:54:51.344 --> 00:54:54.864
+help you accomplish and and uplevel talk to
+
+1183
+00:54:54.864 --> 00:54:57.025
+claude as a tutor to figure out what
+
+1184
+00:54:57.025 --> 00:54:58.545
+it is that would be useful for your
+
+1185
+00:54:58.545 --> 00:55:00.900
+practice have claude look through your work and
+
+1186
+00:55:00.900 --> 00:55:02.260
+say you know what you spend a lot
+
+1187
+00:55:02.260 --> 00:55:04.019
+of time doing this what if we work
+
+1188
+00:55:04.019 --> 00:55:07.940
+together to build something my colleague pamela on
+
+1189
+00:55:07.940 --> 00:55:10.179
+our regulatory operations team used to spend a
+
+1190
+00:55:10.179 --> 00:55:13.785
+few hours each morning reading news and developments
+
+1191
+00:55:13.925 --> 00:55:17.364
+from various regulatory bodies worldwide and she talked
+
+1192
+00:55:17.364 --> 00:55:20.244
+to claude she's nontechnical and she said build
+
+1193
+00:55:20.244 --> 00:55:22.244
+me a custom newspaper i can read each
+
+1194
+00:55:22.244 --> 00:55:24.244
+morning based on the publications you know i'm
+
+1195
+00:55:24.244 --> 00:55:28.349
+subscribed to summarize the articles based on what
+
+1196
+00:55:28.349 --> 00:55:30.190
+you know will be most impactful to my
+
+1197
+00:55:30.190 --> 00:55:31.949
+company because you know about our business you
+
+1198
+00:55:31.949 --> 00:55:34.989
+know about our litigation document or docket you
+
+1199
+00:55:34.989 --> 00:55:39.974
+know about our ongoing policy interactions and now
+
+1200
+00:55:39.974 --> 00:55:41.894
+claude creates a custom newspaper for her to
+
+1201
+00:55:41.894 --> 00:55:43.894
+read and she can read it over a
+
+1202
+00:55:43.894 --> 00:55:45.974
+cup of coffee so any of you who
+
+1203
+00:55:45.974 --> 00:55:48.375
+are nontechnical and you have repeatable workflows like
+
+1204
+00:55:48.375 --> 00:55:50.694
+that i would just suggest you just get
+
+1205
+00:55:50.694 --> 00:55:52.375
+started you don't have to think of yourself
+
+1206
+00:55:52.375 --> 00:55:55.510
+as like changing your job description on linkedin
+
+1207
+00:55:55.510 --> 00:55:58.550
+to be like lawyer builder or hacker it's
+
+1208
+00:55:58.550 --> 00:56:00.230
+just kind of part of what the job
+
+1209
+00:56:00.230 --> 00:56:02.150
+is now and i think we're building tools
+
+1210
+00:56:02.150 --> 00:56:05.349
+to make it easier yeah nancy any other
+
+1211
+00:56:05.349 --> 00:56:09.594
+questions in there yeah for sure lot of
+
+1212
+00:56:09.594 --> 00:56:12.234
+questions that we may have sort of hit
+
+1213
+00:56:12.234 --> 00:56:17.454
+on around privacy confidentiality and also mitigating hallucinations
+
+1214
+00:56:17.675 --> 00:56:19.594
+of the responses i think these are questions
+
+1215
+00:56:19.594 --> 00:56:21.849
+that we get often but maybe mark if
+
+1216
+00:56:21.849 --> 00:56:23.609
+you could touch quickly on those as well
+
+1217
+00:56:23.609 --> 00:56:25.130
+yeah we we talked about this a bit
+
+1218
+00:56:25.130 --> 00:56:28.489
+earlier in the call and i wanna emphasize
+
+1219
+00:56:28.489 --> 00:56:31.449
+that there's dozens of guardrails we put in
+
+1220
+00:56:31.449 --> 00:56:35.005
+place with these plug ins that ensure that
+
+1221
+00:56:35.005 --> 00:56:37.664
+claude is alerting you when it is making
+
+1222
+00:56:38.844 --> 00:56:44.304
+various assumptions and encouraging you to go and
+
+1223
+00:56:44.364 --> 00:56:49.400
+manually verify citations it also during the cold
+
+1224
+00:56:49.400 --> 00:56:51.740
+start interview asks you if you're a lawyer
+
+1225
+00:56:52.760 --> 00:56:56.360
+it inserts privilege at the top of the
+
+1226
+00:56:56.360 --> 00:56:58.360
+documents that are getting created if you're a
+
+1227
+00:56:58.360 --> 00:57:01.019
+lawyer and you are working on privileged information
+
+1228
+00:57:01.474 --> 00:57:03.554
+at the same time we do wanna emphasize
+
+1229
+00:57:03.554 --> 00:57:05.554
+that it is so important that you work
+
+1230
+00:57:05.554 --> 00:57:08.835
+with your it team to set up admin
+
+1231
+00:57:08.835 --> 00:57:12.275
+settings and controls the right way we did
+
+1232
+00:57:12.275 --> 00:57:15.335
+talk about consumer plans i'm not trying to
+
+1233
+00:57:16.119 --> 00:57:19.000
+scare anybody on the call but as a
+
+1234
+00:57:19.000 --> 00:57:21.320
+lawyer you have an ethical obligation to understand
+
+1235
+00:57:21.320 --> 00:57:23.960
+how these tools work and so making sure
+
+1236
+00:57:23.960 --> 00:57:26.280
+that you set things up correctly with your
+
+1237
+00:57:26.280 --> 00:57:29.079
+privacy settings is also really important and i
+
+1238
+00:57:29.079 --> 00:57:30.675
+would i would encourage you to check out
+
+1239
+00:57:30.675 --> 00:57:33.155
+our team in enterprise plan to simplify those
+
+1240
+00:57:33.155 --> 00:57:36.035
+types of settings so we'll share a link
+
+1241
+00:57:36.035 --> 00:57:38.195
+to the self serve plans or you can
+
+1242
+00:57:38.195 --> 00:57:39.555
+reach out to our sales team to get
+
+1243
+00:57:39.555 --> 00:57:41.954
+started but i would encourage you to check
+
+1244
+00:57:41.954 --> 00:57:44.195
+check out our commercial plans with the dpa
+
+1245
+00:57:44.195 --> 00:57:46.670
+in place and the ease of the the
+
+1246
+00:57:46.670 --> 00:57:50.190
+security controls there i've also heard that many
+
+1247
+00:57:50.190 --> 00:57:53.389
+solo practitioners wanna make it easier to purchase
+
+1248
+00:57:53.389 --> 00:57:56.349
+single seat licenses on our commercial plans i
+
+1249
+00:57:56.349 --> 00:57:58.670
+hear you loud and clear i've heard the
+
+1250
+00:57:58.670 --> 00:58:01.605
+feedback in every session i've done and i
+
+1251
+00:58:01.605 --> 00:58:03.684
+am chatting with our product team to ensure
+
+1252
+00:58:03.684 --> 00:58:06.985
+this is something that we're taking into consideration
+
+1253
+00:58:07.125 --> 00:58:08.724
+i i hope to share progress on that
+
+1254
+00:58:08.724 --> 00:58:11.925
+soon this is awesome i think we're out
+
+1255
+00:58:11.925 --> 00:58:15.069
+of time today i'm just so enthused by
+
+1256
+00:58:15.069 --> 00:58:17.230
+the amount of energy that's happening in the
+
+1257
+00:58:17.230 --> 00:58:19.309
+space it really does feel like we're in
+
+1258
+00:58:19.309 --> 00:58:21.309
+a moment when there's you know tens of
+
+1259
+00:58:21.309 --> 00:58:24.190
+thousands of people signing up for webinars the
+
+1260
+00:58:24.190 --> 00:58:26.109
+amount of interest that we're seeing on linkedin
+
+1261
+00:58:26.109 --> 00:58:28.755
+and elsewhere and i just love the builder
+
+1262
+00:58:28.755 --> 00:58:31.234
+community that's creating new solutions in an open
+
+1263
+00:58:31.234 --> 00:58:36.675
+ecosystem and i really feel like there's an
+
+1264
+00:58:36.675 --> 00:58:38.675
+urgency right now for lawyers to meet this
+
+1265
+00:58:38.675 --> 00:58:41.155
+moment and for legal professionals to learn how
+
+1266
+00:58:41.155 --> 00:58:44.489
+to use these tools and us at anthropic
+
+1267
+00:58:44.489 --> 00:58:46.410
+all of us are just excited to be
+
+1268
+00:58:46.410 --> 00:58:48.250
+on this journey with you and we're we
+
+1269
+00:58:48.250 --> 00:58:49.690
+really hope we're building tools that you can
+
+1270
+00:58:49.690 --> 00:58:51.369
+put to use and that this is a
+
+1271
+00:58:51.369 --> 00:58:52.969
+platform you want to build on and that
+
+1272
+00:58:52.969 --> 00:58:56.269
+you can succeed within your in your profession
+
+1273
+00:58:56.329 --> 00:58:58.684
+so thank you for your time today please
+
+1274
+00:58:58.684 --> 00:59:00.204
+reach out if we can do anything to
+
+1275
+00:59:00.204 --> 00:59:03.085
+be more helpful and and thanks for tuning
+
+1276
+00:59:03.085 --> 00:59:05.804
+in share this webinar link with others as
+
+1277
+00:59:05.804 --> 00:59:08.445
+well the recording's going out forward it to
+
+1278
+00:59:08.445 --> 00:59:10.780
+your whole department post links inside of your
+
+1279
+00:59:10.780 --> 00:59:13.020
+slack and teams channels and let us know
+
+1280
+00:59:13.020 --> 00:59:16.620
+what else we can do thank you thank
+
+1281
+00:59:16.620 --> 00:59:19.280
+you all thanks all
+

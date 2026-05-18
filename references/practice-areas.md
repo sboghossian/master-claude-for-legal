@@ -1,6 +1,8 @@
 # Practice Areas
 
-The same Claude architecture, five different daily lives. The webinar's demos were transactional; this reference expands to the practice areas the demos didn't cover.
+The same Claude architecture, five different daily lives. The April webinar's demos were transactional; this reference expands to the practice areas the demos didn't cover.
+
+> **What this file is and isn't.** This is the pattern-level reference for how each practice area uses Claude differently. The actual *plugins* — the 12 pre-tailored installable bundles Anthropic shipped in May 2026 — are catalogued in `references/practice-area-plugins.md`. Read both: this file tells you what the work looks like; that file tells you which plugin to install.
 
 ---
 

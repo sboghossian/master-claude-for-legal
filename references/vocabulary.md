@@ -25,6 +25,12 @@ Two reading paths. **Quick** is the table — keep it open while you work. **Dee
 | **Compliance API** | Audit log + DLP + eDiscovery export; Enterprise tier |
 | **Schedule** | A recurring task (cron-like); Pamela's regulatory tracker uses this |
 | **CLAUDE.md** | A project-level instruction file Claude reads before responding |
+| **Managed agent** | A multi-step, always-on agent hosted by Anthropic (not your laptop); see `references/managed-agents.md` |
+| **Cold-start interview** | The customization Q&A that runs the first time you install a plugin; produces a practice profile |
+| **Practice profile** | The markdown file the cold-start interview produces; loaded into every session that uses the plugin |
+| **Plugin marketplace** | The Cowork surface (Customize → Plugins) where you browse and install plugins |
+| **Tabular review** | Many docs, same schema, output as spreadsheet with cell-level citations; see `skills/tabular-review.md` |
+| **Practice-area plugin** | One of the 12 plugins shipped in May 2026, pre-tailored to a legal practice area |
 
 ---
 
@@ -42,33 +48,27 @@ A markdown file. That is it. About 100-300 lines of plain English describing how
 
 **How they get invoked.** Three ways: by slash command (`/triage-nda`), by name in plain text ("use the NDA triage skill"), or automatically when the user's request matches the skill's description ("there are five NDAs in the inbox folder, what should we do" — Claude infers the right skill).
 
-**The most important thing about skills.** Mark Pike's quote: *"You wouldn't wear a suit you bought off the rack."* The legal plugin's skills are starting templates. They are not finished products. The leverage is in the customization. See `references/skill-authoring.md`.
+**The most important thing about skills.** Mark Pike's quote: *"You wouldn't wear a suit you bought off the rack."* The legal plugin's skills are starting templates. They are not finished products. The leverage is in the customization. See `references/skill-authoring.md` for authoring; `references/cold-start-interview.md` for the customization onboarding ritual that runs the first time you install a plugin.
 
 ## Plugin
 
-A bundle of skills shipped together as a single installable unit. The Anthropic legal plugin is a plugin. Your firm's internal skill library, once you have one, is also a plugin — a private one.
+A bundle of skills shipped together as a single installable unit. The Anthropic legal plugins are plugins. Your firm's internal skill library, once you have one, is also a plugin — a private one.
 
 **Install path.** Cowork → Customize → Plugins → Anthropic and Partners → [pick plugin] → Install. Two minutes.
 
-**Plugins can include.** Skills (the main payload), connectors (less common), CLAUDE.md instructions, scheduled tasks (rare).
+**Plugins can include.** Skills (the main payload), connectors (less common), CLAUDE.md instructions, scheduled tasks (rare), agents (added May 2026).
 
 **Plugins cannot include.** Account credentials, model weights, or anything binary. They are markdown + config, full stop.
+
+**The May 2026 lineup.** Twelve practice-area plugins replaced the single generic legal plugin: Commercial, Product Privacy, Employment, Employment Governance, Regulatory, Corporate, Litigation, IP, Law Student (Socratic), Legal Clinic, Legal Builder Hub, and others. See `references/practice-area-plugins.md` for the lineup; see `references/cold-start-interview.md` for the customization ritual each plugin opens with.
 
 ## Connector (MCP)
 
 A live data pipe. The bridge between Claude and one of your systems.
 
-**Common connectors.**
+**Common connectors.** Microsoft 365, Google Workspace, Slack, Notion, Linear/Jira, iManage, NetDocuments, various CLM platforms, various case management platforms (varies in MCP-readiness). The May 2026 launch added a named legal-specific catalog: Box, Harvey, Thomson Reuters CoCounsel, LSuite, Solve Intelligence, BoardWise, Courtroom5, Descrybe, Free Law Project, and more.
 
-- Microsoft 365 (Outlook, Word, Excel, PowerPoint, OneDrive, Teams, SharePoint)
-- Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, Slides)
-- Slack
-- Notion
-- Linear / Jira
-- iManage
-- NetDocuments
-- Various CLM platforms
-- Various case management platforms (varies in MCP-readiness)
+For the **what's available** question, see `references/mcp-connector-catalog.md`. For the **how to wire it safely** question, see `references/mcp-hardening.md`.
 
 **How they authenticate.** OAuth, almost always. You log in to the system once; Claude has standing access until you revoke.
 
@@ -120,15 +120,22 @@ The browser-based chat interface. The quickest way to start using Claude. Also t
 
 For legal work, chat is a starting place. Move to Cowork as soon as the work warrants it.
 
-## Claude for Word / Excel / PowerPoint
+## Claude for Word / Excel / PowerPoint / Outlook
 
-Sidebar add-ins inside Microsoft Office. The Word add-in is the most legal-relevant one — it's where actual redlining happens with track changes.
+Sidebar add-ins inside Microsoft Office. As of May 2026, all four surfaces are live and share **cross-surface context preservation** — the same Claude session, plugin, and practice profile follow you across all four apps without losing matter context.
 
-**Install path.** Word → Add-ins → Claude. Sign in to your account on first use.
+- **Word** — redlining and drafting with track changes. The most legal-relevant surface.
+- **Excel** — tabular review output, spreadsheet-resident analysis. Demoed in May with 30 M&A contracts.
+- **PowerPoint** — board briefings, client updates, matter summaries from the matter record.
+- **Outlook** — draft email in your voice. Never auto-send.
 
-**What it shares with Cowork.** Skills. The skill you wrote in Cowork is available in the Word add-in. The playbook you trained against an iManage matter folder works when you're staring at a docx in Word. Pillar 4 in action.
+**Install path.** Word → Add-ins → Claude. Sign in once; the auth shares across all four apps.
+
+**What it shares with Cowork.** Skills, plugins, practice profile, conversation context. The skill you wrote in Cowork is available in the Word add-in. The playbook you trained against an iManage matter folder works when you're staring at a docx in Word. Pillar 4 in action.
 
 **Requirements.** A paid Microsoft 365 license. Office 2019 or earlier won't work. If your firm is still on Office 2019, this is on the IT roadmap.
+
+For the full cross-surface context model, see `references/microsoft-365.md`.
 
 ## Project
 
@@ -163,6 +170,14 @@ A long-running, multi-step automation that uses one or more skills and connector
 **Agent vs skill.** A skill is the procedure ("how to triage an NDA"). An agent is the role ("the NDA intake clerk who runs every morning, triages anything new, drafts the redlines, and emails the team").
 
 In Cowork, when you wire a scheduled task that uses a skill against a watched folder and produces an artifact, you have built an agent. You may not have used the word.
+
+## Managed agent
+
+A subtype of agent that's hosted by Anthropic (or your firm's managed deployment) rather than running on the user's laptop. Always-on. Event-triggered or scheduled. Composes multiple skills + connectors into a workflow.
+
+The distinction: a scheduled task in Cowork runs when your laptop is awake. A managed agent runs in Anthropic-managed infrastructure and doesn't care whether your laptop is open.
+
+See `references/managed-agents.md` for the deployment patterns and the human-in-the-loop checkpoints every managed agent should have.
 
 ## MCP
 

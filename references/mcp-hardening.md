@@ -2,6 +2,8 @@
 
 The five-minute exercise every legal team should run before doing real matter work in Claude. Then the longer governance posture for firms that take this seriously.
 
+> **What this file is and isn't.** This is the *security* and *configuration* reference — permission grids, OAuth scopes, audit trails, governance posture. For the *catalog* of which connectors exist and what each one unlocks (Box, Harvey, Thomson Reuters CoCounsel, Free Law Project, Courtroom5, etc.), see `references/mcp-connector-catalog.md`. Wire safely first; pick connectors second.
+
 ---
 
 ## The five-minute hardening

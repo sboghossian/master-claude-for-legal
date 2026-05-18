@@ -8,25 +8,27 @@
 
 ## What this is
 
-A self-contained skill pack you can install into Claude (Cowork, Claude Code, or any tool that supports Anthropic-format skills) that teaches the model — and you — how to do legal work with Claude *the way Anthropic's own legal team does it*, without the rough edges they didn't get to in their April 2026 webinar.
+A self-contained skill pack you can install into Claude (Cowork, Claude Code, or any tool that supports Anthropic-format skills) that teaches the model — and you — how to do legal work with Claude *the way Anthropic's own legal team does it*. Built from **both** of Anthropic's public legal webinars in 2026: *Claude for Legal Teams* (April) and *How Legal Teams Put Claude to Work* (May).
 
 It comes in four layers.
 
-**Reference docs** (`references/`). Ten short documents covering the four-pillar architecture, the four privilege layers, the vocabulary that confused the room at the webinar, MCP permission hardening, citation verification, the agentic harness pattern for long documents, practice-area patterns (transactional, litigation, IP, regulatory, in-house), the four-hour setup checklist, a skill-authoring guide, and a list of anti-patterns we've seen blow up in production.
+**Reference docs** (`references/`). Fifteen short documents covering the four-pillar architecture, the four privilege layers, the vocabulary that confused the room at the April webinar, MCP permission hardening, the May connector catalog (Box / Harvey / Thomson Reuters / Free Law Project / Courtroom5 / etc.), the 12 practice-area plugins, the Microsoft 365 cross-surface context model (Word / Excel / PowerPoint / Outlook), managed agents, the cold-start interview customization ritual, citation verification, the agentic harness pattern for long documents, practice-area patterns, the four-hour setup checklist, a skill-authoring guide, and a list of anti-patterns we've seen blow up in production.
 
-**Starter skills** (`skills/`). Five working skills you can install today: NDA triage, multi-party version diff, meeting brief, citation verifier, status synthesis (the "Friday newsletter" pattern). Each is a markdown file. Each is meant to be remixed for your firm — the legal plugin Anthropic ships is a starting template, not a finished product, and so is this.
+**Starter skills** (`skills/`). Six working skills you can install today: NDA triage, multi-party version diff, tabular review (the May webinar's demoed M&A diligence pattern), meeting brief, citation verifier, status synthesis (the "Friday newsletter" pattern). Each is a markdown file. Each is meant to be remixed for your firm — the legal plugins Anthropic ships are starting templates, not finished products, and so is this.
 
 **Templates** (`templates/`). Three documents most firms need but few have written: a firm AI policy template, a one-page client-facing explainer for "how does our firm handle your data when using AI," and a vendor security questionnaire for assessing legal-AI tools.
 
-**Data** (`data/`). The full transcript of the source webinar, the 51 audience questions with upvotes and themes, and machine-readable JSON for anyone who wants to do their own analysis. We did the work of cleaning the transcript and structuring the question dataset; this directory is the raw output of that effort.
+**Data** (`data/`). Full transcripts of both source webinars, the 51 audience questions from the April session with upvotes and themes, and machine-readable JSON for anyone who wants to do their own analysis. The directory is the raw output of the cleanup-and-structuring effort; everything else in the repo is downstream of it.
 
 ## Why this exists
 
-In April 2026, Anthropic ran a webinar called *Claude for Legal Teams*. Twenty thousand lawyers registered. The chat submitted 51 questions and upvoted them 2,470 times. About half got answered live. The other half didn't, and several of the answers that did happen were partial.
+In April 2026, Anthropic ran a webinar called *Claude for Legal Teams*. Twenty thousand lawyers registered. The chat submitted 51 questions and upvoted them 2,470 times. About half got answered live; the other half didn't, and several of the answers that did happen were partial.
 
-We built this skill pack as the long version of that webinar. The full conversation, with the parts we think were missing.
+In May 2026, Anthropic ran a follow-up webinar — *How Legal Teams Put Claude to Work* — announcing the "connected legal stack": 12 practice-area plugins, 20+ MCP connectors, the Microsoft 365 cross-surface integration, and managed agents. Mark Pike (Anthropic Associate General Counsel and product lead for Claude for Legal) presented again, this time with Harry from the Applied AI team. The May session went deep on what changed and what to do with it.
 
-The companion long-form analysis is at [haqq.ai/blog/claude-for-legal-teams-questions-answered](https://haqq.ai/blog/claude-for-legal-teams-questions-answered) — a piece that goes through the rank-ordered questions, what Mark Pike and Maggie Russo said live, and where we'd add to the answers.
+We built this skill pack as the long version of *both* webinars. The full conversation, with the parts we think were missing, plus the operational guidance for the May launch that the live session didn't have time to cover.
+
+The companion long-form analysis is at [haqq.ai/blog/claude-for-legal-teams-questions-answered](https://haqq.ai/blog/claude-for-legal-teams-questions-answered) — a piece that goes through the rank-ordered April questions, what Mark Pike and Maggie Russo said live, and where we'd add to the answers.
 
 ## How this was built — the full process
 
@@ -169,6 +171,11 @@ master-claude-for-legal/
 │   ├── privilege-layers.md           Four-layer privilege framework + configuration
 │   ├── vocabulary.md                 Skills, plugins, connectors, Cowork, Code, etc.
 │   ├── mcp-hardening.md              Permission grids and connector security
+│   ├── mcp-connector-catalog.md      [May] Named connectors: Box, Harvey, TR, Free Law, etc.
+│   ├── practice-area-plugins.md      [May] The 12 plugins shipped in May 2026
+│   ├── microsoft-365.md              [May] Word / Excel / PowerPoint / Outlook + cross-surface
+│   ├── managed-agents.md             [May] Always-on, event-triggered legal agents
+│   ├── cold-start-interview.md       [May] The customization onboarding ritual
 │   ├── verification.md               Citation grounding and hallucination control
 │   ├── long-documents.md             The 70+ page problem and the agentic harness
 │   ├── practice-areas.md             Transactional / Litigation / IP / Reg / In-house
@@ -178,6 +185,7 @@ master-claude-for-legal/
 ├── skills/
 │   ├── nda-triage.md                 Triage incoming NDAs against a firm playbook
 │   ├── version-diff.md               Multi-party clause-level changelog
+│   ├── tabular-review.md             [May] Many docs / one schema / Excel + cell-level citations
 │   ├── meeting-brief.md              Calendar + email + drive → meeting briefing
 │   ├── citation-verifier.md          Round-trip every quoted source
 │   └── status-synthesis.md           Friday newsletter / weekly status pattern
@@ -186,18 +194,23 @@ master-claude-for-legal/
 │   ├── client-data-explainer.md      One-pager for clients asking about AI use
 │   └── vendor-security-questionnaire.md   Assess any legal-AI tool
 └── data/
-    ├── webinar-transcript.txt        Full transcript of the source webinar (57 min)
+    ├── webinar-transcript.txt        Full transcript of the April 2026 webinar
     ├── webinar-transcript.vtt        Same, with timestamps
-    ├── webinar-questions.json        Structured dataset of all 51 questions
+    ├── webinar2-transcript.txt       Full transcript of the May 2026 webinar
+    ├── webinar2-transcript.vtt       Same, with timestamps
+    ├── webinar-questions.json        Structured dataset of all 51 April questions
     └── webinar-questions.md          Human-readable version with rankings + status
 ```
+
+Files marked **[May]** were added based on the May 2026 webinar (*How Legal Teams Put Claude to Work*). The rest came from the April 2026 webinar (*Claude for Legal Teams*).
 
 ## The data directory
 
 `data/` is here because we believe the underlying material that informed this pack should be public. It includes:
 
-- **Full webinar transcript** — produced via whisper.cpp small.en model, ~10,000 words, 591 lines. Lightly cleaned but not editorialized.
-- **51-question dataset** — every audience question with author, upvote count, theme classification, and answer status (answered live / partially / not addressed / reaction).
+- **April 2026 webinar transcript** — produced via whisper.cpp small.en model, ~10,000 words. Lightly cleaned but not editorialized.
+- **May 2026 webinar transcript** — pulled directly from the Goldcast on-demand subtitle endpoint as VTT + cleaned plain text, ~10,200 words. Speakers: Mark Pike, Harry (Applied AI), Nancy (moderator).
+- **51-question dataset** (April session) — every audience question with author, upvote count, theme classification, and answer status (answered live / partially / not addressed / reaction).
 - **Theme analysis** — the rank-order, distribution, and signal interpretation.
 
 Use it for:
