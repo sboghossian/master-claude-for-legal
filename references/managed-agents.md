@@ -18,6 +18,21 @@ Three properties, all of which a managed agent has and a regular skill doesn't:
 
 ---
 
+## The four cookbook-deployable plugins
+
+Four of the twelve practice-area plugins ship as **cookbooks** deployable through the Claude API as managed agents:
+
+- **Commercial Legal** — vendor contract review, NDA triage, MSA negotiation support
+- **Corporate Legal** — M&A diligence, board governance, transactional support
+- **Litigation Legal** — matter intake, holds, chronologies, privilege logs
+- **Product Legal** — launch review, framework checks, claim substantiation
+
+The other eight plugins (Privacy Legal, Employment Legal, Regulatory Legal, AI Governance Legal, IP Legal, Law Student, Legal Clinic, Legal Builder Hub) are Cowork-resident at launch. That lineup may expand.
+
+If you want one of the four cookbook plugins running 24/7 as a managed agent, this is the deployment route. If you want one of the other eight as a managed agent, you'll need to either wait for the cookbook or build your own composition.
+
+---
+
 ## When to use a managed agent vs. a scheduled task
 
 Both run on a schedule. The distinction:

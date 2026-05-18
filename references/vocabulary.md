@@ -60,13 +60,13 @@ A bundle of skills shipped together as a single installable unit. The Anthropic 
 
 **Plugins cannot include.** Account credentials, model weights, or anything binary. They are markdown + config, full stop.
 
-**The May 2026 lineup.** Twelve practice-area plugins replaced the single generic legal plugin: Commercial, Product Privacy, Employment, Employment Governance, Regulatory, Corporate, Litigation, IP, Law Student (Socratic), Legal Clinic, Legal Builder Hub, and others. See `references/practice-area-plugins.md` for the lineup; see `references/cold-start-interview.md` for the customization ritual each plugin opens with.
+**The May 2026 lineup.** Twelve practice-area plugins replaced the single generic legal plugin: Commercial Legal, Corporate Legal, Employment Legal, Privacy Legal, Product Legal, Regulatory Legal, AI Governance Legal, IP Legal, Litigation Legal, Law Student, Legal Clinic, Legal Builder Hub. Four (Commercial, Corporate, Litigation, Product) are also deployable as managed agents via cookbooks. See `references/practice-area-plugins.md` for the full lineup; see `references/cold-start-interview.md` for the customization ritual each plugin opens with.
 
 ## Connector (MCP)
 
 A live data pipe. The bridge between Claude and one of your systems.
 
-**Common connectors.** Microsoft 365, Google Workspace, Slack, Notion, Linear/Jira, iManage, NetDocuments, various CLM platforms, various case management platforms (varies in MCP-readiness). The May 2026 launch added a named legal-specific catalog: Box, Harvey, Thomson Reuters CoCounsel, LSuite, Solve Intelligence, BoardWise, Courtroom5, Descrybe, Free Law Project, and more.
+**Common connectors.** Microsoft 365, Google Workspace, Slack, Notion, Linear/Jira. The May 2026 launch added a named legal-specific catalog spanning CLM (Ironclad, DocuSign, Definely), DMS (iManage, NetDocuments, Box), deal rooms (Datasite, Box), eDiscovery (Relativity, Everlaw, Consilio), legal research (Thomson Reuters CoCounsel, Midpage, Trellis, Legal Data Hunter), legal AI (Harvey, Solve Intelligence, Lawve AI, the L Suite's Lloyd and TopCounsel), and access-to-justice (Free Law Project, Descrybe, Courtroom5, BoardWise).
 
 For the **what's available** question, see `references/mcp-connector-catalog.md`. For the **how to wire it safely** question, see `references/mcp-hardening.md`.
 
